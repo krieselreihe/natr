@@ -4,7 +4,7 @@ describe("handle contained execution", async assert => {
   assert({
     given: "an expression",
     should: "throw",
-    actual: execute(() => {
+    actual: await execute(() => {
       throw new TypeError("Doh!");
     }),
     expected: new TypeError("Doh!")
@@ -22,7 +22,7 @@ describe("handle contained execution", async assert => {
   assert({
     given: "some code to execute",
     should: "execute and return a value",
-    actual: execute(() => {
+    actual: await execute(() => {
       const hello = `Hello`;
       return `${hello}, World!`;
     }),

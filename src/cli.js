@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const { resolve } = require("path");
-const parseOpts = require("minimist");
 const glob = require("fast-glob");
+const parseOpts = require("minimist");
+const { resolve } = require("path");
 
 const opts = parseOpts(process.argv.slice(2), {
   alias: { r: "require" },

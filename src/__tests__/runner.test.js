@@ -1,6 +1,6 @@
-const { describe } = require("../runner");
+const { describe, execute } = require("../runner");
 
-describe("regular test cases", async assert => {
+describe("runner", async assert => {
   const calc = (a = 0, b = 0) => a + b;
 
   assert({
@@ -22,5 +22,23 @@ describe("regular test cases", async assert => {
     should: "return the correct sum",
     actual: calc(10, -5),
     expected: 5
+  });
+
+  assert({
+    given: "a function that will throw",
+    should: "throw",
+    actual: await execute(() => {
+      throw new Error("Err!");
+    }),
+    expected: new Error("Err!")
+  });
+
+  assert({
+    given: "a failed check execution",
+    should: "throw",
+    actual: await execute(check => {
+      check(true, false);
+    }),
+    expected: new Error("check() in execute() didn't match: true with false")
   });
 });

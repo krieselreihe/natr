@@ -29,7 +29,7 @@ function createInternal(message) {
  * @returns {string}
  */
 function cleanInternal(message) {
-  return message.replace(NATR_MESSAGE_REGEXP, "") || "";
+  return message.replace(NATR_MESSAGE_REGEXP, "");
 }
 
 const API_DESCRIPTION = createInternal(`{
@@ -41,7 +41,6 @@ const API_DESCRIPTION = createInternal(`{
 
 module.exports = {
   isInternal,
-  createInternal,
   cleanInternal,
   API_DESCRIPTION
 };

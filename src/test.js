@@ -26,17 +26,6 @@ module.exports = class Test extends EventEmitter {
     this.emit("run");
   }
 
-  test(name, cb) {
-    const test = new Test(name, cb);
-
-    this.progeny.push(test);
-    this.emit("test", test);
-
-    test.on("prerun", () => this.assertCount++);
-
-    setImmediate(() => this._end());
-  }
-
   timeoutAfter() {
     const timeout = setTimeout(() => {
       this.fail(`test timed out after ${500}ms`);

@@ -9,10 +9,6 @@
   "scripts": {
     "test": "./src/cli.js src/__tests__/*.test.js | tap-color",
     "coverage": "nyc --reporter=html --reporter=text ./src/cli.js src/__tests__/*.test.js | tap-nyc",
-    "t:tap": "tap src/__tap_tests__",
-    "t:examples": "./src/cli.js examples/*.js | tap-color",
-    "t:examples:coverage": "nyc --reporter=html ./src/cli.js examples/*.js | tap-nyc",
-    "t:coverage": "nyc tape src/__tests__/*.js | tap-nirvana",
     "lint": "eslint --ignore-path .gitignore --ext .js .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,md,json,yml}\"",
     "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,md,json,yml}\""

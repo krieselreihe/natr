@@ -1,7 +1,7 @@
 const { inspect } = require("util");
 
 const objectStartRegExp = /^{\s+/;
-const objectEndRegExp = /\s\}$/;
+const objectEndRegExp = /\s}$/;
 
 /**
  * Inspect object

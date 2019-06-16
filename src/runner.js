@@ -1,12 +1,15 @@
+const deepEqual = require("fast-deep-equal");
+
 const createDefaultStream = require("./default-stream");
 const duplexStream = require("./duplex-stream");
+const inspectObject = require("./inspect-object");
 const messaging = require("./messaging");
 const Results = require("./results");
 const Test = require("./test");
 
 function createExitHarness(conf = {}) {
   const harness = createHarness();
-  const stream = harness.createStream({ objectMode: conf.objectMode });
+  const stream = harness.createStream();
   const extendedStream = stream.pipe(conf.stream || createDefaultStream());
   let ended = false;
 
@@ -52,7 +55,7 @@ function createHarness() {
   testHarness.exitCode = 0;
   testHarness.tests = [];
 
-  testHarness.createStream = opts => results.createStream(opts);
+  testHarness.createStream = () => results.createStream();
   testHarness.onFinish = cb => results.on("done", cb);
   testHarness.onFailure = cb => results.on("fail", cb);
   testHarness.close = () => results.close();
@@ -72,16 +75,16 @@ const _describe = (function test() {
 
   const lazyLoad = (message, cb) => getHarness()(message, cb);
 
-  lazyLoad.createStream = (opts = {}) => {
+  lazyLoad.createStream = () => {
     if (!harness) {
-      const output = duplexStream();
+      const stream = duplexStream();
 
-      getHarness({ stream: output, objectMode: opts.objectMode });
+      getHarness({ stream });
 
-      return output;
+      return stream;
     }
 
-    return harness.createStream(opts);
+    return harness.createStream();
   };
 
   lazyLoad.onFinish = cb => getHarness().onFinish(cb);
@@ -149,6 +152,16 @@ function createAssert(description, test) {
   };
 }
 
+function check(a, b) {
+  if (!deepEqual(a, b)) {
+    throw new Error(
+      `check() in execute() didn't match: ${inspectObject(
+        a
+      )} with ${inspectObject(b)}`
+    );
+  }
+}
+
 /**
  * Describe a test suite
  *
@@ -178,7 +191,7 @@ function describe(description, unit) {
  */
 async function execute(fn) {
   try {
-    return await Promise.resolve(catchPromise(fn()));
+    return await Promise.resolve(catchPromise(fn(check)));
   } catch (err) {
     return err;
   }

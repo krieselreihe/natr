@@ -1,10 +1,10 @@
-const { EventEmitter } = require("events");
 const StackUtils = require("stack-utils");
+const { EventEmitter } = require("events");
 
 const duplexStream = require("./duplex-stream");
-const resumeStream = require("./resume-stream");
-const messaging = require("./messaging");
 const inspectObject = require("./inspect-object");
+const messaging = require("./messaging");
+const resumeStream = require("./resume-stream");
 
 const cwd = process.cwd();
 const projectFiles = /natr$/.test(cwd) ? [] : [/natr\/src/];
@@ -97,46 +97,11 @@ module.exports = class Results extends EventEmitter {
     this.isRunning = false;
   }
 
-  createStream(opts = {}) {
-    let output;
-    let testId = 0;
+  createStream() {
+    let output = resumeStream();
 
-    if (opts.objectMode) {
-      output = duplexStream();
-
-      const onTest = (test, extra = {}) => {
-        let id = testId++;
-
-        test.once("prerun", () => {
-          const row = {
-            type: "test",
-            name: test.name,
-            id
-          };
-          if (extra.hasOwnProperty("parent")) {
-            row.parent = extra.parent;
-          }
-          output.queue(row);
-        });
-
-        test.on("test", str => onTest(str, { parent: id }));
-
-        test.on("result", result => {
-          result.test = id;
-          result.type = "assert";
-          output.queue(result);
-        });
-
-        test.on("end", () => output.queue({ type: "end", test: id }));
-      };
-
-      this.on("_push", onTest);
-      this.on("done", () => output.queue(null));
-    } else {
-      output = resumeStream();
-      output.queue("TAP version 13\n");
-      this.stream.pipe(output);
-    }
+    output.queue("TAP version 13\n");
+    this.stream.pipe(output);
 
     if (!this.isRunning) {
       this.isRunning = true;
@@ -166,15 +131,13 @@ module.exports = class Results extends EventEmitter {
   }
 
   _watch(test) {
-    const write = str => this.stream.queue(str);
+    const write = str => {
+      this.stream.queue(str);
+    };
 
     test.once("prerun", () => write(`# ${test.name}\n`));
 
     test.on("result", result => {
-      if (typeof result === "string") {
-        return write(`# ${result}\n`);
-      }
-
       write(encodeResult(result, this.count + 1));
       this.count += 1;
 
