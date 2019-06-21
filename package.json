@@ -34,11 +34,11 @@
   "license": "MIT",
   "engines": {
     "node": ">=10",
-    "npm": ">=6"
+    "pnpm": ">=3"
   },
   "dependencies": {
     "fast-deep-equal": "2.0.1",
-    "fast-glob": "2.2.7",
+    "fast-glob": "3.0.1",
     "minimist": "1.2.0",
     "object-inspect": "1.6.0",
     "stack-utils": "1.0.2"
@@ -48,10 +48,10 @@
     "concat-stream": "2.0.0",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "5.16.0",
-    "eslint-config-prettier": "4.3.0",
-    "eslint-plugin-compat": "3.1.1",
+    "eslint-config-prettier": "5.0.0",
+    "eslint-plugin-compat": "3.1.2",
     "nyc": "14.1.1",
-    "prettier": "1.17.1",
+    "prettier": "1.18.2",
     "stream-spec": "0.3.6",
     "tap-color": "1.1.0",
     "tap-nirvana": "1.1.0",
