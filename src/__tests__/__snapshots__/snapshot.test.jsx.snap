@@ -1,0 +1,18 @@
+{
+  "toMatchSnapshot, Given an object: should match a specific snapshot": {
+    "id": 1,
+    "name": "Mary"
+  },
+  "toMatchSnapshot, Given a different object: should match a specific snapshot": {
+    "id": 2,
+    "name": "Martin",
+    "active": true
+  },
+  "toMatchSnapshot, Given a React component: should match a specific snapshot": {
+    "type": "div",
+    "props": {},
+    "children": [
+      "Hello World"
+    ]
+  }
+}

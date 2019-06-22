@@ -2,20 +2,23 @@
 
 module.exports = {
   root: true,
-  extends: ["eslint:recommended", "prettier"],
-  // plugins: ["compat"],
+  extends: ["eslint:recommended", "prettier", "plugin:react/recommended"],
   parserOptions: {
     ecmaVersion: 2018,
-    impliedStrict: false
+    impliedStrict: false,
+    jsx: true
   },
   env: {
     node: true,
     es6: true
   },
   settings: {
-    browsers: ["maintained node versions"]
+    browsers: ["maintained node versions"],
+    react: {
+      version: "detect"
+    }
   },
   rules: {
-    // "compat/compat": "error"
+    "no-prototype-builtins": 0
   }
 };

@@ -7,11 +7,11 @@
     "natr": "./src/cli.js"
   },
   "scripts": {
-    "test": "./src/cli.js src/__tests__/*.test.js | tap-color",
+    "test": "./src/cli.js \"src/__tests__/*.test.@(js|jsx)\" -r @babel/register | tap-color",
     "coverage": "nyc --reporter=html --reporter=text ./src/cli.js src/__tests__/*.test.js | tap-nyc",
-    "lint": "eslint --ignore-path .gitignore --ext .js .",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,md,json,yml}\"",
-    "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,md,json,yml}\""
+    "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,md,json,yml}\"",
+    "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,jsx,md,json,yml}\""
   },
   "keywords": [
     "natr",
@@ -44,14 +44,19 @@
     "stack-utils": "1.0.2"
   },
   "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/plugin-transform-react-jsx": "7.3.0",
+    "@babel/register": "7.4.4",
     "commitizen": "3.1.1",
     "concat-stream": "2.0.0",
     "cz-conventional-changelog": "2.1.0",
-    "eslint": "5.16.0",
+    "eslint": "6.0.0",
     "eslint-config-prettier": "5.0.0",
-    "eslint-plugin-compat": "3.1.2",
+    "eslint-plugin-react": "7.13.0",
     "nyc": "14.1.1",
     "prettier": "1.18.2",
+    "react": "16.8.6",
+    "react-test-renderer": "16.8.6",
     "stream-spec": "0.3.6",
     "tap-color": "1.1.0",
     "tap-nirvana": "1.1.0",

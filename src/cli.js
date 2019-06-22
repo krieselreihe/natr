@@ -3,11 +3,13 @@
 const glob = require("fast-glob");
 const parseOpts = require("minimist");
 const { resolve } = require("path");
+const { unlinkSync } = require("fs");
 
 const opts = parseOpts(process.argv.slice(2), {
-  alias: { r: "require" },
+  alias: { r: "require", u: "update-snapshot" },
   string: "require",
-  default: { r: [] }
+  boolean: "updateSnapshot",
+  default: { r: [], u: false }
 });
 
 const cwd = process.cwd();
@@ -23,6 +25,12 @@ opts.require.forEach(module => {
     }));
   }
 });
+
+if (opts["updateSnapshot"]) {
+  const snapshotFiles = glob.sync(`${process.cwd()}/**/*.snap`);
+
+  snapshotFiles.forEach(unlinkSync);
+}
 
 opts._.forEach(arg => {
   const files = glob.sync(arg).map(String);

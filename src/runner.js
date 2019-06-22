@@ -1,4 +1,6 @@
 const deepEqual = require("fast-deep-equal");
+const fs = require("fs");
+const path = require("path");
 
 const createDefaultStream = require("./default-stream");
 const duplexStream = require("./duplex-stream");
@@ -6,6 +8,8 @@ const inspectObject = require("./inspect-object");
 const messaging = require("./messaging");
 const Results = require("./results");
 const Test = require("./test");
+
+const FS_OPTIONS = { encoding: "utf8" };
 
 function createExitHarness(conf = {}) {
   const harness = createHarness();
@@ -106,10 +110,70 @@ function catchPromise(value) {
   return isPromise(value) ? catchAndReturn(value) : value;
 }
 
-function resolveSnapshot(name) {
-  const obj = {};
+function getTestFile() {
+  const originalFunc = Error.prepareStackTrace;
+  let callerFile;
 
-  return obj[name];
+  try {
+    const err = new Error();
+
+    Error.prepareStackTrace = (_, stack) => stack;
+
+    const currentFile = err.stack.shift().getFileName();
+
+    while (err.stack.length) {
+      callerFile = err.stack.shift().getFileName();
+
+      if (currentFile !== callerFile) {
+        break;
+      }
+    }
+  } catch (e) {
+    // Ignore exception
+  }
+
+  Error.prepareStackTrace = originalFunc;
+
+  return callerFile;
+}
+
+function writeFormattedObjectFile(file, obj) {
+  const data = JSON.stringify(obj, null, 2);
+
+  fs.writeFileSync(file, data, FS_OPTIONS);
+}
+
+function readFormattedObjectFile(file) {
+  return JSON.parse(fs.readFileSync(file, FS_OPTIONS));
+}
+
+function resolveSnapshot(name, value) {
+  const testFile = getTestFile();
+  const snapshotDir = `${path.dirname(testFile)}${path.sep}__snapshots__`;
+  const snapshotFile = `${snapshotDir}${path.sep}${path.basename(
+    testFile
+  )}.snap`;
+
+  if (!fs.existsSync(snapshotDir)) {
+    fs.mkdirSync(snapshotDir);
+  }
+
+  if (!fs.existsSync(snapshotFile)) {
+    writeFormattedObjectFile(snapshotFile, { [name]: value });
+
+    return value;
+  }
+
+  const snapshots = readFormattedObjectFile(snapshotFile);
+
+  if (!snapshots[name]) {
+    snapshots[name] = value;
+    writeFormattedObjectFile(snapshotFile, snapshots);
+
+    return value;
+  }
+
+  return snapshots[name];
 }
 
 function isValidTestDescriptor(descriptor) {
@@ -142,7 +206,7 @@ function createAssert(description, test) {
     if (expected === resolveSnapshot) {
       test.deepEqual(
         actual,
-        resolveSnapshot(`${description}, ${message}`),
+        resolveSnapshot(`${description}, ${message}`, actual),
         message
       );
       return;
@@ -155,9 +219,9 @@ function createAssert(description, test) {
 function check(a, b) {
   if (!deepEqual(a, b)) {
     throw new Error(
-      `check() in execute() didn't match: ${inspectObject(
+      `check() in execute() didn't match:\n${inspectObject(
         a
-      )} with ${inspectObject(b)}`
+      )}\nwith:\n${inspectObject(b)}`
     );
   }
 }
@@ -187,7 +251,7 @@ function describe(description, unit) {
  *
  * @public
  * @param {Function} fn Execution wrapper
- * @returns {Promise<any>} Returns resolved return value or thrown error
+ * @returns {Promise<*>} Returns resolved return value or thrown error
  */
 async function execute(fn) {
   try {
