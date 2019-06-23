@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/krieselreihe/natr/compare/v0.1.1...v0.1.2) (2019-06-23)
+
+
+### Bug Fixes
+
+* add scope to package name for usage guide ([addd07c](https://github.com/krieselreihe/natr/commit/addd07c))
+
+
+### Build System
+
+* only include relevant files for publishing ([e1a6a3a](https://github.com/krieselreihe/natr/commit/e1a6a3a))
+
+
+
 ### [0.1.1](https://github.com/krieselreihe/natr/compare/v0.1.0...v0.1.1) (2019-06-23)
 
 
