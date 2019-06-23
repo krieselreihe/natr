@@ -2,7 +2,6 @@
   "name": "@krieselreihe/natr",
   "version": "0.1.0",
   "description": "Not another test runner! But it is, and it is my highly opinionated one.",
-  "main": "src/index.js",
   "bin": {
     "natr": "./src/cli.js"
   },
@@ -13,7 +12,9 @@
     "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,md,json,yml}\"",
     "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,jsx,md,json,yml}\"",
-    "ci": "pnpm run lint && pnpm run format:check && pnpm test && pnpm run coverage:ci"
+    "ci": "pnpm run prerelease && pnpm run coverage:ci",
+    "prerelease": "pnpm run lint && pnpm run format:check && pnpm test",
+    "release": "standard-version -a -s"
   },
   "keywords": [
     "natr",
@@ -51,6 +52,7 @@
     "@babel/register": "7.4.4",
     "commitizen": "3.1.1",
     "concat-stream": "2.0.0",
+    "coveralls": "3.0.4",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "6.0.0",
     "eslint-config-prettier": "5.0.0",
@@ -59,6 +61,7 @@
     "prettier": "1.18.2",
     "react": "16.8.6",
     "react-test-renderer": "16.8.6",
+    "standard-version": "6.0.1",
     "stream-spec": "0.3.6",
     "tap-color": "1.1.0",
     "tap-nyc": "1.0.3"
