@@ -7,7 +7,7 @@
 
 **Not another test runner!** (natr) But it is, and it is a highly opinionated one that is used for own projects. But if you want to use it as well, you are very welcome to do and give feedback 😎
 
-**Important note:** This runner is a MVP. Therefore not stable, features missing and not every edge case tested, overall alpha software. Use at own risk.
+**Important note:** This runner is a MVP. Therefore not stable, features missing and not every edge case tested, overall alpha software. Use at own risk. If you want to help get _natr_ on track please read the [contribution guide](./CONTRIBUTING.md).
 
 ## Contents
 
@@ -35,7 +35,7 @@
 
 ## Principles
 
-The goal of _natr_ is a simple API by only using deep equal to check values for tests. This got inspired by [RITEWay](https://github.com/ericelliott/riteway) and uses the same API. Another goal was readability. Every test case should state a clear goal without over complicating things. By implement [TAP](https://testanything.org/) it is also possible to already use a wide variety of tools together with _natr_ for test coverage, color output and formatting. Besides that, speed is another factor. Tests should be execute often and therefore _natr_ aims to be as fast as possible.
+The goal of _natr_ is a reduced API by only using deep equal to check values for tests. This got inspired by [RITEWay](https://github.com/ericelliott/riteway) and uses the same API. Another goal was readability. Every test case should state a clear goal without over complicating things. By implement [TAP](https://testanything.org/) it is also possible to already use a wide variety of tools together with _natr_ for test coverage, color output and formatting. Besides that, speed is another factor. Tests should be execute often and therefore _natr_ aims to be as fast as possible.
 
 ## Installation
 
@@ -381,7 +381,7 @@ await execute(check => {
 
 ## Disclaimer
 
-This runner was highly inspired by [RITEWay](https://github.com/ericelliott/riteway) on how to write tests with focus on simplicity (e.g. only use deep equal, enforce simple API), and [node-tap](https://www.node-tap.org/) on how to log test reports based on the [TAP](https://testanything.org/) (Test Anything Protocol). Also [Jest](https://jestjs.io/) for snapshot testing and [tape](https://github.com/substack/tape) on actual creating a runner that had to hold as base for _natr_.
+This runner was highly inspired by [RITEWay](https://github.com/ericelliott/riteway) on how to write tests with focus on simplicity (e.g. only use deep equal, enforce reduced API), and [node-tap](https://www.node-tap.org/) on how to log test reports based on the [TAP](https://testanything.org/) (Test Anything Protocol). Also [Jest](https://jestjs.io/) for snapshot testing and [tape](https://github.com/substack/tape) on actual creating a runner that had to hold as base for _natr_.
 
 [bsurl]: https://travis-ci.org/krieselreihe/natr.svg?branch=master
 [bsimg]: https://travis-ci.org/krieselreihe/natr
