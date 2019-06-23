@@ -1,6 +1,6 @@
 {
   "name": "@krieselreihe/natr",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Not another test runner! But it is, and it is a highly opinionated one.",
   "main": "./src/runner.js",
   "bin": {
