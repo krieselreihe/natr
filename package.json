@@ -8,7 +8,7 @@
   "scripts": {
     "test": "./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | tap-color",
     "coverage": "nyc --reporter=html --reporter=text ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | tap-nyc",
-    "coverage:ci": "nyc --reporter=text-lcov ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | coveralls",
+    "coverage:ci": "nyc --reporter=text-lcov ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\"",
     "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
     "format": "prettier --write \"**/*.{js,jsx,md,json,yml}\"",
     "format:check": "prettier --list-different \"**/*.{js,jsx,md,json,yml}\"",
