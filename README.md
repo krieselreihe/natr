@@ -41,13 +41,13 @@ The goal of _natr_ is a reduced API by only using deep equal to check values for
 
 ```bash
 # NPM
-npm install natr --save-dev
+npm install @krieselreihe/natr --save-dev
 
 # Yarn
-yarn add natr --dev
+yarn add @krieselreihe/natr --dev
 
 # PNPM
-pnpm install natr --save-dev
+pnpm install @krieselreihe/natr --save-dev
 ```
 
 ## Usage
@@ -57,7 +57,7 @@ pnpm install natr --save-dev
 Unit tests are explicit, so there are no global variables injected. Import `describe` from the test runner to create a test suite:
 
 ```javascript
-import { describe } from "natr";
+import { describe } from "@krieselreihe/natr";
 
 describe("my test suite", async assert => {
   assert({
@@ -86,7 +86,7 @@ node "src/__tests__/my.test.js"
 The `execute` helper gives you the chance to wrap an executions of multiple expressions to evaluate results. One example could be to retrieve the evaluated result of a promise:
 
 ```javascript
-import { describe, execute } from "natr";
+import { describe, execute } from "@krieselreihe/natr";
 
 describe("my test suite", async assert => {
   assert({
@@ -105,7 +105,7 @@ describe("my test suite", async assert => {
 To test if a function throws an error you can use the `execute` helper and pass a function to wrap your execution.
 
 ```javascript
-import { describe, execute } from "natr";
+import { describe, execute } from "@krieselreihe/natr";
 
 describe("my test suite", async assert => {
   assert({
@@ -122,7 +122,7 @@ describe("my test suite", async assert => {
 Inside executions you can perform assert checks as well that will throw if values are not deeply equal. Therefore the `execute` function passes a `check` function to the callback.
 
 ```javascript
-import { describe, execute } from "natr";
+import { describe, execute } from "@krieselreihe/natr";
 
 describe("my test suite", async assert => {
   assert({
@@ -162,7 +162,7 @@ not ok 1 - Given user object: should have the correct user id and structure
 To render react component you can just use [react-test-renderer](https://reactjs.org/docs/test-renderer.html) and its API.
 
 ```jsx
-import { describe } from "natr";
+import { describe } from "@krieselreihe/natr";
 import render from "react-test-renderer";
 
 const MyComponent = () => (
@@ -194,7 +194,7 @@ describe("my test suite", async assert => {
 Snapshot testing is included and can be used to test React component as JSON tree or regular JavaScript objects as well. Therefore the "expected" helper function `toMatchSnapshot` is exposed, that will create a snapshot on first run and match against on further.
 
 ```javascript
-import { describe, toMatchSnapshot } from "natr";
+import { describe, toMatchSnapshot } from "@krieselreihe/natr";
 import render from "react-test-renderer";
 
 const MyComponent = () => (
