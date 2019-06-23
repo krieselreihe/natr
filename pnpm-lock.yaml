@@ -15,7 +15,7 @@ devDependencies:
   cz-conventional-changelog: 2.1.0
   eslint: 6.0.0
   eslint-config-prettier: 5.0.0_eslint@6.0.0
-  eslint-plugin-react: 7.13.0_eslint@6.0.0
+  eslint-plugin-react: 7.14.0_eslint@6.0.0
   nyc: 14.1.1
   prettier: 1.18.2
   react: 16.8.6
@@ -1197,23 +1197,25 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-c17Aqiz5e8LEqoc/QPmYnaxQFAHTx2KlCZBPxXXjEMmNchOLnV/7j0HoPZuC+rL/tDC9bazUYOKJW9bOhftI/w==
-  /eslint-plugin-react/7.13.0_eslint@6.0.0:
+  /eslint-plugin-react/7.14.0_eslint@6.0.0:
     dependencies:
       array-includes: 3.0.3
       doctrine: 2.1.0
       eslint: 6.0.0
       has: 1.0.3
       jsx-ast-utils: 2.1.0
+      object.entries: 1.1.0
       object.fromentries: 2.0.0
+      object.values: 1.1.0
       prop-types: 15.7.2
       resolve: 1.11.1
     dev: true
     engines:
       node: '>=4'
     peerDependencies:
-      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     resolution:
-      integrity: sha512-uA5LrHylu8lW/eAH3bEQe9YdzpPaFd9yAJTwTi/i/BKTD7j6aQMKVAdGM/ML72zD6womuSK7EiGtMKuK06lWjQ==
+      integrity: sha512-MbPYPGsOteqqnFZx4lGLw6izxcWv6onLsil/6iX6+CaZAzMxOwsPja1Xg25cVCJ4jwKBDhJXe+ZAn6HAjGHSCw==
   /eslint-scope/4.0.3:
     dependencies:
       esrecurse: 4.2.1
@@ -2927,6 +2929,17 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-95xEk68MU3e1n+OdOV5BBC3QRbs=
+  /object.entries/1.1.0:
+    dependencies:
+      define-properties: 1.1.3
+      es-abstract: 1.13.0
+      function-bind: 1.1.1
+      has: 1.0.3
+    dev: true
+    engines:
+      node: '>= 0.4'
+    resolution:
+      integrity: sha512-l+H6EQ8qzGRxbkHOd5I/aHRhHDKoQXQ8g0BYt4uSweQU1/J6dZUOyWh9a2Vky35YCKjzmgxOzta2hH6kf9HuXA==
   /object.fromentries/2.0.0:
     dependencies:
       define-properties: 1.1.3
@@ -2946,6 +2959,17 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-h6EKxMFpS9Lhy/U1kaZhQftd10c=
+  /object.values/1.1.0:
+    dependencies:
+      define-properties: 1.1.3
+      es-abstract: 1.13.0
+      function-bind: 1.1.1
+      has: 1.0.3
+    dev: true
+    engines:
+      node: '>= 0.4'
+    resolution:
+      integrity: sha512-8mf0nKLAoFX6VlNVdhGj31SVYpaNFtUnuoOXWyFEstsWRgU837AK+JYM0iAxwkSzGRbwn8cbFmgbyxj1j4VbXg==
   /once/1.4.0:
     dependencies:
       wrappy: 1.0.2
@@ -4437,7 +4461,7 @@ specifiers:
   cz-conventional-changelog: 2.1.0
   eslint: 6.0.0
   eslint-config-prettier: 5.0.0
-  eslint-plugin-react: 7.13.0
+  eslint-plugin-react: 7.14.0
   fast-deep-equal: 2.0.1
   fast-glob: 3.0.2
   minimist: 1.2.0
