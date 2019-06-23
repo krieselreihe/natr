@@ -10,8 +10,8 @@
     "coverage": "nyc --reporter=html --reporter=text ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | tap-nyc",
     "coverage:ci": "nyc --reporter=text-lcov ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | coveralls",
     "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,md,json,yml}\"",
-    "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,jsx,md,json,yml}\"",
+    "format": "prettier --write \"**/*.{js,jsx,md,json,yml}\"",
+    "format:check": "prettier --list-different \"**/*.{js,jsx,md,json,yml}\"",
     "ci": "pnpm run prerelease && pnpm run coverage:ci",
     "prerelease": "pnpm run lint && pnpm run format:check && pnpm test",
     "release": "standard-version -a -s"
