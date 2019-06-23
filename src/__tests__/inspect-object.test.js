@@ -13,14 +13,15 @@ describe("inspect object", async assert => {
     given: "a flat object",
     should: "return an inspect string",
     actual: inspectObject({ a: 1, b: 2 }),
-    expected: "{ a: 1, b: 2 }"
+    expected: "{\n      a: 1,\n      b: 2\n    }"
   });
 
   assert({
     given: "a nested object",
     should: "return an inspect string with a maximal depth",
     actual: inspectObject({ a: { b: { c: { d: { e: { f: { g: 42 } } } } } } }),
-    expected: "{ a: { b: { c: { d: { e: { f: [Object] } } } } } }"
+    expected:
+      "{\n      a: {\n      b: {\n      c: {\n      d: {\n      e: {\n      f: [Object]\n      }\n      }\n      }\n      }\n      }\n    }"
   });
 
   assert({

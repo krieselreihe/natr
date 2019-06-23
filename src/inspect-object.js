@@ -12,7 +12,9 @@ const objectEndRegExp = /\s}$/;
 function inspectObject(obj) {
   const result = inspect(obj, {
     depth: 5,
-    maxArrayLength: 10
+    maxArrayLength: 10,
+    compact: false,
+    breakLength: 60
   });
 
   if (result.indexOf("\n") === -1) {
