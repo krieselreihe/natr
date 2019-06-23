@@ -7,11 +7,13 @@
     "natr": "./src/cli.js"
   },
   "scripts": {
-    "test": "./src/cli.js \"src/__tests__/*.test.@(js|jsx)\" -r @babel/register | tap-color",
-    "coverage": "nyc --reporter=html --reporter=text ./src/cli.js src/__tests__/*.test.js | tap-nyc",
+    "test": "./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | tap-color",
+    "coverage": "nyc --reporter=html --reporter=text ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | tap-nyc",
+    "coverage:ci": "nyc --reporter=text-lcov ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | coveralls",
     "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,md,json,yml}\"",
-    "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,jsx,md,json,yml}\""
+    "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,jsx,md,json,yml}\"",
+    "ci": "pnpm run lint && pnpm run format:check && pnpm test && pnpm run coverage:ci"
   },
   "keywords": [
     "natr",
@@ -59,7 +61,6 @@
     "react-test-renderer": "16.8.6",
     "stream-spec": "0.3.6",
     "tap-color": "1.1.0",
-    "tap-nirvana": "1.1.0",
     "tap-nyc": "1.0.3"
   }
 }

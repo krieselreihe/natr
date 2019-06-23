@@ -20,7 +20,6 @@ devDependencies:
   react-test-renderer: 16.8.6_react@16.8.6
   stream-spec: 0.3.6
   tap-color: 1.1.0
-  tap-nirvana: 1.1.0
   tap-nyc: 1.0.3
 lockfileVersion: 5.1
 packages:
@@ -389,10 +388,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
-  /buffer-shims/1.0.0:
-    dev: true
-    resolution:
-      integrity: sha1-mXjOMXOIxkmth5MCjDR37wRKi1E=
   /byline/5.0.0:
     dev: true
     engines:
@@ -1759,10 +1754,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
-  /json-stringify-pretty-compact/1.2.0:
-    dev: true
-    resolution:
-      integrity: sha512-/11Pj1OyX814QMKO7K8l85SHPTr/KsFxHp8GE2zVa0BtJgGimDjXHfM3FhC7keQdWDea7+nXf+f1de7ATZcZkQ==
   /json5/2.1.0:
     dependencies:
       minimist: 1.2.0
@@ -2425,18 +2416,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-QlfCVt8/sLRR1q/6qwIYhBJpgdw=
-  /pretty-ms/3.2.0:
-    dependencies:
-      parse-ms: 1.0.1
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-ZypexbfVUGTFxb0v+m1bUyy92DHe5SyYlnyY0msyms5zd3RwyvNgyxZZsXXgoyzlxjx5MiqtXUdhUfvQbe0A2Q==
-  /process-nextick-args/1.0.7:
-    dev: true
-    resolution:
-      integrity: sha1-FQ4gt1ZZCtP5EJPyWk8q2L/zC6M=
   /process-nextick-args/2.0.1:
     dev: true
     resolution:
@@ -2522,18 +2501,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-nLxoaXj+5l0WwA4rGcI3/Pbjg4k=
-  /readable-stream/2.2.9:
-    dependencies:
-      buffer-shims: 1.0.0
-      core-util-is: 1.0.2
-      inherits: 2.0.4
-      isarray: 1.0.0
-      process-nextick-args: 1.0.7
-      string_decoder: 1.0.3
-      util-deprecate: 1.0.2
-    dev: true
-    resolution:
-      integrity: sha1-z3jsb0ptHrQ9JkiMrJfwQudLf8g=
   /readable-stream/2.3.6:
     dependencies:
       core-util-is: 1.0.2
@@ -2900,12 +2867,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw==
-  /split/1.0.0:
-    dependencies:
-      through: 2.3.8
-    dev: true
-    resolution:
-      integrity: sha1-xDlc5oOrzSVLwo/h2rtuXCfc/64=
   /split/1.0.1:
     dependencies:
       through: 2.3.8
@@ -2956,12 +2917,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-vafcv6KjVZKSgz06oM/H6GDBrAtz8vdhQakGjFIvNrHA6y3HCF1CInLy+QLq8dTJPQ1b+KDUqDFctkdRW44e1w==
-  /string_decoder/1.0.3:
-    dependencies:
-      safe-buffer: 5.1.2
-    dev: true
-    resolution:
-      integrity: sha512-4AH6Z5fzNNBcH+6XDMfA/BTt87skxqJlO0lAh3Dker5zThcAxG6mKz+iGu308UKoPPQ8Dcqx/4JhujzltRa+hQ==
   /string_decoder/1.1.1:
     dependencies:
       safe-buffer: 5.1.2
@@ -3059,22 +3014,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Qq6wJ/xCn7dqIaAUAfMF0XuRSP7fOu09aCWJCh7SeVIsUjO8D9xrGr5LlvnUMVIwd6giR2PsmVStmTITaQkqyQ==
-  /tap-nirvana/1.1.0:
-    dependencies:
-      chalk: 2.4.2
-      duplexer: 0.1.1
-      figures: 2.0.0
-      json-stringify-pretty-compact: 1.2.0
-      lodash: 4.17.11
-      pretty-ms: 3.2.0
-      repeat-string: 1.6.1
-      tap-out: 3.0.0
-      through2: 2.0.5
-      variable-diff: 1.1.0
-    dev: true
-    hasBin: true
-    resolution:
-      integrity: sha512-TInVjB9doaYU8f1qX5/N2szEY+1ue506T1UQANrae8RSpQvrsYhtrXcHjkfgCcBVJKY38xZHi3izOkhqY7Yz3g==
   /tap-nyc/1.0.3:
     dependencies:
       chalk: 1.1.3
@@ -3098,16 +3037,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-yQfsG/lAURHQiCY+kvVgi4jLs3o=
-  /tap-out/3.0.0:
-    dependencies:
-      re-emitter: 1.1.3
-      readable-stream: 2.2.9
-      split: 1.0.0
-      trim: 0.0.1
-    dev: true
-    hasBin: true
-    resolution:
-      integrity: sha512-JzlrjCL3anqI9xHGPfYb6Mo+6nYs60m0tDy6i0sWhYDlrBDVerYPNWoUo1buK3YeWQFdm42KQv8wu9qLf1tL5A==
   /test-exclude/5.2.3:
     dependencies:
       glob: 7.1.4
@@ -3279,13 +3208,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==
-  /variable-diff/1.1.0:
-    dependencies:
-      chalk: 1.1.3
-      object-assign: 4.1.1
-    dev: true
-    resolution:
-      integrity: sha1-0r1cZtt2wTh52W5qMG7cmJ35eNo=
   /which-module/2.0.0:
     dev: true
     resolution:
@@ -3401,5 +3323,4 @@ specifiers:
   stack-utils: 1.0.2
   stream-spec: 0.3.6
   tap-color: 1.1.0
-  tap-nirvana: 1.1.0
   tap-nyc: 1.0.3
