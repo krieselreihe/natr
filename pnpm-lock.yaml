@@ -15,7 +15,7 @@ devDependencies:
   cz-conventional-changelog: 2.1.0
   eslint: 6.0.0
   eslint-config-prettier: 5.0.0_eslint@6.0.0
-  eslint-plugin-react: 7.14.0_eslint@6.0.0
+  eslint-plugin-react: 7.14.1_eslint@6.0.0
   nyc: 14.1.1
   prettier: 1.18.2
   react: 16.8.6
@@ -801,7 +801,7 @@ packages:
       json-stringify-safe: 5.0.1
       lodash: 4.17.11
       meow: 4.0.1
-      semver: 6.1.1
+      semver: 6.1.2
       split: 1.0.1
       through2: 3.0.1
     dev: true
@@ -1197,7 +1197,7 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-c17Aqiz5e8LEqoc/QPmYnaxQFAHTx2KlCZBPxXXjEMmNchOLnV/7j0HoPZuC+rL/tDC9bazUYOKJW9bOhftI/w==
-  /eslint-plugin-react/7.14.0_eslint@6.0.0:
+  /eslint-plugin-react/7.14.1_eslint@6.0.0:
     dependencies:
       array-includes: 3.0.3
       doctrine: 2.1.0
@@ -1215,7 +1215,7 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     resolution:
-      integrity: sha512-MbPYPGsOteqqnFZx4lGLw6izxcWv6onLsil/6iX6+CaZAzMxOwsPja1Xg25cVCJ4jwKBDhJXe+ZAn6HAjGHSCw==
+      integrity: sha512-fQSIHJ3t0tYgctUyPbcjDPgNUTM6jNFguFKi73ctNjq+8KgqSynMMltakn60/VTtvmNSxOtju/j8Yby8mNn3bQ==
   /eslint-scope/4.0.3:
     dependencies:
       esrecurse: 4.2.1
@@ -2290,7 +2290,7 @@ packages:
       '@babel/traverse': 7.4.5
       '@babel/types': 7.4.4
       istanbul-lib-coverage: 2.0.5
-      semver: 6.1.1
+      semver: 6.1.2
     dev: true
     engines:
       node: '>=6'
@@ -3670,11 +3670,11 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-0UewU+9rFapKFnlbirLi3byoOuhrSsli/z/ihNnvM24vgF+8sNBiI1LZPBSH9wJKUwaUbw+s3hToDLCXkrghrQ==
-  /semver/6.1.1:
+  /semver/6.1.2:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-rWYq2e5iYW+fFe/oPPtYJxYgjBm8sC4rmoGdUOgBB7VnwKt6HrL793l2voH1UlsyYZpJ4g0wfjnTEO1s1NP2eQ==
+      integrity: sha512-z4PqiCpomGtWj8633oeAdXm1Kn1W++3T8epkZYnwiVgIYIJ0QHszhInYSJTYxebByQH7KVCEAn8R9duzZW2PhQ==
   /set-blocking/2.0.0:
     dev: true
     resolution:
@@ -4461,7 +4461,7 @@ specifiers:
   cz-conventional-changelog: 2.1.0
   eslint: 6.0.0
   eslint-config-prettier: 5.0.0
-  eslint-plugin-react: 7.14.0
+  eslint-plugin-react: 7.14.1
   fast-deep-equal: 2.0.1
   fast-glob: 3.0.2
   minimist: 1.2.0
