@@ -14,7 +14,7 @@ devDependencies:
   coveralls: 3.0.4
   cz-conventional-changelog: 2.1.0
   eslint: 6.0.1
-  eslint-config-prettier: 5.1.0_eslint@6.0.1
+  eslint-config-prettier: 6.0.0_eslint@6.0.1
   eslint-plugin-react: 7.14.2_eslint@6.0.1
   nyc: 14.1.1
   prettier: 1.18.2
@@ -1187,7 +1187,7 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /eslint-config-prettier/5.1.0_eslint@6.0.1:
+  /eslint-config-prettier/6.0.0_eslint@6.0.1:
     dependencies:
       eslint: 6.0.1
       get-stdin: 6.0.0
@@ -1196,7 +1196,7 @@ packages:
     peerDependencies:
       eslint: '>=3.14.1'
     resolution:
-      integrity: sha512-+tpiaLm3wl6fPW5nq0dDyVowQM0FT61lAdWZ+sDWgk6kKzgbOnCDwlcbwI38cyCBhq+Z3ret5Iofp6/gZpO0zw==
+      integrity: sha512-vDrcCFE3+2ixNT5H83g28bO/uYAwibJxerXPj+E7op4qzBCsAV36QfvdAyVOoNxKAH2Os/e01T/2x++V0LPukA==
   /eslint-plugin-react/7.14.2_eslint@6.0.1:
     dependencies:
       array-includes: 3.0.3
@@ -1561,7 +1561,7 @@ packages:
       integrity: sha512-YbffarhcicEhOrm4CtrwdKBdCuz576RLdhJDsIfvNtxUuhdRet1qZcsMjqbePtAseKdAnDyM/IyXbu7PRPRLYg==
   /flat-cache/2.0.1:
     dependencies:
-      flatted: 2.0.0
+      flatted: 2.0.1
       rimraf: 2.6.3
       write: 1.0.3
     dev: true
@@ -1569,10 +1569,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-LoQe6yDuUMDzQAEH8sgmh4Md6oZnc/7PjtwjNFSzveXqSHt6ka9fPBuso7IGf9Rz4uqnSnWiFH2B/zj24a5ReA==
-  /flatted/2.0.0:
+  /flatted/2.0.1:
     dev: true
     resolution:
-      integrity: sha512-R+H8IZclI8AAkSBRQJLVOsxwAoHd6WC40b4QTNWIjzAa6BXOBfQcM587MXDTVPeYaopFNWHUFLx7eNmHDSxMWg==
+      integrity: sha512-a1hQMktqW9Nmqr5aktAux3JMNqaucxGcjtjWnZLHX7yyPCmlSV3M54nGYbqT8K+0GhF3NBgmJCc3ma+WOgX8Jg==
   /for-in/1.0.2:
     dev: true
     engines:
@@ -4446,7 +4446,7 @@ specifiers:
   coveralls: 3.0.4
   cz-conventional-changelog: 2.1.0
   eslint: 6.0.1
-  eslint-config-prettier: 5.1.0
+  eslint-config-prettier: 6.0.0
   eslint-plugin-react: 7.14.2
   fast-deep-equal: 2.0.1
   fast-glob: 3.0.2
