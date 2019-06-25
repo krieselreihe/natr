@@ -13,9 +13,9 @@ devDependencies:
   conventional-changelog-conventionalcommits: 3.0.2
   coveralls: 3.0.4
   cz-conventional-changelog: 2.1.0
-  eslint: 6.0.0
-  eslint-config-prettier: 5.1.0_eslint@6.0.0
-  eslint-plugin-react: 7.14.1_eslint@6.0.0
+  eslint: 6.0.1
+  eslint-config-prettier: 5.1.0_eslint@6.0.1
+  eslint-plugin-react: 7.14.1_eslint@6.0.1
   nyc: 14.1.1
   prettier: 1.18.2
   react: 16.8.6
@@ -1187,9 +1187,9 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /eslint-config-prettier/5.1.0_eslint@6.0.0:
+  /eslint-config-prettier/5.1.0_eslint@6.0.1:
     dependencies:
-      eslint: 6.0.0
+      eslint: 6.0.1
       get-stdin: 6.0.0
     dev: true
     hasBin: true
@@ -1197,11 +1197,11 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-+tpiaLm3wl6fPW5nq0dDyVowQM0FT61lAdWZ+sDWgk6kKzgbOnCDwlcbwI38cyCBhq+Z3ret5Iofp6/gZpO0zw==
-  /eslint-plugin-react/7.14.1_eslint@6.0.0:
+  /eslint-plugin-react/7.14.1_eslint@6.0.1:
     dependencies:
       array-includes: 3.0.3
       doctrine: 2.1.0
-      eslint: 6.0.0
+      eslint: 6.0.1
       has: 1.0.3
       jsx-ast-utils: 2.1.0
       object.entries: 1.1.0
@@ -1237,7 +1237,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
-  /eslint/6.0.0:
+  /eslint/6.0.1:
     dependencies:
       '@babel/code-frame': 7.0.0
       ajv: 6.10.0
@@ -1280,7 +1280,7 @@ packages:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     hasBin: true
     resolution:
-      integrity: sha512-SrrIfcd4tOgsspOKTSwamuTOAMZOUigHQhVMrzNjz4/B9Za6SHQDIocMIyIDfwDgx6MhS15nS6HC8kumCV2qBQ==
+      integrity: sha512-DyQRaMmORQ+JsWShYsSg4OPTjY56u1nCjAmICrE8vLWqyLKxhFXOthwMj1SA8xwfrv0CofLNVnqbfyhwCkaO0w==
   /espree/6.0.0:
     dependencies:
       acorn: 6.1.1
@@ -4445,7 +4445,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 3.0.2
   coveralls: 3.0.4
   cz-conventional-changelog: 2.1.0
-  eslint: 6.0.0
+  eslint: 6.0.1
   eslint-config-prettier: 5.1.0
   eslint-plugin-react: 7.14.1
   fast-deep-equal: 2.0.1
