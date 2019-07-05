@@ -1,6 +1,6 @@
 dependencies:
   fast-deep-equal: 2.0.1
-  fast-glob: 3.0.3
+  fast-glob: 3.0.4
   minimist: 1.2.0
   object-inspect: 1.6.0
   stack-utils: 1.0.2
@@ -110,13 +110,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7dV4eu9gBxoM0dAnj/BCFDW9LFU0zvTrkq0ugM7pnHEgguOEeOz1so2ZghEdzviYzQEED0r4EAgpsBChKy1TRQ==
-  /@babel/parser/7.4.5:
-    dev: true
-    engines:
-      node: '>=6.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-9mUqkL1FF5T7f0WDFfAoDdiMVPWsdD1gZYzSnaXsxUCUqzuch/8of9G3VUSNiZmMBoRxT3neyVsqeiL/ZPcjew==
   /@babel/parser/7.5.0:
     dev: true
     engines:
@@ -161,7 +154,7 @@ packages:
   /@babel/template/7.4.4:
     dependencies:
       '@babel/code-frame': 7.0.0
-      '@babel/parser': 7.4.5
+      '@babel/parser': 7.5.0
       '@babel/types': 7.5.0
     dev: true
     resolution:
@@ -920,7 +913,7 @@ packages:
       make-dir: 2.1.0
       nested-error-stacks: 2.1.0
       pify: 4.0.1
-      safe-buffer: 5.1.2
+      safe-buffer: 5.2.0
     dev: true
     engines:
       node: '>=6'
@@ -1430,7 +1423,7 @@ packages:
   /fast-deep-equal/2.0.1:
     resolution:
       integrity: sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
-  /fast-glob/3.0.3:
+  /fast-glob/3.0.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.1
       '@nodelib/fs.walk': 1.2.2
@@ -1442,7 +1435,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-scDJbDhN+6S4ELXzzN96Fqm5y1CMRn+Io3C4Go+n/gUKP+LW26Wma6IxLSsX2eAMBUOFmyHKDBrUSuoHsycQ5A==
+      integrity: sha512-wkIbV6qg37xTJwqSsdnIphL1e+LaGz4AIQqr00mIubMaEhv1/HEmJ0uuCGZRNRUkZZmOB5mJKO0ZUTVq+SxMQg==
   /fast-json-stable-stringify/2.0.0:
     dev: true
     resolution:
@@ -2292,7 +2285,7 @@ packages:
   /istanbul-lib-instrument/3.3.0:
     dependencies:
       '@babel/generator': 7.5.0
-      '@babel/parser': 7.4.5
+      '@babel/parser': 7.5.0
       '@babel/template': 7.4.4
       '@babel/traverse': 7.5.0
       '@babel/types': 7.5.0
@@ -3558,7 +3551,7 @@ packages:
       oauth-sign: 0.9.0
       performance-now: 2.1.0
       qs: 6.5.2
-      safe-buffer: 5.1.2
+      safe-buffer: 5.2.0
       tough-cookie: 2.4.3
       tunnel-agent: 0.6.0
       uuid: 3.3.2
@@ -3661,6 +3654,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
+  /safe-buffer/5.2.0:
+    dev: true
+    resolution:
+      integrity: sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
   /safe-regex/1.1.0:
     dependencies:
       ret: 0.1.15
@@ -4237,7 +4234,7 @@ packages:
       integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
   /tunnel-agent/0.6.0:
     dependencies:
-      safe-buffer: 5.1.2
+      safe-buffer: 5.2.0
     dev: true
     resolution:
       integrity: sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
@@ -4468,7 +4465,7 @@ specifiers:
   eslint-config-prettier: 6.0.0
   eslint-plugin-react: 7.14.2
   fast-deep-equal: 2.0.1
-  fast-glob: 3.0.3
+  fast-glob: 3.0.4
   minimist: 1.2.0
   nyc: 14.1.1
   object-inspect: 1.6.0
