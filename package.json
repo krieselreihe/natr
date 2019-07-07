@@ -3,18 +3,20 @@
   "version": "0.1.3",
   "description": "Not another test runner! But it is, and it is a highly opinionated one.",
   "main": "./src/runner.js",
+  "types": "./src/runner.d.ts",
   "bin": {
     "natr": "./src/cli.js"
   },
   "scripts": {
     "test": "./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | tap-color",
+    "test:typings": "tsc",
     "coverage": "nyc --reporter=html --reporter=text ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | tap-nyc",
     "coverage:ci": "nyc --reporter=text-lcov ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | coveralls",
     "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
-    "format": "prettier --write \"**/*.{js,jsx,md,json,yml}\"",
-    "format:check": "prettier --list-different \"**/*.{js,jsx,md,json,yml}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,yml}\"",
+    "format:check": "prettier --list-different \"**/*.{js,jsx,ts,tsx,md,json,yml}\"",
     "ci": "pnpm run prerelease && pnpm run coverage:ci",
-    "prerelease": "pnpm run lint && pnpm run format:check && pnpm test",
+    "prerelease": "pnpm run lint && pnpm run format:check && pnpm test && pnpm run test:typings",
     "release": "standard-version -a -s"
   },
   "keywords": [
@@ -37,8 +39,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=10",
-    "pnpm": ">=3"
+    "node": ">=10"
   },
   "files": [
     "src/*.js"
@@ -69,6 +70,7 @@
     "standard-version": "6.0.1",
     "stream-spec": "0.3.6",
     "tap-color": "1.1.0",
-    "tap-nyc": "1.0.3"
+    "tap-nyc": "1.0.3",
+    "typescript": "3.5.2"
   }
 }
