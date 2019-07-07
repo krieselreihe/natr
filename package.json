@@ -42,7 +42,8 @@
     "node": ">=10"
   },
   "files": [
-    "src/*.js"
+    "src/*.js",
+    "src/*.ts"
   ],
   "dependencies": {
     "fast-deep-equal": "2.0.1",
