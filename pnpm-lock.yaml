@@ -11,7 +11,7 @@ devDependencies:
   commitizen: 3.1.1
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 3.0.2
-  coveralls: 3.0.4
+  coveralls: 3.0.5
   cz-conventional-changelog: 2.1.0
   eslint: 6.0.1
   eslint-config-prettier: 6.0.0_eslint@6.0.1
@@ -45,7 +45,7 @@ packages:
       convert-source-map: 1.6.0
       debug: 4.1.1
       json5: 2.1.0
-      lodash: 4.17.11
+      lodash: 4.17.14
       resolve: 1.11.1
       semver: 5.7.0
       source-map: 0.5.7
@@ -58,7 +58,7 @@ packages:
     dependencies:
       '@babel/types': 7.5.0
       jsesc: 2.5.2
-      lodash: 4.17.11
+      lodash: 4.17.14
       source-map: 0.5.7
       trim-right: 1.0.1
     dev: true
@@ -143,7 +143,7 @@ packages:
       '@babel/core': 7.5.4
       core-js: 3.1.4
       find-cache-dir: 2.1.0
-      lodash: 4.17.11
+      lodash: 4.17.14
       mkdirp: 0.5.1
       pirates: 4.0.1
       source-map-support: 0.5.12
@@ -170,14 +170,14 @@ packages:
       '@babel/types': 7.5.0
       debug: 4.1.1
       globals: 11.12.0
-      lodash: 4.17.11
+      lodash: 4.17.14
     dev: true
     resolution:
       integrity: sha512-SnA9aLbyOCcnnbQEGwdfBggnc142h/rbqqsXcaATj2hZcegCl903pUD/lfpsNBlBSuWow/YDfRyJuWi2EPR5cg==
   /@babel/types/7.5.0:
     dependencies:
       esutils: 2.0.2
-      lodash: 4.17.11
+      lodash: 4.17.14
       to-fast-properties: 2.0.0
     dev: true
     resolution:
@@ -735,7 +735,7 @@ packages:
       git-raw-commits: 2.0.0
       git-remote-origin-url: 2.0.0
       git-semver-tags: 2.0.2
-      lodash: 4.17.11
+      lodash: 4.17.14
       normalize-package-data: 2.5.0
       q: 1.5.1
       read-pkg: 3.0.0
@@ -800,7 +800,7 @@ packages:
       dateformat: 3.0.3
       handlebars: 4.1.2
       json-stringify-safe: 5.0.1
-      lodash: 4.17.11
+      lodash: 4.17.14
       meow: 4.0.1
       semver: 6.2.0
       split: 1.0.1
@@ -846,7 +846,7 @@ packages:
     dependencies:
       JSONStream: 1.3.5
       is-text-path: 2.0.0
-      lodash: 4.17.11
+      lodash: 4.17.14
       meow: 4.0.1
       split2: 2.2.0
       through2: 3.0.1
@@ -894,7 +894,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
-  /coveralls/3.0.4:
+  /coveralls/3.0.5:
     dependencies:
       growl: 1.10.5
       js-yaml: 3.13.1
@@ -907,7 +907,7 @@ packages:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-eyqUWA/7RT0JagiL0tThVhjbIjoiEUyWCjtUJoOPcWoeofP5WK/jb2OJYoBFrR6DvplR+AxOyuBqk4JHkk5ykA==
+      integrity: sha512-/KD7PGfZv/tjKB6LoW97jzIgFqem0Tu9tZL9/iwBnBd8zkIZp7vT1ZSHNvnr0GSQMV/LTMxUstWg8WcDDUVQKg==
   /cp-file/6.2.0:
     dependencies:
       graceful-fs: 4.2.0
@@ -1259,12 +1259,12 @@ packages:
       ignore: 4.0.6
       import-fresh: 3.1.0
       imurmurhash: 0.1.4
-      inquirer: 6.4.1
+      inquirer: 6.5.0
       is-glob: 4.0.1
       js-yaml: 3.13.1
       json-stable-stringify-without-jsonify: 1.0.1
       levn: 0.3.0
-      lodash: 4.17.11
+      lodash: 4.17.14
       minimatch: 3.0.4
       mkdirp: 0.5.1
       natural-compare: 1.4.0
@@ -1691,7 +1691,7 @@ packages:
   /git-raw-commits/2.0.0:
     dependencies:
       dargs: 4.1.0
-      lodash.template: 4.4.0
+      lodash.template: 4.5.0
       meow: 4.0.1
       split2: 2.2.0
       through2: 2.0.5
@@ -1989,7 +1989,7 @@ packages:
       cli-width: 2.2.0
       external-editor: 3.1.0
       figures: 2.0.0
-      lodash: 4.17.11
+      lodash: 4.17.14
       mute-stream: 0.0.7
       run-async: 2.3.0
       rxjs: 6.5.2
@@ -2001,7 +2001,7 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-QIEQG4YyQ2UYZGDC4srMZ7BjHOmNk1lR2JQj5UknBapklm6WHA+VVH7N+sUdX3A7NeCfGF8o4X1S3Ao7nAcIeg==
-  /inquirer/6.4.1:
+  /inquirer/6.5.0:
     dependencies:
       ansi-escapes: 3.2.0
       chalk: 2.4.2
@@ -2009,7 +2009,7 @@ packages:
       cli-width: 2.2.0
       external-editor: 3.1.0
       figures: 2.0.0
-      lodash: 4.17.11
+      lodash: 4.17.14
       mute-stream: 0.0.7
       run-async: 2.3.0
       rxjs: 6.5.2
@@ -2020,7 +2020,7 @@ packages:
     engines:
       node: '>=6.0.0'
     resolution:
-      integrity: sha512-/Jw+qPZx4EDYsaT6uz7F4GJRNFMRdKNeUZw3ZnKV8lyuUgz/YWRCSUAJMZSVhSq4Ec0R2oYnyi6b3d4JXcL5Nw==
+      integrity: sha512-scfHejeG/lVZSpvCXpsB4j/wQNPM5JC8kiElOI0OUTwmc1RTpXr4H32/HOlQHcZiYl2z2VElwuCVDRG8vFmbnA==
   /interpret/1.2.0:
     dev: true
     engines:
@@ -2517,23 +2517,27 @@ packages:
     dev: true
     resolution:
       integrity: sha1-dx7Hg540c9nEzeKLGTlMNWL09tM=
-  /lodash.template/4.4.0:
+  /lodash.template/4.5.0:
     dependencies:
       lodash._reinterpolate: 3.0.0
-      lodash.templatesettings: 4.1.0
+      lodash.templatesettings: 4.2.0
     dev: true
     resolution:
-      integrity: sha1-5zoDhcg1VZF0bgILmWecaQ5o+6A=
-  /lodash.templatesettings/4.1.0:
+      integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
+  /lodash.templatesettings/4.2.0:
     dependencies:
       lodash._reinterpolate: 3.0.0
     dev: true
     resolution:
-      integrity: sha1-K01OlbpEDZFf8IvImeRVNmZxMxY=
+      integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
   /lodash/4.17.11:
     dev: true
     resolution:
       integrity: sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+  /lodash/4.17.14:
+    dev: true
+    resolution:
+      integrity: sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
   /log-driver/1.2.7:
     dev: true
     engines:
@@ -3825,7 +3829,7 @@ packages:
   /spdx-correct/3.1.0:
     dependencies:
       spdx-expression-parse: 3.0.0
-      spdx-license-ids: 3.0.4
+      spdx-license-ids: 3.0.5
     dev: true
     resolution:
       integrity: sha512-lr2EZCctC2BNR7j7WzJ2FpDznxky1sjfxvvYEyzxNyb6lZXHODmEoJeFu4JupYlkfha1KZpJyoqiJ7pgA1qq8Q==
@@ -3836,14 +3840,14 @@ packages:
   /spdx-expression-parse/3.0.0:
     dependencies:
       spdx-exceptions: 2.2.0
-      spdx-license-ids: 3.0.4
+      spdx-license-ids: 3.0.5
     dev: true
     resolution:
       integrity: sha512-Yg6D3XpRD4kkOmTpdgbUiEJFKghJH03fiC1OPll5h/0sO6neh2jqRDVHOQ4o/LMea0tgCkbMgea5ip/e+MkWyg==
-  /spdx-license-ids/3.0.4:
+  /spdx-license-ids/3.0.5:
     dev: true
     resolution:
-      integrity: sha512-7j8LYJLeY/Yb6ACbQ7F76qy5jHkp0U6jgBfJsk97bwWlVUnUWsAgpyaCvo17h0/RQGnQ036tVDomiwoI4pDkQA==
+      integrity: sha512-J+FWzZoynJEXGphVIS+XEh3kFSjZX/1i9gFBaWQcB+/tmpe2qUsSBABpcxqxnAxFdiUFEgAX1bjYGQvIZmoz9Q==
   /split-string/3.1.0:
     dependencies:
       extend-shallow: 3.0.2
@@ -4063,7 +4067,7 @@ packages:
   /table/5.4.1:
     dependencies:
       ajv: 6.10.1
-      lodash: 4.17.11
+      lodash: 4.17.14
       slice-ansi: 2.1.0
       string-width: 3.1.0
     dev: true
@@ -4467,7 +4471,7 @@ specifiers:
   commitizen: 3.1.1
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 3.0.2
-  coveralls: 3.0.4
+  coveralls: 3.0.5
   cz-conventional-changelog: 2.1.0
   eslint: 6.0.1
   eslint-config-prettier: 6.0.0
