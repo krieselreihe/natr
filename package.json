@@ -53,9 +53,9 @@
     "stack-utils": "1.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.5.4",
+    "@babel/core": "7.5.5",
     "@babel/plugin-transform-react-jsx": "7.3.0",
-    "@babel/register": "7.4.4",
+    "@babel/register": "7.5.5",
     "commitizen": "4.0.1",
     "concat-stream": "2.0.0",
     "conventional-changelog-conventionalcommits": "3.0.2",
