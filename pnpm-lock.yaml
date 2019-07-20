@@ -8,7 +8,7 @@ devDependencies:
   '@babel/core': 7.5.5
   '@babel/plugin-transform-react-jsx': 7.3.0_@babel+core@7.5.5
   '@babel/register': 7.5.5_@babel+core@7.5.5
-  commitizen: 4.0.1
+  commitizen: 4.0.3
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 3.0.2
   coveralls: 3.0.5
@@ -708,10 +708,10 @@ packages:
     optional: true
     resolution:
       integrity: sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
-  /commitizen/4.0.1:
+  /commitizen/4.0.3:
     dependencies:
       cachedir: 2.2.0
-      cz-conventional-changelog: 2.1.0
+      cz-conventional-changelog: 3.0.1
       dedent: 0.7.0
       detect-indent: 6.0.0
       find-node-modules: 2.0.0
@@ -720,17 +720,17 @@ packages:
       glob: 7.1.4
       inquirer: 6.5.0
       is-utf8: 0.2.1
-      lodash: 4.17.14
+      lodash: 4.17.15
       minimist: 1.2.0
       shelljs: 0.7.6
       strip-bom: 4.0.0
-      strip-json-comments: 2.0.1
+      strip-json-comments: 3.0.1
     dev: true
     engines:
       node: '>= 10'
     hasBin: true
     resolution:
-      integrity: sha512-0ErKiVOhrPH9B0rQcQQ36kcW2GoFatOy1u7ucvYwUtNULBLZuHxtZpYk6lObld0eCbPGTF7/5EhUs6LZ2ejHXg==
+      integrity: sha512-lxu0F/Iq4dudoFeIl5pY3h3CQJzkmQuh3ygnaOvqhAD8Wu2pYBI17ofqSuPHNsBTEOh1r1AVa9kR4Hp0FAHKcQ==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -2629,6 +2629,7 @@ packages:
       integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
   /lodash/4.17.14:
     dev: true
+    optional: true
     resolution:
       integrity: sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
   /lodash/4.17.15:
@@ -4179,6 +4180,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+  /strip-json-comments/3.0.1:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-VTyMAUfdm047mwKl+u79WIdrZxtFtn+nBxHeb844XBQ9uMNTuTHdx2hc5RiAJYqwTj3wc/xe5HLSdJSkJ+WfZw==
   /supports-color/2.0.0:
     dev: true
     engines:
@@ -4604,7 +4611,7 @@ specifiers:
   '@babel/core': 7.5.5
   '@babel/plugin-transform-react-jsx': 7.3.0
   '@babel/register': 7.5.5
-  commitizen: 4.0.1
+  commitizen: 4.0.3
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 3.0.2
   coveralls: 3.0.5
