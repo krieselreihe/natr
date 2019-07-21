@@ -13,9 +13,9 @@ devDependencies:
   conventional-changelog-conventionalcommits: 3.0.2
   coveralls: 3.0.5
   cz-conventional-changelog: 3.0.2
-  eslint: 6.0.1
-  eslint-config-prettier: 6.0.0_eslint@6.0.1
-  eslint-plugin-react: 7.14.2_eslint@6.0.1
+  eslint: 6.1.0
+  eslint-config-prettier: 6.0.0_eslint@6.1.0
+  eslint-plugin-react: 7.14.2_eslint@6.1.0
   nyc: 14.1.1
   prettier: 1.18.2
   react: 16.8.6
@@ -1294,9 +1294,9 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /eslint-config-prettier/6.0.0_eslint@6.0.1:
+  /eslint-config-prettier/6.0.0_eslint@6.1.0:
     dependencies:
-      eslint: 6.0.1
+      eslint: 6.1.0
       get-stdin: 6.0.0
     dev: true
     hasBin: true
@@ -1304,11 +1304,11 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-vDrcCFE3+2ixNT5H83g28bO/uYAwibJxerXPj+E7op4qzBCsAV36QfvdAyVOoNxKAH2Os/e01T/2x++V0LPukA==
-  /eslint-plugin-react/7.14.2_eslint@6.0.1:
+  /eslint-plugin-react/7.14.2_eslint@6.1.0:
     dependencies:
       array-includes: 3.0.3
       doctrine: 2.1.0
-      eslint: 6.0.1
+      eslint: 6.1.0
       has: 1.0.3
       jsx-ast-utils: 2.2.1
       object.entries: 1.1.0
@@ -1323,15 +1323,15 @@ packages:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     resolution:
       integrity: sha512-jZdnKe3ip7FQOdjxks9XPN0pjUKZYq48OggNMd16Sk+8VXx6JOvXmlElxROCgp7tiUsTsze3jd78s/9AFJP2mA==
-  /eslint-scope/4.0.3:
+  /eslint-scope/5.0.0:
     dependencies:
       esrecurse: 4.2.1
       estraverse: 4.2.0
     dev: true
     engines:
-      node: '>=4.0.0'
+      node: '>=8.0.0'
     resolution:
-      integrity: sha512-p7VutNr1O/QrxysMo3E45FjYDTeXBy0iTltPFNSqKAIfjDSXC+4dj+qfyuD8bfAXrW/y6lW3O76VaYNPKfpKrg==
+      integrity: sha512-oYrhJW7S0bxAFDvWqzvMPRm6pcgcnWc4QnofCAqRTRfQC0JcwenzGglTtsLyIuuWFfkqDG9vz67cnttSd53djw==
   /eslint-utils/1.4.0:
     dependencies:
       eslint-visitor-keys: 1.0.0
@@ -1346,7 +1346,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
-  /eslint/6.0.1:
+  /eslint/6.1.0:
     dependencies:
       '@babel/code-frame': 7.5.5
       ajv: 6.10.2
@@ -1354,7 +1354,7 @@ packages:
       cross-spawn: 6.0.5
       debug: 4.1.1
       doctrine: 3.0.0
-      eslint-scope: 4.0.3
+      eslint-scope: 5.0.0
       eslint-utils: 1.4.0
       eslint-visitor-keys: 1.0.0
       espree: 6.0.0
@@ -1362,7 +1362,7 @@ packages:
       esutils: 2.0.2
       file-entry-cache: 5.0.1
       functional-red-black-tree: 1.0.1
-      glob-parent: 3.1.0
+      glob-parent: 5.0.0
       globals: 11.12.0
       ignore: 4.0.6
       import-fresh: 3.1.0
@@ -1379,17 +1379,18 @@ packages:
       optionator: 0.8.2
       progress: 2.0.3
       regexpp: 2.0.1
-      semver: 5.7.0
-      strip-ansi: 4.0.0
-      strip-json-comments: 2.0.1
+      semver: 6.2.0
+      strip-ansi: 5.2.0
+      strip-json-comments: 3.0.1
       table: 5.4.4
       text-table: 0.2.0
+      v8-compile-cache: 2.0.3
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     hasBin: true
     resolution:
-      integrity: sha512-DyQRaMmORQ+JsWShYsSg4OPTjY56u1nCjAmICrE8vLWqyLKxhFXOthwMj1SA8xwfrv0CofLNVnqbfyhwCkaO0w==
+      integrity: sha512-QhrbdRD7ofuV09IuE2ySWBz0FyXCq0rriLTZXZqaWSI79CVtHVRdkFuFTViiqzZhkCgfOh9USpriuGN2gIpZDQ==
   /espree/6.0.0:
     dependencies:
       acorn: 6.2.1
@@ -1834,17 +1835,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-QdBF84UaXqiPA/JMocYXgRRGS5s=
-  /glob-parent/3.1.0:
-    dependencies:
-      is-glob: 3.1.0
-      path-dirname: 1.0.2
-    dev: true
-    resolution:
-      integrity: sha1-nmr2KZ2NO9K9QEMIMr0RPfkGxa4=
   /glob-parent/5.0.0:
     dependencies:
       is-glob: 4.0.1
-    dev: false
     engines:
       node: '>= 6'
     resolution:
@@ -2249,14 +2242,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=
-  /is-glob/3.1.0:
-    dependencies:
-      is-extglob: 2.1.1
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-e6WuJCF4BKxwcHuWkiVnSGzD6Eo=
   /is-glob/4.0.1:
     dependencies:
       is-extglob: 2.1.1
@@ -3266,10 +3251,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
-  /path-dirname/1.0.2:
-    dev: true
-    resolution:
-      integrity: sha1-zDPSTVJeCZpTiMAzbG4yuRYGCeA=
   /path-exists/2.1.0:
     dependencies:
       pinkie-promise: 2.0.1
@@ -4174,12 +4155,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-XvjbKV0B5u1sv3qrlpmNeCJSe2g=
-  /strip-json-comments/2.0.1:
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-PFMZQukIwml8DsNEhYwobHygpgo=
   /strip-json-comments/3.0.1:
     dev: true
     engines:
@@ -4472,6 +4447,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
+  /v8-compile-cache/2.0.3:
+    dev: true
+    resolution:
+      integrity: sha512-CNmdbwQMBjwr9Gsmohvm0pbL954tJrNzf6gWL3K+QMQf00PF7ERGrEiLgjuU3mKreLC2MeGhUsNV9ybTbLgd3w==
   /validate-npm-package-license/3.0.4:
     dependencies:
       spdx-correct: 3.1.0
@@ -4616,7 +4595,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 3.0.2
   coveralls: 3.0.5
   cz-conventional-changelog: 3.0.2
-  eslint: 6.0.1
+  eslint: 6.1.0
   eslint-config-prettier: 6.0.0
   eslint-plugin-react: 7.14.2
   fast-deep-equal: 2.0.1
