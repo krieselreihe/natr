@@ -12,7 +12,7 @@ devDependencies:
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 3.0.2
   coveralls: 3.0.5
-  cz-conventional-changelog: 3.0.1
+  cz-conventional-changelog: 3.0.2
   eslint: 6.0.1
   eslint-config-prettier: 6.0.0_eslint@6.0.1
   eslint-plugin-react: 7.14.2_eslint@6.0.1
@@ -254,21 +254,21 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==
-  /acorn-jsx/5.0.1_acorn@6.2.0:
+  /acorn-jsx/5.0.1_acorn@6.2.1:
     dependencies:
-      acorn: 6.2.0
+      acorn: 6.2.1
     dev: true
     peerDependencies:
       acorn: ^6.0.0
     resolution:
       integrity: sha512-HJ7CfNHrfJLlNTzIEUTj43LNWGkqpRLxm3YjAlcD0ACydk9XynzYsCBHxut+iqt+1aBXkx9UP/w/ZqMr13XIzg==
-  /acorn/6.2.0:
+  /acorn/6.2.1:
     dev: true
     engines:
       node: '>=0.4.0'
     hasBin: true
     resolution:
-      integrity: sha512-8oe72N3WPMjA+2zVG71Ia0nXZ8DpQH+QyyHO+p06jT8eg8FGG3FbcUIi8KziHlAfheJQZeoqbvq1mQSQHXKYLw==
+      integrity: sha512-JD0xT5FCRDNyjDda3Lrg/IxFscp9q4tiYtxE1/nOzlKCk7hIRuYjhq1kCNkbPjMRMZuFq20HNQn1I9k8Oj0E+Q==
   /ajv/6.10.2:
     dependencies:
       fast-deep-equal: 2.0.1
@@ -1038,16 +1038,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-mI3zP+qxke95mmE2nddsF635V+o=
-  /cz-conventional-changelog/2.1.0:
-    dependencies:
-      conventional-commit-types: 2.1.1
-      lodash.map: 4.6.0
-      longest: 1.0.1
-      right-pad: 1.0.1
-      word-wrap: 1.2.3
-    dev: true
-    resolution:
-      integrity: sha1-L0vHOQ4yROTfKT5ro1Hkx0Cnx2Q=
   /cz-conventional-changelog/3.0.1:
     dependencies:
       chalk: 2.4.2
@@ -1063,6 +1053,22 @@ packages:
       '@commitlint/load': 8.1.0
     resolution:
       integrity: sha512-7KASIwB8/ClEyCRvQrCPbN7WkQnUSjSSVNyPM+gDJ0jskLi8h8N2hrdpyeCk7fIqKMRzziqVSOBTB8yyLTMHGQ==
+  /cz-conventional-changelog/3.0.2:
+    dependencies:
+      chalk: 2.4.2
+      commitizen: 4.0.3
+      conventional-commit-types: 2.1.1
+      lodash.map: 4.6.0
+      longest: 2.0.1
+      right-pad: 1.0.1
+      word-wrap: 1.2.3
+    dev: true
+    engines:
+      node: '>= 10'
+    optionalDependencies:
+      '@commitlint/load': 8.1.0
+    resolution:
+      integrity: sha512-MPxERbtQyVp0nnpCBiwzKGKmMBSswmCV3Jpef3Axqd5f3c/SOc6VFiSUlclOyZXBn3Xtf4snzt4O15hBTRb2gA==
   /dargs/4.1.0:
     dependencies:
       number-is-nan: 1.0.1
@@ -1386,8 +1392,8 @@ packages:
       integrity: sha512-DyQRaMmORQ+JsWShYsSg4OPTjY56u1nCjAmICrE8vLWqyLKxhFXOthwMj1SA8xwfrv0CofLNVnqbfyhwCkaO0w==
   /espree/6.0.0:
     dependencies:
-      acorn: 6.2.0
-      acorn-jsx: 5.0.1_acorn@6.2.0
+      acorn: 6.2.1
+      acorn-jsx: 5.0.1_acorn@6.2.1
       eslint-visitor-keys: 1.0.0
     dev: true
     engines:
@@ -2642,12 +2648,6 @@ packages:
       node: '>=0.8.6'
     resolution:
       integrity: sha512-U7KCmLdqsGHBLeWqYlFA0V0Sl6P08EE1ZrmA9cxjUE0WVqT9qnyVDPz1kzpFEP0jdJuFnasWIfSd7fsaNXkpbg==
-  /longest/1.0.1:
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
   /longest/2.0.1:
     dev: true
     engines:
@@ -4615,7 +4615,7 @@ specifiers:
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 3.0.2
   coveralls: 3.0.5
-  cz-conventional-changelog: 3.0.1
+  cz-conventional-changelog: 3.0.2
   eslint: 6.0.1
   eslint-config-prettier: 6.0.0
   eslint-plugin-react: 7.14.2
