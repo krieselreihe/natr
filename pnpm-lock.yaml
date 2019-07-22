@@ -15,7 +15,7 @@ devDependencies:
   cz-conventional-changelog: 3.0.2
   eslint: 6.1.0
   eslint-config-prettier: 6.0.0_eslint@6.1.0
-  eslint-plugin-react: 7.14.2_eslint@6.1.0
+  eslint-plugin-react: 7.14.3_eslint@6.1.0
   nyc: 14.1.1
   prettier: 1.18.2
   react: 16.8.6
@@ -1304,7 +1304,7 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-vDrcCFE3+2ixNT5H83g28bO/uYAwibJxerXPj+E7op4qzBCsAV36QfvdAyVOoNxKAH2Os/e01T/2x++V0LPukA==
-  /eslint-plugin-react/7.14.2_eslint@6.1.0:
+  /eslint-plugin-react/7.14.3_eslint@6.1.0:
     dependencies:
       array-includes: 3.0.3
       doctrine: 2.1.0
@@ -1322,7 +1322,7 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     resolution:
-      integrity: sha512-jZdnKe3ip7FQOdjxks9XPN0pjUKZYq48OggNMd16Sk+8VXx6JOvXmlElxROCgp7tiUsTsze3jd78s/9AFJP2mA==
+      integrity: sha512-EzdyyBWC4Uz2hPYBiEJrKCUi2Fn+BJ9B/pJQcjw5X+x/H2Nm59S4MJIvL4O5NEE0+WbnQwEBxWY03oUk+Bc3FA==
   /eslint-scope/5.0.0:
     dependencies:
       esrecurse: 4.2.1
@@ -4597,7 +4597,7 @@ specifiers:
   cz-conventional-changelog: 3.0.2
   eslint: 6.1.0
   eslint-config-prettier: 6.0.0
-  eslint-plugin-react: 7.14.2
+  eslint-plugin-react: 7.14.3
   fast-deep-equal: 2.0.1
   fast-glob: 3.0.4
   minimist: 1.2.0
