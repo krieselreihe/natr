@@ -62,7 +62,7 @@
     "conventional-changelog-conventionalcommits": "4.1.0",
     "coveralls": "3.0.6",
     "cz-conventional-changelog": "3.0.2",
-    "eslint": "6.1.0",
+    "eslint": "6.2.1",
     "eslint-config-prettier": "6.1.0",
     "eslint-plugin-react": "7.14.3",
     "nyc": "14.1.1",
