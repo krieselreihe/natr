@@ -13,9 +13,9 @@ devDependencies:
   conventional-changelog-conventionalcommits: 4.1.0
   coveralls: 3.0.6
   cz-conventional-changelog: 3.0.2
-  eslint: 6.4.0
-  eslint-config-prettier: 6.3.0_eslint@6.4.0
-  eslint-plugin-react: 7.14.3_eslint@6.4.0
+  eslint: 6.5.0
+  eslint-config-prettier: 6.3.0_eslint@6.5.0
+  eslint-plugin-react: 7.14.3_eslint@6.5.0
   nyc: 14.1.1
   prettier: 1.18.2
   react: 16.9.0
@@ -110,13 +110,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7dV4eu9gBxoM0dAnj/BCFDW9LFU0zvTrkq0ugM7pnHEgguOEeOz1so2ZghEdzviYzQEED0r4EAgpsBChKy1TRQ==
-  /@babel/parser/7.6.0:
-    dev: true
-    engines:
-      node: '>=6.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-+o2q111WEx4srBs7L9eJmcwi655eD8sXniLqMB93TBK9GrNzGrxDWSjiqz2hLU0Ha8MTXFIP0yd9fNdP+m43ZQ==
   /@babel/parser/7.6.2:
     dev: true
     engines:
@@ -160,7 +153,7 @@ packages:
   /@babel/template/7.6.0:
     dependencies:
       '@babel/code-frame': 7.5.5
-      '@babel/parser': 7.6.0
+      '@babel/parser': 7.6.2
       '@babel/types': 7.6.1
     dev: true
     resolution:
@@ -211,7 +204,7 @@ packages:
       integrity: sha512-EV6PfAY/p83QynNd1llHxJiNxKmp43g8+7dZbyfHFbsGOdokrCnoelAVZ+WGgktXwLN/uXyfkcIAxwac015UYw==
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
-      '@types/node': 12.7.5
+      '@types/node': 12.7.8
       import-fresh: 3.1.0
       lodash: 4.17.14
       resolve-from: 5.0.0
@@ -246,11 +239,11 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-l6t8xEhfK9Sa4YO5mIRdau7XSOADfmh3jCr0evNHdY+HNkW6xuQhgMH7D73VV6WpZOagrW0UludvMTiifiwTfA==
-  /@types/node/12.7.5:
+  /@types/node/12.7.8:
     dev: true
     optional: true
     resolution:
-      integrity: sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
+      integrity: sha512-FMdVn84tJJdV+xe+53sYiZS4R5yn1mAIxfj+DVoNiQjTYz1+OYmjwEZr1ev9nU0axXwda0QDbYl06QHanRVH3A==
   /JSONStream/1.3.5:
     dependencies:
       jsonparse: 1.3.1
@@ -259,21 +252,21 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==
-  /acorn-jsx/5.0.2_acorn@7.0.0:
+  /acorn-jsx/5.0.2_acorn@7.1.0:
     dependencies:
-      acorn: 7.0.0
+      acorn: 7.1.0
     dev: true
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0
     resolution:
       integrity: sha512-tiNTrP1MP0QrChmD2DdupCr6HWSFeKVw5d/dHTu4Y7rkAkRhU/Dt7dphAfIUyxtHpl/eBVip5uTNSpQJHylpAw==
-  /acorn/7.0.0:
+  /acorn/7.1.0:
     dev: true
     engines:
       node: '>=0.4.0'
     hasBin: true
     resolution:
-      integrity: sha512-PaF/MduxijYYt7unVGRuds1vBC9bFxbNf+VWqhOClfdgy7RlVkQqt610ig1/yxTgsDIfW1cWDel5EBbOy3jdtQ==
+      integrity: sha512-kL5CuoXA/dgxlBbVrflsflzQ3PAas7RYZB52NOm/6839iVYJgKMJ3cQJD+t2i5+qFa8h3MDpEOJiS64E8JLnSQ==
   /ajv/6.10.2:
     dependencies:
       fast-deep-equal: 2.0.1
@@ -694,11 +687,11 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
-  /commander/2.20.0:
+  /commander/2.20.1:
     dev: true
     optional: true
     resolution:
-      integrity: sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
+      integrity: sha512-cCuLsMhJeWQ/ZpsFTbE765kvVfoeSddc4nU3up4fV+fDBcfUXnbITJ+JzhkdjzOqhURjZgujxaioam4RM9yGUg==
   /commitizen/4.0.3:
     dependencies:
       cachedir: 2.2.0
@@ -862,7 +855,7 @@ packages:
       compare-func: 1.3.2
       conventional-commits-filter: 2.0.2
       dateformat: 3.0.3
-      handlebars: 4.2.1
+      handlebars: 4.3.4
       json-stringify-safe: 5.0.1
       lodash: 4.17.15
       meow: 4.0.1
@@ -1278,9 +1271,9 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /eslint-config-prettier/6.3.0_eslint@6.4.0:
+  /eslint-config-prettier/6.3.0_eslint@6.5.0:
     dependencies:
-      eslint: 6.4.0
+      eslint: 6.5.0
       get-stdin: 6.0.0
     dev: true
     hasBin: true
@@ -1288,11 +1281,11 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-EWaGjlDAZRzVFveh2Jsglcere2KK5CJBhkNSa1xs3KfMUGdRiT7lG089eqPdvlzWHpAqaekubOsOMu8W8Yk71A==
-  /eslint-plugin-react/7.14.3_eslint@6.4.0:
+  /eslint-plugin-react/7.14.3_eslint@6.5.0:
     dependencies:
       array-includes: 3.0.3
       doctrine: 2.1.0
-      eslint: 6.4.0
+      eslint: 6.5.0
       has: 1.0.3
       jsx-ast-utils: 2.2.1
       object.entries: 1.1.0
@@ -1330,7 +1323,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
-  /eslint/6.4.0:
+  /eslint/6.5.0:
     dependencies:
       '@babel/code-frame': 7.5.5
       ajv: 6.10.2
@@ -1374,11 +1367,11 @@ packages:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     hasBin: true
     resolution:
-      integrity: sha512-WTVEzK3lSFoXUovDHEbkJqCVPEPwbhCq4trDktNI6ygs7aO41d4cDT0JFAT5MivzZeVLWlg7vHL+bgrQv/t3vA==
+      integrity: sha512-IIbSW+vKOqMatPmS9ayyku4tvWxHY2iricSRtOz6+ZA5IPRlgXzEL0u/j6dr4eha0ugmhMwDTqxtmNu3kj9O4w==
   /espree/6.1.1:
     dependencies:
-      acorn: 7.0.0
-      acorn-jsx: 5.0.2_acorn@7.0.0
+      acorn: 7.1.0
+      acorn-jsx: 5.0.2_acorn@7.1.0
       eslint-visitor-keys: 1.1.0
     dev: true
     engines:
@@ -1881,7 +1874,7 @@ packages:
       node: '>=4.x'
     resolution:
       integrity: sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
-  /handlebars/4.2.1:
+  /handlebars/4.3.4:
     dependencies:
       neo-async: 2.6.1
       optimist: 0.6.1
@@ -1893,7 +1886,7 @@ packages:
     optionalDependencies:
       uglify-js: 3.6.0
     resolution:
-      integrity: sha512-bqPIlDk06UWbVEIFoYj+LVo42WhK96J+b25l7hbFDpxrOXMphFM3fNIm+cluwg4Pk2jiLjWU5nHQY7igGE75NQ==
+      integrity: sha512-vvpo6mpK4ScNC1DbGRZ2d5BznS6ht0r1hi20RivsibMc6jNvFAeZQ6qk5VNspo6SOwVOJQbjHyBCpuS7BzA1pw==
   /har-schema/2.0.0:
     dev: true
     engines:
@@ -2361,7 +2354,7 @@ packages:
   /istanbul-lib-instrument/3.3.0:
     dependencies:
       '@babel/generator': 7.6.2
-      '@babel/parser': 7.6.0
+      '@babel/parser': 7.6.2
       '@babel/template': 7.6.0
       '@babel/traverse': 7.6.2
       '@babel/types': 7.6.1
@@ -2396,7 +2389,7 @@ packages:
       integrity: sha512-R47KzMtDJH6X4/YW9XTx+jrLnZnscW4VpNN+1PViSYTejLVPWv7oov+Duf8YQSPyVRUvueQqz1TcsC6mooZTXw==
   /istanbul-reports/2.2.6:
     dependencies:
-      handlebars: 4.2.1
+      handlebars: 4.3.4
     dev: true
     engines:
       node: '>=6'
@@ -3346,7 +3339,7 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      react-is: 16.9.0
+      react-is: 16.10.1
     dev: true
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -3391,16 +3384,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-C0SIXdXDSus2yqqvV7qifnb4NoWP7mEBXJq3axci301mXHCZb8Djwm4hrEZo4UeXRaEnfjH98uQ8EBppk2oNWA==
-  /react-is/16.9.0:
+  /react-is/16.10.1:
     dev: true
     resolution:
-      integrity: sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
+      integrity: sha512-BXUMf9sIOPXXZWqr7+c5SeOKJykyVr2u0UDzEf4LNGc6taGkQe1A9DFD07umCIXz45RLr9oAAwZbAJ0Pkknfaw==
   /react-test-renderer/16.9.0_react@16.9.0:
     dependencies:
       object-assign: 4.1.1
       prop-types: 15.7.2
       react: 16.9.0
-      react-is: 16.9.0
+      react-is: 16.10.1
       scheduler: 0.15.0
     dev: true
     peerDependencies:
@@ -4317,7 +4310,7 @@ packages:
       integrity: sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
   /uglify-js/3.6.0:
     dependencies:
-      commander: 2.20.0
+      commander: 2.20.1
       source-map: 0.6.1
     dev: true
     engines:
@@ -4500,7 +4493,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.1.0
   coveralls: 3.0.6
   cz-conventional-changelog: 3.0.2
-  eslint: 6.4.0
+  eslint: 6.5.0
   eslint-config-prettier: 6.3.0
   eslint-plugin-react: 7.14.3
   fast-deep-equal: 2.0.1
