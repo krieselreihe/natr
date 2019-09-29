@@ -18,8 +18,8 @@ devDependencies:
   eslint-plugin-react: 7.14.3_eslint@6.5.0
   nyc: 14.1.1
   prettier: 1.18.2
-  react: 16.9.0
-  react-test-renderer: 16.9.0_react@16.9.0
+  react: 16.10.1
+  react-test-renderer: 16.10.1_react@16.10.1
   standard-version: 7.0.0
   stream-spec: 0.3.6
   tap-color: 1.1.0
@@ -855,7 +855,7 @@ packages:
       compare-func: 1.3.2
       conventional-commits-filter: 2.0.2
       dateformat: 3.0.3
-      handlebars: 4.3.4
+      handlebars: 4.4.0
       json-stringify-safe: 5.0.1
       lodash: 4.17.15
       meow: 4.0.1
@@ -1874,7 +1874,7 @@ packages:
       node: '>=4.x'
     resolution:
       integrity: sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
-  /handlebars/4.3.4:
+  /handlebars/4.4.0:
     dependencies:
       neo-async: 2.6.1
       optimist: 0.6.1
@@ -1886,7 +1886,7 @@ packages:
     optionalDependencies:
       uglify-js: 3.6.0
     resolution:
-      integrity: sha512-vvpo6mpK4ScNC1DbGRZ2d5BznS6ht0r1hi20RivsibMc6jNvFAeZQ6qk5VNspo6SOwVOJQbjHyBCpuS7BzA1pw==
+      integrity: sha512-xkRtOt3/3DzTKMOt3xahj2M/EqNhY988T+imYSlMgs5fVhLN2fmKVVj0LtEGmb+3UUYV5Qmm1052Mm3dIQxOvw==
   /har-schema/2.0.0:
     dev: true
     engines:
@@ -2389,7 +2389,7 @@ packages:
       integrity: sha512-R47KzMtDJH6X4/YW9XTx+jrLnZnscW4VpNN+1PViSYTejLVPWv7oov+Duf8YQSPyVRUvueQqz1TcsC6mooZTXw==
   /istanbul-reports/2.2.6:
     dependencies:
-      handlebars: 4.3.4
+      handlebars: 4.4.0
     dev: true
     engines:
       node: '>=6'
@@ -3388,19 +3388,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-BXUMf9sIOPXXZWqr7+c5SeOKJykyVr2u0UDzEf4LNGc6taGkQe1A9DFD07umCIXz45RLr9oAAwZbAJ0Pkknfaw==
-  /react-test-renderer/16.9.0_react@16.9.0:
+  /react-test-renderer/16.10.1_react@16.10.1:
     dependencies:
       object-assign: 4.1.1
       prop-types: 15.7.2
-      react: 16.9.0
+      react: 16.10.1
       react-is: 16.10.1
-      scheduler: 0.15.0
+      scheduler: 0.16.1
     dev: true
     peerDependencies:
       react: ^16.0.0
     resolution:
-      integrity: sha512-R62stB73qZyhrJo7wmCW9jgl/07ai+YzvouvCXIJLBkRlRqLx4j9RqcLEAfNfU3OxTGucqR2Whmn3/Aad6L3hQ==
-  /react/16.9.0:
+      integrity: sha512-VT8nd7XrrUV7MQPxeIuH7WstfrK2A8kgcMwGUtVXa0ja+CiYkxdmLYNjwX1L7irRF7ydzJJWiSLsQf2xBj4Xaw==
+  /react/16.10.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
@@ -3409,7 +3409,7 @@ packages:
     engines:
       node: '>=0.10.0'
     resolution:
-      integrity: sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w==
+      integrity: sha512-2bisHwMhxQ3XQz4LiJJwG3360pY965pTl/MRrZYxIBKVj4fOHoDs5aZAkYXGxDRO1Li+SyjTAilQEbOmtQJHzA==
   /read-pkg-up/1.0.1:
     dependencies:
       find-up: 1.1.2
@@ -3718,13 +3718,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /scheduler/0.15.0:
+  /scheduler/0.16.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
     resolution:
-      integrity: sha512-xAefmSfN6jqAa7Kuq7LIJY0bwAPG3xlCj0HMEBQk1lxYiDKZscY2xJ5U/61ZTrYbmNQbXa+gc7czPkVo11tnCg==
+      integrity: sha512-MIuie7SgsqMYOdCXVFZa8SKoNorJZUWHW8dPgto7uEHn1lX3fg2Gu0TzgK8USj76uxV7vB5eRMnZs/cdEHg+cg==
   /semver/5.7.1:
     dev: true
     hasBin: true
@@ -4502,8 +4502,8 @@ specifiers:
   nyc: 14.1.1
   object-inspect: 1.6.0
   prettier: 1.18.2
-  react: 16.9.0
-  react-test-renderer: 16.9.0
+  react: 16.10.1
+  react-test-renderer: 16.10.1
   stack-utils: 1.0.2
   standard-version: 7.0.0
   stream-spec: 0.3.6
