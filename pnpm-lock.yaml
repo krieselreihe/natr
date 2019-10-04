@@ -15,7 +15,7 @@ devDependencies:
   cz-conventional-changelog: 3.0.2
   eslint: 6.5.1
   eslint-config-prettier: 6.3.0_eslint@6.5.1
-  eslint-plugin-react: 7.15.1_eslint@6.5.1
+  eslint-plugin-react: 7.16.0_eslint@6.5.1
   nyc: 14.1.1
   prettier: 1.18.2
   react: 16.10.1
@@ -44,7 +44,7 @@ packages:
       '@babel/types': 7.6.1
       convert-source-map: 1.6.0
       debug: 4.1.1
-      json5: 2.1.0
+      json5: 2.1.1
       lodash: 4.17.15
       resolve: 1.12.0
       semver: 5.7.1
@@ -204,7 +204,7 @@ packages:
       integrity: sha512-EV6PfAY/p83QynNd1llHxJiNxKmp43g8+7dZbyfHFbsGOdokrCnoelAVZ+WGgktXwLN/uXyfkcIAxwac015UYw==
   /@commitlint/resolve-extends/8.2.0:
     dependencies:
-      '@types/node': 12.7.8
+      '@types/node': 12.7.11
       import-fresh: 3.1.0
       lodash: 4.17.14
       resolve-from: 5.0.0
@@ -215,35 +215,35 @@ packages:
     optional: true
     resolution:
       integrity: sha512-cwi0HUsDcD502HBP8huXfTkVuWmeo1Fiz3GKxNwMBBsJV4+bKa7QrtxbNpXhVuarX7QjWfNTvmW6KmFS7YK9uw==
-  /@nodelib/fs.scandir/2.1.2:
+  /@nodelib/fs.scandir/2.1.3:
     dependencies:
-      '@nodelib/fs.stat': 2.0.2
+      '@nodelib/fs.stat': 2.0.3
       run-parallel: 1.1.9
     dev: false
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-wrIBsjA5pl13f0RN4Zx4FNWmU71lv03meGKnqRUoCyan17s4V3WL92f3w3AIuWbNnpcrQyFBU5qMavJoB8d27w==
-  /@nodelib/fs.stat/2.0.2:
+      integrity: sha512-eGmwYQn3gxo4r7jdQnkrrN6bY478C3P+a/y72IJukF8LjB6ZHeB3c+Ehacj3sYeSmUXGlnA67/PmbM9CVwL7Dw==
+  /@nodelib/fs.stat/2.0.3:
     dev: false
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-z8+wGWV2dgUhLqrtRYa03yDx4HWMvXKi1z8g3m2JyxAx8F7xk74asqPk5LAETjqDSGLFML/6CDl0+yFunSYicw==
-  /@nodelib/fs.walk/1.2.3:
+      integrity: sha512-bQBFruR2TAwoevBEd/NWMoAAtNGzTRgdrqnYCc7dhzfoNvqPzLyqlEQnzZ3kVnNrSp25iyxE00/3h2fqGAGArA==
+  /@nodelib/fs.walk/1.2.4:
     dependencies:
-      '@nodelib/fs.scandir': 2.1.2
+      '@nodelib/fs.scandir': 2.1.3
       fastq: 1.6.0
     dev: false
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-l6t8xEhfK9Sa4YO5mIRdau7XSOADfmh3jCr0evNHdY+HNkW6xuQhgMH7D73VV6WpZOagrW0UludvMTiifiwTfA==
-  /@types/node/12.7.8:
+      integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
+  /@types/node/12.7.11:
     dev: true
     optional: true
     resolution:
-      integrity: sha512-FMdVn84tJJdV+xe+53sYiZS4R5yn1mAIxfj+DVoNiQjTYz1+OYmjwEZr1ev9nU0axXwda0QDbYl06QHanRVH3A==
+      integrity: sha512-Otxmr2rrZLKRYIybtdG/sgeO+tHY20GxeDjcGmUnmmlCWyEnv2a2x1ZXBo3BTec4OiTXMQCiazB8NMBf0iRlFw==
   /JSONStream/1.3.5:
     dependencies:
       jsonparse: 1.3.1
@@ -363,7 +363,7 @@ packages:
   /array-includes/3.0.3:
     dependencies:
       define-properties: 1.1.3
-      es-abstract: 1.14.2
+      es-abstract: 1.15.0
     dev: true
     engines:
       node: '>= 0.4'
@@ -786,7 +786,7 @@ packages:
   /conventional-changelog-core/3.2.3:
     dependencies:
       conventional-changelog-writer: 4.0.7
-      conventional-commits-parser: 3.0.3
+      conventional-commits-parser: 3.0.5
       dateformat: 3.0.3
       get-pkg-repo: 1.4.0
       git-raw-commits: 2.0.0
@@ -811,14 +811,14 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-qtZbA3XefO/n6DDmkYywDYi6wDKNNc98MMl2F9PKSaheJ25Trpi3336W8fDlBhq0X+EJRuseceAdKLEMmuX2tg==
-  /conventional-changelog-eslint/3.0.2:
+  /conventional-changelog-eslint/3.0.4:
     dependencies:
       q: 1.5.1
     dev: true
     engines:
       node: '>=6.9.0'
     resolution:
-      integrity: sha512-Yi7tOnxjZLXlCYBHArbIAm8vZ68QUSygFS7PgumPRiEk+9NPUeucy5Wg9AAyKoBprSV3o6P7Oghh4IZSLtKCvQ==
+      integrity: sha512-CPwTUENzhLGl3auunrJxiIEWncAGaby7gOFCdj2gslIuOFJ0KPJVOUhRz4Da/I53sdo/7UncUJkiLg94jEsjxg==
   /conventional-changelog-express/2.0.1:
     dependencies:
       q: 1.5.1
@@ -855,7 +855,7 @@ packages:
       compare-func: 1.3.2
       conventional-commits-filter: 2.0.2
       dateformat: 3.0.3
-      handlebars: 4.4.0
+      handlebars: 4.4.2
       json-stringify-safe: 5.0.1
       lodash: 4.17.15
       meow: 4.0.1
@@ -876,7 +876,7 @@ packages:
       conventional-changelog-conventionalcommits: 4.1.0
       conventional-changelog-core: 3.2.3
       conventional-changelog-ember: 2.0.2
-      conventional-changelog-eslint: 3.0.2
+      conventional-changelog-eslint: 3.0.4
       conventional-changelog-express: 2.0.1
       conventional-changelog-jquery: 3.0.4
       conventional-changelog-jshint: 2.0.1
@@ -899,7 +899,7 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-WpGKsMeXfs21m1zIw4s9H5sys2+9JccTzpN6toXtxhpw2VNF2JUXwIakthKBy+LN4DvJm+TzWhxOMWOs1OFCFQ==
-  /conventional-commits-parser/3.0.3:
+  /conventional-commits-parser/3.0.5:
     dependencies:
       JSONStream: 1.3.5
       is-text-path: 2.0.0
@@ -913,13 +913,13 @@ packages:
       node: '>=6.9.0'
     hasBin: true
     resolution:
-      integrity: sha512-KaA/2EeUkO4bKjinNfGUyqPTX/6w9JGshuQRik4r/wJz7rUw3+D3fDG6sZSEqJvKILzKXFQuFkpPLclcsAuZcg==
+      integrity: sha512-qVz9+5JwdJzsbt7JbJ6P7NOXBGt8CyLFJYSjKAuPSgO+5UGfcsbk9EMR+lI8Unlvx6qwIc2YDJlrGIfay2ehNA==
   /conventional-recommended-bump/6.0.0:
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog-preset-loader: 2.2.0
       conventional-commits-filter: 2.0.2
-      conventional-commits-parser: 3.0.3
+      conventional-commits-parser: 3.0.5
       git-raw-commits: 2.0.0
       git-semver-tags: 3.0.0
       meow: 4.0.1
@@ -1234,7 +1234,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==
-  /es-abstract/1.14.2:
+  /es-abstract/1.15.0:
     dependencies:
       es-to-primitive: 1.2.0
       function-bind: 1.1.1
@@ -1250,7 +1250,7 @@ packages:
     engines:
       node: '>= 0.4'
     resolution:
-      integrity: sha512-DgoQmbpFNOofkjJtKwr87Ma5EW4Dc8fWhD0R+ndq7Oc456ivUfGOOP6oAZTTKl5/CcNMP+EN+e3/iUzgE0veZg==
+      integrity: sha512-bhkEqWJ2t2lMeaJDuk7okMkJWI/yqgH/EoGwpcvv0XW9RWQsRspI4wt6xuyuvMvvQE3gg/D9HXppgk21w78GyQ==
   /es-to-primitive/1.2.0:
     dependencies:
       is-callable: 1.1.4
@@ -1281,7 +1281,7 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-EWaGjlDAZRzVFveh2Jsglcere2KK5CJBhkNSa1xs3KfMUGdRiT7lG089eqPdvlzWHpAqaekubOsOMu8W8Yk71A==
-  /eslint-plugin-react/7.15.1_eslint@6.5.1:
+  /eslint-plugin-react/7.16.0_eslint@6.5.1:
     dependencies:
       array-includes: 3.0.3
       doctrine: 2.1.0
@@ -1289,7 +1289,7 @@ packages:
       has: 1.0.3
       jsx-ast-utils: 2.2.1
       object.entries: 1.1.0
-      object.fromentries: 2.0.0
+      object.fromentries: 2.0.1
       object.values: 1.1.0
       prop-types: 15.7.2
       resolve: 1.12.0
@@ -1299,7 +1299,7 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     resolution:
-      integrity: sha512-YotSItgMPwLGlr3df44MGVyXnHkmKcpkHTzpte3QwJtocr3nFqCXCuoxFZeBtnT8RHdj038NlTvam3dcAFrMcA==
+      integrity: sha512-GacBAATewhhptbK3/vTP09CbFrgUJmBSaaRcWdbQLFvUZy9yVcQxigBNHGPU/KE2AyHpzj3AWXpxoMTsIDiHug==
   /eslint-scope/5.0.0:
     dependencies:
       esrecurse: 4.2.1
@@ -1498,8 +1498,8 @@ packages:
       integrity: sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
   /fast-glob/3.0.4:
     dependencies:
-      '@nodelib/fs.stat': 2.0.2
-      '@nodelib/fs.walk': 1.2.3
+      '@nodelib/fs.stat': 2.0.3
+      '@nodelib/fs.walk': 1.2.4
       glob-parent: 5.1.0
       is-glob: 4.0.1
       merge2: 1.3.0
@@ -1874,7 +1874,7 @@ packages:
       node: '>=4.x'
     resolution:
       integrity: sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
-  /handlebars/4.4.0:
+  /handlebars/4.4.2:
     dependencies:
       neo-async: 2.6.1
       optimist: 0.6.1
@@ -1886,7 +1886,7 @@ packages:
     optionalDependencies:
       uglify-js: 3.6.0
     resolution:
-      integrity: sha512-xkRtOt3/3DzTKMOt3xahj2M/EqNhY988T+imYSlMgs5fVhLN2fmKVVj0LtEGmb+3UUYV5Qmm1052Mm3dIQxOvw==
+      integrity: sha512-cIv17+GhL8pHHnRJzGu2wwcthL5sb8uDKBHvZ2Dtu5s1YNt0ljbzKbamnc+gr69y7bzwQiBdr5+hOpRd5pnOdg==
   /har-schema/2.0.0:
     dev: true
     engines:
@@ -2389,7 +2389,7 @@ packages:
       integrity: sha512-R47KzMtDJH6X4/YW9XTx+jrLnZnscW4VpNN+1PViSYTejLVPWv7oov+Duf8YQSPyVRUvueQqz1TcsC6mooZTXw==
   /istanbul-reports/2.2.6:
     dependencies:
-      handlebars: 4.4.0
+      handlebars: 4.4.2
     dev: true
     engines:
       node: '>=6'
@@ -2438,7 +2438,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
-  /json5/2.1.0:
+  /json5/2.1.1:
     dependencies:
       minimist: 1.2.0
     dev: true
@@ -2446,7 +2446,7 @@ packages:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-8Mh9h6xViijj36g7Dxi+Y4S6hNGV96vcJZr/SrlHh1LR/pEn/8j/+qIBbs44YKl69Lrfctp4QD+AdWLTMqEZAQ==
+      integrity: sha512-l+3HXD0GEI3huGq1njuqtzYK8OYJyXMkOLtQ53pjWh89tvWS2h6l+1zMkYWqlb57+SiQodKZyvMEFb2X+KrFhQ==
   /jsonfile/4.0.0:
     dev: true
     optionalDependencies:
@@ -2984,7 +2984,7 @@ packages:
   /object.entries/1.1.0:
     dependencies:
       define-properties: 1.1.3
-      es-abstract: 1.14.2
+      es-abstract: 1.15.0
       function-bind: 1.1.1
       has: 1.0.3
     dev: true
@@ -2992,17 +2992,17 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-l+H6EQ8qzGRxbkHOd5I/aHRhHDKoQXQ8g0BYt4uSweQU1/J6dZUOyWh9a2Vky35YCKjzmgxOzta2hH6kf9HuXA==
-  /object.fromentries/2.0.0:
+  /object.fromentries/2.0.1:
     dependencies:
       define-properties: 1.1.3
-      es-abstract: 1.14.2
+      es-abstract: 1.15.0
       function-bind: 1.1.1
       has: 1.0.3
     dev: true
     engines:
       node: '>= 0.4'
     resolution:
-      integrity: sha512-9iLiI6H083uiqUuvzyY6qrlmc/Gz8hLQFOcb/Ri/0xXFkSNS3ctV+CbE6yM2+AnkYfOB3dGjdzC0wrMLIhQICA==
+      integrity: sha512-PUQv8Hbg3j2QX0IQYv3iAGCbGcu4yY4KQ92/dhA4sFSixBmSmp13UpDLs6jGK8rBtbmhNNIK99LD2k293jpiGA==
   /object.pick/1.3.0:
     dependencies:
       isobject: 3.0.1
@@ -3014,7 +3014,7 @@ packages:
   /object.values/1.1.0:
     dependencies:
       define-properties: 1.1.3
-      es-abstract: 1.14.2
+      es-abstract: 1.15.0
       function-bind: 1.1.1
       has: 1.0.3
     dev: true
@@ -3339,7 +3339,7 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      react-is: 16.10.1
+      react-is: 16.10.2
     dev: true
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -3384,17 +3384,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-C0SIXdXDSus2yqqvV7qifnb4NoWP7mEBXJq3axci301mXHCZb8Djwm4hrEZo4UeXRaEnfjH98uQ8EBppk2oNWA==
-  /react-is/16.10.1:
+  /react-is/16.10.2:
     dev: true
     resolution:
-      integrity: sha512-BXUMf9sIOPXXZWqr7+c5SeOKJykyVr2u0UDzEf4LNGc6taGkQe1A9DFD07umCIXz45RLr9oAAwZbAJ0Pkknfaw==
+      integrity: sha512-INBT1QEgtcCCgvccr5/86CfD71fw9EPmDxgiJX4I2Ddr6ZsV6iFXsuby+qWJPtmNuMY0zByTsG4468P7nHuNWA==
   /react-test-renderer/16.10.1_react@16.10.1:
     dependencies:
       object-assign: 4.1.1
       prop-types: 15.7.2
       react: 16.10.1
-      react-is: 16.10.1
-      scheduler: 0.16.1
+      react-is: 16.10.2
+      scheduler: 0.16.2
     dev: true
     peerDependencies:
       react: ^16.0.0
@@ -3718,13 +3718,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /scheduler/0.16.1:
+  /scheduler/0.16.2:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
     resolution:
-      integrity: sha512-MIuie7SgsqMYOdCXVFZa8SKoNorJZUWHW8dPgto7uEHn1lX3fg2Gu0TzgK8USj76uxV7vB5eRMnZs/cdEHg+cg==
+      integrity: sha512-BqYVWqwz6s1wZMhjFvLfVR5WXP7ZY32M/wYPo04CcuPM7XZEbV2TBNW7Z0UkguPTl0dWMA59VbNXxK6q+pHItg==
   /semver/5.7.1:
     dev: true
     hasBin: true
@@ -4495,7 +4495,7 @@ specifiers:
   cz-conventional-changelog: 3.0.2
   eslint: 6.5.1
   eslint-config-prettier: 6.3.0
-  eslint-plugin-react: 7.15.1
+  eslint-plugin-react: 7.16.0
   fast-deep-equal: 2.0.1
   fast-glob: 3.0.4
   minimist: 1.2.0
