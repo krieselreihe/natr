@@ -1,6 +1,6 @@
 dependencies:
   fast-deep-equal: 2.0.1
-  fast-glob: 3.0.4
+  fast-glob: 3.1.0
   minimist: 1.2.0
   object-inspect: 1.6.0
   stack-utils: 1.0.2
@@ -1496,19 +1496,18 @@ packages:
   /fast-deep-equal/2.0.1:
     resolution:
       integrity: sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
-  /fast-glob/3.0.4:
+  /fast-glob/3.1.0:
     dependencies:
       '@nodelib/fs.stat': 2.0.3
       '@nodelib/fs.walk': 1.2.4
       glob-parent: 5.1.0
-      is-glob: 4.0.1
       merge2: 1.3.0
       micromatch: 4.0.2
     dev: false
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-wkIbV6qg37xTJwqSsdnIphL1e+LaGz4AIQqr00mIubMaEhv1/HEmJ0uuCGZRNRUkZZmOB5mJKO0ZUTVq+SxMQg==
+      integrity: sha512-TrUz3THiq2Vy3bjfQUB2wNyPdGBeGmdjbzzBLhfHN4YFurYptCKwGq/TfiRavbGywFRzY6U2CdmQ1zmsY5yYaw==
   /fast-json-stable-stringify/2.0.0:
     dev: true
     resolution:
@@ -4497,7 +4496,7 @@ specifiers:
   eslint-config-prettier: 6.4.0
   eslint-plugin-react: 7.16.0
   fast-deep-equal: 2.0.1
-  fast-glob: 3.0.4
+  fast-glob: 3.1.0
   minimist: 1.2.0
   nyc: 14.1.1
   object-inspect: 1.6.0
