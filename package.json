@@ -60,7 +60,7 @@
     "commitizen": "4.0.3",
     "concat-stream": "2.0.0",
     "conventional-changelog-conventionalcommits": "4.1.0",
-    "coveralls": "3.0.6",
+    "coveralls": "3.0.7",
     "cz-conventional-changelog": "3.0.2",
     "eslint": "6.5.1",
     "eslint-config-prettier": "6.4.0",
