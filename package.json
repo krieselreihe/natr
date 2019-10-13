@@ -73,6 +73,6 @@
     "stream-spec": "0.3.6",
     "tap-color": "1.1.0",
     "tap-nyc": "1.0.3",
-    "typescript": "3.6.3"
+    "typescript": "3.6.4"
   }
 }
