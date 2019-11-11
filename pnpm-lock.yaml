@@ -17,7 +17,7 @@ devDependencies:
   eslint-config-prettier: 6.5.0_eslint@6.6.0
   eslint-plugin-react: 7.16.0_eslint@6.6.0
   nyc: 14.1.1
-  prettier: 1.18.2
+  prettier: 1.19.1
   react: 16.11.0
   react-test-renderer: 16.11.0_react@16.11.0
   standard-version: 7.0.0
@@ -3371,13 +3371,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
-  /prettier/1.18.2:
+  /prettier/1.19.1:
     dev: true
     engines:
       node: '>=4'
     hasBin: true
     resolution:
-      integrity: sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
+      integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
   /pretty-ms/2.1.0:
     dependencies:
       is-finite: 1.0.2
@@ -4585,7 +4585,7 @@ specifiers:
   minimist: 1.2.0
   nyc: 14.1.1
   object-inspect: 1.7.0
-  prettier: 1.18.2
+  prettier: 1.19.1
   react: 16.11.0
   react-test-renderer: 16.11.0
   stack-utils: 1.0.2
