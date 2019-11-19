@@ -69,7 +69,7 @@
     "prettier": "1.19.1",
     "react": "16.12.0",
     "react-test-renderer": "16.12.0",
-    "standard-version": "7.0.0",
+    "standard-version": "7.0.1",
     "stream-spec": "0.3.6",
     "tap-color": "1.1.0",
     "tap-nyc": "1.0.3",
