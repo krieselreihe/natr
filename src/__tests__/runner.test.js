@@ -39,7 +39,9 @@ describe("runner", async assert => {
     actual: await execute(check => {
       check(true, false);
     }),
-    expected: new Error("check() in execute() didn't match: true with false")
+    expected: new Error(
+      "check() in execute() didn't match:\ntrue\nwith:\nfalse"
+    )
   });
 
   assert({

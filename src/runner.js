@@ -144,7 +144,7 @@ function writeFormattedObjectFile(file, obj) {
 }
 
 function readFormattedObjectFile(file) {
-  return JSON.parse(fs.readFileSync(file, FS_OPTIONS));
+  return JSON.parse(String(fs.readFileSync(file, FS_OPTIONS)));
 }
 
 function resolveSnapshot(name, value) {
