@@ -1,6 +1,6 @@
 dependencies:
   fast-deep-equal: 3.1.1
-  fast-glob: 3.1.1
+  fast-glob: 3.2.0
   minimist: 1.2.0
   object-inspect: 1.7.0
   stack-utils: 2.0.1
@@ -1754,7 +1754,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8UEa58QDLauDNfpbrX55Q9jrGHThw2ZMdOky5Gl1CDtVeJDPVrG4Jxx1N8jw2gkWaff5UUuX1KJd+9zGe2B+ZA==
-  /fast-glob/3.1.1:
+  /fast-glob/3.2.0:
     dependencies:
       '@nodelib/fs.stat': 2.0.3
       '@nodelib/fs.walk': 1.2.4
@@ -1765,7 +1765,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-nTCREpBY8w8r+boyFYAx21iL6faSsQynliPHM4Uf56SbkyohCNxpVPEH9xrF5TXKy+IsjkPUHDKiUkzBVRXn9g==
+      integrity: sha512-x0gdwWaaubNqJ2nQV8YDALCZRiCy9zOEHlF7ScpzalxdxMKh78Qc0lcpZ4w2I0LZUfklA/IQPLlPU36YTgUozA==
   /fast-json-stable-stringify/2.0.0:
     dev: true
     resolution:
@@ -3099,7 +3099,7 @@ packages:
   /micromatch/4.0.2:
     dependencies:
       braces: 3.0.2
-      picomatch: 2.1.1
+      picomatch: 2.2.1
     dev: false
     engines:
       node: '>=8'
@@ -3615,12 +3615,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
-  /picomatch/2.1.1:
+  /picomatch/2.2.1:
     dev: false
     engines:
       node: '>=8.6'
     resolution:
-      integrity: sha512-OYMyqkKzK7blWO/+XZYP6w8hH0LDvkBvdvKukti+7kqYFCiEAk+gI3DWnryapc0Dau05ugGTy0foQ6mqn4AHYA==
+      integrity: sha512-ISBaA8xQNmwELC7eOjqFKMESB2VIqt4PPDD0nsS95b/9dZXvVKOlz9keMSnoGGKcOHXfTvDD6WMaRoSc9UuhRA==
   /pify/2.3.0:
     dev: true
     engines:
@@ -4999,7 +4999,7 @@ specifiers:
   eslint-config-prettier: 6.10.0
   eslint-plugin-react: 7.18.3
   fast-deep-equal: 3.1.1
-  fast-glob: 3.1.1
+  fast-glob: 3.2.0
   minimist: 1.2.0
   nyc: 15.0.0
   object-inspect: 1.7.0
