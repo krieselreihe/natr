@@ -15,7 +15,7 @@ devDependencies:
   cz-conventional-changelog: 3.1.0
   eslint: 6.8.0
   eslint-config-prettier: 6.10.0_eslint@6.8.0
-  eslint-plugin-react: 7.18.3_eslint@6.8.0
+  eslint-plugin-react: 7.19.0_eslint@6.8.0
   nyc: 15.0.0
   prettier: 1.19.1
   react: 16.13.0
@@ -246,6 +246,13 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-7IDO93fuRsbyml7bAafBQb3RcBGlCpU4hh5wADA2LJEEcYk92WkwFZ0pHyIi2fb5Auoz1714abETdZKCOxN0CQ==
+  /@babel/runtime-corejs3/7.8.7:
+    dependencies:
+      core-js-pure: 3.6.4
+      regenerator-runtime: 0.13.4
+    dev: true
+    resolution:
+      integrity: sha512-sc7A+H4I8kTd7S61dgB9RomXu/C+F4IrRr4Ytze4dnfx7AXEpCrejSNpjx7vq6y/Bak9S6Kbk65a/WgMLtg43Q==
   /@babel/template/7.7.4:
     dependencies:
       '@babel/code-frame': 7.5.5
@@ -1200,6 +1207,11 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
+  /core-js-pure/3.6.4:
+    dev: true
+    requiresBuild: true
+    resolution:
+      integrity: sha512-epIhRLkXdgv32xIUFaaAry2wdxZYBi6bgM7cB136dzzXXa+dFyRLTZeLUJxnd8ShrmyVXBub63n2NHo2JAt8Cw==
   /core-js/2.6.11:
     deprecated: 'core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
     dev: true
@@ -1541,7 +1553,7 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-AtndijGte1rPILInUdHjvKEGbIV06NuvPrqlIEaEaWtbtvJh464mDeyGMdZEQMsGvC0ZVkiex1fSNcC4HAbRGg==
-  /eslint-plugin-react/7.18.3_eslint@6.8.0:
+  /eslint-plugin-react/7.19.0_eslint@6.8.0:
     dependencies:
       array-includes: 3.1.1
       doctrine: 2.1.0
@@ -1552,15 +1564,17 @@ packages:
       object.fromentries: 2.0.2
       object.values: 1.1.1
       prop-types: 15.7.2
-      resolve: 1.15.0
+      resolve: 1.15.1
+      semver: 6.3.0
       string.prototype.matchall: 4.0.2
+      xregexp: 4.3.0
     dev: true
     engines:
       node: '>=4'
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     resolution:
-      integrity: sha512-Bt56LNHAQCoou88s8ViKRjMB2+36XRejCQ1VoLj716KI1MoE99HpTVvIThJ0rvFmG4E4Gsq+UgToEjn+j044Bg==
+      integrity: sha512-SPT8j72CGuAP+JFbT0sJHOB80TX/pu44gQ4vXH/cq+hQTiY2PuZ6IHkqXJV6x1b28GDdo1lbInjKUrrdUf0LOQ==
   /eslint-scope/5.0.0:
     dependencies:
       esrecurse: 4.2.1
@@ -3927,6 +3941,10 @@ packages:
     optional: true
     resolution:
       integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
+  /regenerator-runtime/0.13.4:
+    dev: true
+    resolution:
+      integrity: sha512-plpwicqEzfEyTQohIKktWigcLzmNStMGwbOUbykx51/29Z3JOGYldaaNGK7ngNXV+UcoqvIMmloZ48Sr74sd+g==
   /regex-not/1.0.2:
     dependencies:
       extend-shallow: 3.0.2
@@ -4075,12 +4093,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EjlOBLBO1kxsUxsKjLt7TAECyKW6fOh1VRkykQkKGzcBbjjPIxBqGh0jf7GJ3k/f5mxMqW3htMD3WdTUVtW8HQ==
-  /resolve/1.15.0:
-    dependencies:
-      path-parse: 1.0.6
-    dev: true
-    resolution:
-      integrity: sha512-+hTmAldEGE80U2wJJDC1lebb5jWqvTYAfm3YZ1ckk1gBr0MnCqUKlwK1e+anaFljIl+F5tR5IoZcm4ZDA1zMQw==
   /resolve/1.15.1:
     dependencies:
       path-parse: 1.0.6
@@ -4978,6 +4990,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
+  /xregexp/4.3.0:
+    dependencies:
+      '@babel/runtime-corejs3': 7.8.7
+    dev: true
+    resolution:
+      integrity: sha512-7jXDIFXh5yJ/orPn4SXjuVrWWoi4Cr8jfV1eHv9CixKSbU+jY4mxfrBwAuDvupPNKpMUY+FeIqsVw/JLT9+B8g==
   /xtend/4.0.2:
     dev: true
     engines:
@@ -5028,7 +5046,7 @@ specifiers:
   cz-conventional-changelog: 3.1.0
   eslint: 6.8.0
   eslint-config-prettier: 6.10.0
-  eslint-plugin-react: 7.18.3
+  eslint-plugin-react: 7.19.0
   fast-deep-equal: 3.1.1
   fast-glob: 3.2.2
   minimist: 1.2.0
