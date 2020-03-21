@@ -59,12 +59,12 @@ Unit tests are explicit, so there are no global variables injected. Import `desc
 ```javascript
 import { describe } from "@krieselreihe/natr";
 
-describe("my test suite", async assert => {
+describe("my test suite", async (assert) => {
   assert({
     given: "a basic arithmetic expression",
     should: "calculate 2",
     actual: 1 + 1,
-    expected: 2
+    expected: 2,
   });
 });
 ```
@@ -88,12 +88,12 @@ The `execute` helper gives you the chance to wrap an executions of multiple expr
 ```javascript
 import { describe, execute } from "@krieselreihe/natr";
 
-describe("my test suite", async assert => {
+describe("my test suite", async (assert) => {
   assert({
     given: "a promise",
     should: "resolve",
     actual: await execute(() => Promise.resolve(23)),
-    expected: 23
+    expected: 23,
   });
 });
 ```
@@ -107,12 +107,12 @@ To test if a function throws an error you can use the `execute` helper and pass 
 ```javascript
 import { describe, execute } from "@krieselreihe/natr";
 
-describe("my test suite", async assert => {
+describe("my test suite", async (assert) => {
   assert({
     given: "an expression that will throw",
     should: "throw an error",
     actual: await execute(() => throw new Error("Doh!")),
-    expected: new Error("Doh!")
+    expected: new Error("Doh!"),
   });
 });
 ```
@@ -124,18 +124,18 @@ Inside executions you can perform assert checks as well that will throw if value
 ```javascript
 import { describe, execute } from "@krieselreihe/natr";
 
-describe("my test suite", async assert => {
+describe("my test suite", async (assert) => {
   assert({
     given: "user object",
     should: "have the correct user id and structure",
-    actual: await execute(check => {
+    actual: await execute((check) => {
       const user = { id: 1, name: "Helga" };
 
       check(user, { id: 1, name: "Max" });
 
       return user.id;
     }),
-    expected: 1
+    expected: 1,
   });
 });
 ```
@@ -172,19 +172,19 @@ const MyComponent = () => (
 );
 const SubComponent = () => <p className="sub">Sub</p>;
 
-describe("my test suite", async assert => {
+describe("my test suite", async (assert) => {
   assert({
     given: "a react component",
     should: "be of a specific type",
     actual: render.create(<MyComponent />).findByType(SubComponent).type,
-    expected: "SubComponent"
+    expected: "SubComponent",
   });
 
   assert({
     given: "a react component",
     should: "have a specific prop",
     actual: render.create(<MyComponent />).findByType(SubComponent).props.foo,
-    expected: "bar"
+    expected: "bar",
   });
 });
 ```
@@ -204,19 +204,19 @@ const MyComponent = () => (
 );
 const SubComponent = () => <p className="sub">Sub</p>;
 
-describe("my test suite", async assert => {
+describe("my test suite", async (assert) => {
   assert({
     given: "a react component",
     should: "match snapshot",
     actual: render.create(<MyComponent />).toJSON(),
-    expected: toMatchSnapshot()
+    expected: toMatchSnapshot(),
   });
 
   assert({
     given: "JavaScript object",
     should: "match snapshot",
     actual: { foo: 42 },
-    expected: toMatchSnapshot()
+    expected: toMatchSnapshot(),
   });
 });
 ```

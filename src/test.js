@@ -64,7 +64,7 @@ module.exports = class Test extends EventEmitter {
   exit() {
     if (!this.ended) {
       this.fail("test exited without ending", {
-        exiting: true
+        exiting: true,
       });
     }
   }
@@ -73,7 +73,7 @@ module.exports = class Test extends EventEmitter {
     const result = {
       id: this.assertCount++,
       ok: Boolean(ok),
-      name: opts.message || "(unnamed assert)"
+      name: opts.message || "(unnamed assert)",
     };
 
     if (opts.hasOwnProperty("actual")) {
@@ -126,7 +126,7 @@ module.exports = class Test extends EventEmitter {
 
   fail(message) {
     this.assert(false, {
-      message
+      message,
     });
   }
 
@@ -134,7 +134,7 @@ module.exports = class Test extends EventEmitter {
     this.assert(deepEqual(actual, expected), {
       message,
       actual,
-      expected
+      expected,
     });
   }
 };

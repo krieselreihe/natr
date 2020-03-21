@@ -42,5 +42,5 @@ const API_DESCRIPTION = createInternal(`{
 module.exports = {
   isInternal,
   cleanInternal,
-  API_DESCRIPTION
+  API_DESCRIPTION,
 };

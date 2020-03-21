@@ -28,7 +28,7 @@ module.exports = function duplexStream(write, end, opts = {}) {
   let destroyed = false;
   let _ended = false;
 
-  write = write || (data => stream.queue(data));
+  write = write || ((data) => stream.queue(data));
   end = end || (() => stream.queue(null));
 
   stream.writable = true;
@@ -37,12 +37,12 @@ module.exports = function duplexStream(write, end, opts = {}) {
 
   stream.autoDestroy = !opts.autoDestroy;
 
-  stream.write = data => {
+  stream.write = (data) => {
     write.call(stream, data);
     return !stream.paused;
   };
 
-  stream.queue = stream.push = data => {
+  stream.queue = stream.push = (data) => {
     if (_ended) {
       return stream;
     }

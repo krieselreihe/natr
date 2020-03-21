@@ -22,12 +22,12 @@ function write(array, stream) {
 function read(stream, callback) {
   const actual = [];
 
-  stream.on("data", data => actual.push(data));
+  stream.on("data", (data) => actual.push(data));
   stream.once("end", () => callback(null, actual));
   stream.once("error", callback);
 }
 
-describe("duplex streams", async assert => {
+describe("duplex streams", async (assert) => {
   // 100 is just a generic length for the test data set
   const expected = Array.from({ length: 100 }, () =>
     Math.floor(Math.random() * 100)
@@ -114,9 +114,7 @@ describe("duplex streams", async assert => {
     should: "be possible to be paused",
     actual: await execute(() => {
       const stream = duplexStream();
-      const mockedStream = spec(stream)
-        .through()
-        .pausable();
+      const mockedStream = spec(stream).through().pausable();
 
       stream.on("data", () => {
         if (Math.random() > 0.1) {
@@ -142,7 +140,7 @@ describe("duplex streams", async assert => {
 
       return result;
     }),
-    expected
+    expected,
   });
 
   assert({
@@ -161,7 +159,7 @@ describe("duplex streams", async assert => {
 
       return count;
     }),
-    expected: 2
+    expected: 2,
   });
 
   assert({
@@ -187,7 +185,7 @@ describe("duplex streams", async assert => {
 
       return ended && closed;
     }),
-    expected: true
+    expected: true,
   });
 
   assert({
@@ -219,7 +217,7 @@ describe("duplex streams", async assert => {
 
       return beforeDestroyState && closed;
     }),
-    expected: true
+    expected: true,
   });
 
   assert({
@@ -243,7 +241,7 @@ describe("duplex streams", async assert => {
 
       return endedOnce;
     }),
-    expected: true
+    expected: true,
   });
 
   assert({
@@ -264,15 +262,15 @@ describe("duplex streams", async assert => {
 
       return endedOnce;
     }),
-    expected: true
+    expected: true,
   });
 
   assert({
     given: "an input stream",
     should: "buffer",
-    actual: await execute(check => {
+    actual: await execute((check) => {
       const stream = duplexStream(
-        data => stream.queue(data),
+        (data) => stream.queue(data),
         () => stream.queue(null)
       );
       let ended = false;
@@ -309,15 +307,15 @@ describe("duplex streams", async assert => {
 
       return ended;
     }),
-    expected: true
+    expected: true,
   });
 
   assert({
     given: "a stream on buffering",
     should: "have data in queue when ends",
-    actual: await execute(check => {
+    actual: await execute((check) => {
       const stream = duplexStream(
-        data => stream.queue(data),
+        (data) => stream.queue(data),
         () => stream.queue(null)
       );
 
@@ -344,6 +342,6 @@ describe("duplex streams", async assert => {
 
       return ended;
     }),
-    expected: true
+    expected: true,
   });
 });

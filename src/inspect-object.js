@@ -14,7 +14,7 @@ function inspectObject(obj) {
     depth: 5,
     maxArrayLength: 10,
     compact: false,
-    breakLength: 60
+    breakLength: 60,
   });
 
   if (result.indexOf("\n") === -1) {
@@ -25,7 +25,7 @@ function inspectObject(obj) {
     .replace(objectStartRegExp, "")
     .replace(objectEndRegExp, "")
     .split("\n")
-    .map(line => {
+    .map((line) => {
       return `      ${line.trim()}`;
     })
     .join("\n");

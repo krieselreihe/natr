@@ -10,7 +10,7 @@ const cwd = process.cwd();
 const projectFiles = /natr$/.test(cwd) ? [] : [/natr\/src/];
 const stackHelper = new StackUtils({
   cwd,
-  internals: [...StackUtils.nodeInternals(), ...projectFiles]
+  internals: [...StackUtils.nodeInternals(), ...projectFiles],
 });
 
 function isInvalidYaml(str) {
@@ -24,7 +24,7 @@ function encodeResult(result, count) {
   const output = [
     `${result.ok ? "ok " : "not ok "}${count} -`,
     result.name ? ` ${result.name.toString().replace(/\s+/g, " ")}` : "",
-    "\n"
+    "\n",
   ];
 
   if (result.ok) {
@@ -71,7 +71,7 @@ function encodeResult(result, count) {
     stackHelper
       .clean(stack)
       .split("\n")
-      .forEach(line => {
+      .forEach((line) => {
         if (isInternalResult && !line.startsWith("describe")) {
           return;
         }
@@ -131,13 +131,13 @@ module.exports = class Results extends EventEmitter {
   }
 
   _watch(test) {
-    const write = str => {
+    const write = (str) => {
       this.stream.queue(str);
     };
 
     test.once("prerun", () => write(`# ${test.name}\n`));
 
-    test.on("result", result => {
+    test.on("result", (result) => {
       write(encodeResult(result, this.count + 1));
       this.count += 1;
 
@@ -149,7 +149,7 @@ module.exports = class Results extends EventEmitter {
       }
     });
 
-    test.on("test", str => this._watch(str));
+    test.on("test", (str) => this._watch(str));
   }
 
   close() {
@@ -158,7 +158,7 @@ module.exports = class Results extends EventEmitter {
     }
 
     this.closed = true;
-    const write = str => this.stream.queue(str);
+    const write = (str) => this.stream.queue(str);
 
     write(`\n1..${this.count}\n`);
     write(`# tests ${this.count}\n`);

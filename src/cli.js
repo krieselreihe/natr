@@ -9,7 +9,7 @@ const opts = parseOpts(process.argv.slice(2), {
   alias: { r: "require", u: "update-snapshot" },
   string: "require",
   boolean: "updateSnapshot",
-  default: { r: [], u: false }
+  default: { r: [], u: false },
 });
 
 const cwd = process.cwd();
@@ -18,10 +18,10 @@ if (typeof opts.require === "string") {
   opts.require = [opts.require];
 }
 
-opts.require.forEach(module => {
+opts.require.forEach((module) => {
   if (module) {
     require(require.resolve(module, {
-      paths: [cwd]
+      paths: [cwd],
     }));
   }
 });
@@ -32,7 +32,7 @@ if (opts["updateSnapshot"]) {
   snapshotFiles.forEach(unlinkSync);
 }
 
-opts._.forEach(arg => {
+opts._.forEach((arg) => {
   const files = glob.sync(arg).map(String);
 
   if (!Array.isArray(files)) {
@@ -41,5 +41,5 @@ opts._.forEach(arg => {
     );
   }
 
-  files.forEach(file => require(resolve(cwd, file)));
+  files.forEach((file) => require(resolve(cwd, file)));
 });
