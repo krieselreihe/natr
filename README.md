@@ -1,5 +1,6 @@
 # natr
 
+[![npm][npmimg]][npmurl]
 [![Build Status][bsurl]][bsimg]
 [![Coverage Status][cvurl]][cvimg]
 [![Commitizen friendly][cfimg]][cfurl]
@@ -383,6 +384,8 @@ await execute(check => {
 
 This runner was highly inspired by [RITEWay](https://github.com/ericelliott/riteway) on how to write tests with focus on simplicity (e.g. only use deep equal, enforce reduced API), and [node-tap](https://www.node-tap.org/) on how to log test reports based on the [TAP](https://testanything.org/) (Test Anything Protocol). Also [Jest](https://jestjs.io/) for snapshot testing and [tape](https://github.com/substack/tape) on actual creating a runner that had to hold as base for _natr_.
 
+[npmurl]: https://www.npmjs.com/package/@krieselreihe/natr
+[npmimg]: https://img.shields.io/npm/v/@krieselreihe/natr.svg
 [bsurl]: https://travis-ci.org/krieselreihe/natr.svg?branch=master
 [bsimg]: https://travis-ci.org/krieselreihe/natr
 [cvurl]: https://coveralls.io/repos/github/krieselreihe/natr/badge.svg?branch=master
