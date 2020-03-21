@@ -6,19 +6,19 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     impliedStrict: false,
-    jsx: true
+    jsx: true,
   },
   env: {
     node: true,
-    es6: true
+    es6: true,
   },
   settings: {
     browsers: ["maintained node versions"],
     react: {
-      version: "detect"
-    }
+      version: "detect",
+    },
   },
   rules: {
-    "no-prototype-builtins": 0
-  }
+    "no-prototype-builtins": 0,
+  },
 };

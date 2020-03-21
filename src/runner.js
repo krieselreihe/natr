@@ -20,13 +20,13 @@ function createExitHarness(conf = {}) {
   extendedStream.on("error", () => (harness.exitCode = 1));
   stream.on("end", () => (ended = true));
 
-  process.on("exit", code => {
+  process.on("exit", (code) => {
     if (code !== 0) {
       return;
     }
 
     if (!ended) {
-      harness.tests.forEach(test => test.exit());
+      harness.tests.forEach((test) => test.exit());
     }
 
     harness.close();
@@ -44,7 +44,7 @@ function createHarness() {
 
     (function inspectCode(stream) {
       stream.on("test", inspectCode);
-      stream.on("result", result => {
+      stream.on("result", (result) => {
         if (!result.ok && typeof result !== "string") {
           testHarness.exitCode = 1;
         }
@@ -60,8 +60,8 @@ function createHarness() {
   testHarness.tests = [];
 
   testHarness.createStream = () => results.createStream();
-  testHarness.onFinish = cb => results.on("done", cb);
-  testHarness.onFailure = cb => results.on("fail", cb);
+  testHarness.onFinish = (cb) => results.on("done", cb);
+  testHarness.onFailure = (cb) => results.on("fail", cb);
   testHarness.close = () => results.close();
 
   return testHarness;
@@ -91,15 +91,15 @@ const _describe = (function test() {
     return harness.createStream();
   };
 
-  lazyLoad.onFinish = cb => getHarness().onFinish(cb);
-  lazyLoad.onFailure = cb => getHarness().onFailure(cb);
+  lazyLoad.onFinish = (cb) => getHarness().onFinish(cb);
+  lazyLoad.onFailure = (cb) => getHarness().onFailure(cb);
   lazyLoad.getHarness = getHarness;
 
   return lazyLoad;
 })();
 
 function catchAndReturn(value) {
-  return value.catch(err => err);
+  return value.catch((err) => err);
 }
 
 function isPromise(value) {
@@ -235,7 +235,7 @@ function check(a, b) {
  * @param {function(Function)} unit Actual unit tests that gets `assert` passed
  */
 function describe(description, unit) {
-  _describe(description, test => {
+  _describe(description, (test) => {
     const end = () => test.end();
     const assert = createAssert(description, test);
     const result = unit(assert);
@@ -274,5 +274,5 @@ function toMatchSnapshot() {
 module.exports = {
   describe,
   execute,
-  toMatchSnapshot
+  toMatchSnapshot,
 };
