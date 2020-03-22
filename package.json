@@ -46,6 +46,73 @@
     "src/*.js",
     "src/*.ts"
   ],
+  "babel": {
+    "plugins": [
+      "@babel/plugin-transform-react-jsx"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "prettier",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "impliedStrict": false,
+      "jsx": true
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "settings": {
+      "browsers": [
+        "maintained node versions"
+      ],
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "no-prototype-builtins": 0
+    }
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "supportPolicy": [
+      "lts_latest"
+    ],
+    "dependencies": {
+      "semanticPrefix": "chore:",
+      "semanticCommitScope": ""
+    },
+    "pin": {
+      "semanticPrefix": "chore:",
+      "semanticCommitScope": ""
+    },
+    "semanticPrefix": "chore:",
+    "semanticCommitScope": "",
+    "packageRules": [
+      {
+        "updateTypes": [
+          "minor",
+          "patch",
+          "pin",
+          "digest"
+        ],
+        "automerge": true
+      }
+    ]
+  },
   "dependencies": {
     "fast-deep-equal": "3.1.1",
     "fast-glob": "3.2.2",
