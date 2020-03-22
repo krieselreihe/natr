@@ -29,7 +29,7 @@
   ],
   "author": "Krieselreihe Games <info@krieselreihe.com> (https://krieselreihe.com)",
   "contributors": [
-    "Martin Helmut Fieber <info@martin-fieber.de> (https://martin-fieber.de)"
+    "Martin Helmut Fieber <info@martin-fieber.se> (https://martin-fieber.se)"
   ],
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "files": [
     "src/*.js",

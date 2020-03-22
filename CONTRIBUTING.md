@@ -22,32 +22,32 @@ You want to help get _natr_ on track? Nice! And of course: you are the best! ðŸ¥
 
 First you need to clone the repository somewhere on your local machine and switch to the created project directory.
 
-```bash
+```shell script
 git clone git@github.com:krieselreihe/natr.git
 cd natr
 ```
 
 ### Node version
 
-To develop _natr_ you need at least a version 10 or higher of node. You can check this by running:
+To develop _natr_ you need at least a version 12 or higher of node. You can check this by running:
 
-```bash
+```shell script
 $ node --version
-v10.16.0
+v12.16.1
 ```
 
 ### Package manager
 
-Next you need to ensure that you have a [pnpm](https://pnpm.js.org/) version installed larger than 3 (pnpm is a fast npm/yarn alternative). You can test this by running:
+Next you need to ensure that you have a [pnpm](https://pnpm.js.org/) version installed larger than 4 (pnpm is a fast npm/yarn alternative). You can test this by running:
 
-```bash
+```shell script
 $ pnpm --version
-3.5.2
+4.12.0
 ```
 
 If you do not have pnpm installed or an old version of it, you can install or upgrade by running:
 
-```bash
+```shell script
 curl -L https://unpkg.com/@pnpm/self-installer | node
 ```
 
@@ -55,7 +55,7 @@ curl -L https://unpkg.com/@pnpm/self-installer | node
 
 To install all the necessary dependencies to develop _natr_ run:
 
-```bash
+```shell script
 pnpm install
 ```
 
@@ -65,7 +65,7 @@ Now you're good to go ðŸŽ‰
 
 ### Run tests
 
-```bash
+```shell script
 # Run tests
 pnpm test
 
@@ -80,13 +80,13 @@ pnpm run lint
 
 To format the code use:
 
-```bash
+```shell script
 pnpm run format
 ```
 
 To check for formatting issues inside the code run:
 
-```bash
+```shell script
 pnpm run format:check
 ```
 
@@ -102,11 +102,10 @@ Push the changes and your feature branch and create a "Merge Request" on GitHub.
 
 1.  Make changes
 2.  Commit those changes with `pnpx git-cz`
-3.  Make sure all tests turn green by running `pnpm test`
-4.  Create a new release with `pnpm run release`
-5.  Push your release `git push --follow-tags origin master`
-6.  Publish: `NPM_CONFIG_OTP=XXXXXX pnpm publish` (replace `XXXXXX` with a valid 2FA token)
-7.  **Done!**
+3.  Create a new release with `pnpm run release`
+4.  Push your release `git push --follow-tags origin master`
+5.  Publish: `NPM_CONFIG_OTP=XXXXXX pnpm publish` (replace `XXXXXX` with a valid 2FA token)
+6.  **Done!**
 
 For more information on building a release see [https://github.com/conventional-changelog/standard-version][sv]
 
