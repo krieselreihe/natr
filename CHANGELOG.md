@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/krieselreihe/natr/compare/v0.2.1...v0.2.2) (2020-03-22)
+
+
+### Features
+
+* spring clenup and updates ([1bff676](https://github.com/krieselreihe/natr/commit/1bff676fcfe36b89019dcc345ce38c10e5382718))
+
+
+### Bug Fixes
+
+* change runner test for formatted error messages on check function ([ecbbf08](https://github.com/krieselreihe/natr/commit/ecbbf08103e98538da42902cf4f91b184e448fc7))
+
 ### [0.2.1](https://github.com/krieselreihe/natr/compare/v0.2.0...v0.2.1) (2019-07-07)
 
 
