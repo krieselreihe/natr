@@ -6,7 +6,7 @@ dependencies:
   stack-utils: 2.0.1
 devDependencies:
   '@babel/core': 7.9.0
-  '@babel/plugin-transform-react-jsx': 7.9.1_@babel+core@7.9.0
+  '@babel/plugin-transform-react-jsx': 7.9.4_@babel+core@7.9.0
   '@babel/register': 7.9.0_@babel+core@7.9.0
   commitizen: 4.0.3
   concat-stream: 2.0.0
@@ -192,7 +192,7 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-WxdW9xyLgBdefoo0Ynn3MRSkhe5tFVxxKNVdnZSh318WrG2e2jH+E9wd/++JsqcLJZPfz87njQJ8j2Upjm0M0A==
-  /@babel/plugin-transform-react-jsx/7.9.1_@babel+core@7.9.0:
+  /@babel/plugin-transform-react-jsx/7.9.4_@babel+core@7.9.0:
     dependencies:
       '@babel/core': 7.9.0
       '@babel/helper-builder-react-jsx': 7.9.0
@@ -203,7 +203,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
-      integrity: sha512-+xIZ6fPoix7h57CNO/ZeYADchg1tFyX9NDsnmNFFua8e1JNPln156mzS+8AQe1On2X2GLlANHJWHIXbMCqWDkQ==
+      integrity: sha512-Mjqf3pZBNLt854CK0C/kRuXAnE6H/bo7xYojP+WGtX8glDGSibcwnsWwhwoSuRg0+EBnxPC1ouVnuetUIlPSAw==
   /@babel/register/7.9.0_@babel+core@7.9.0:
     dependencies:
       '@babel/core': 7.9.0
@@ -4915,7 +4915,7 @@ packages:
       integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
 specifiers:
   '@babel/core': 7.9.0
-  '@babel/plugin-transform-react-jsx': 7.9.1
+  '@babel/plugin-transform-react-jsx': 7.9.4
   '@babel/register': 7.9.0
   commitizen: 4.0.3
   concat-stream: 2.0.0
