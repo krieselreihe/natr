@@ -34,6 +34,15 @@ describe("runner", async (assert) => {
   });
 
   assert({
+    given: "a function that will throw",
+    should: "throw and be comparable to a string for its message",
+    actual: execute(() => {
+      throw new Error("Err!");
+    }),
+    expected: "Err!",
+  });
+
+  assert({
     given: "a promise",
     should: "resolve",
     actual: await execute(() => Promise.resolve(23)),

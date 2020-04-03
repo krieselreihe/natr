@@ -131,6 +131,11 @@ module.exports = class Test extends EventEmitter {
   }
 
   deepEqual(actual, expected, message = "should be equal") {
+    // @todo: A feature for comparing an error against a string. Maybe useful, maybe not.
+    if (actual instanceof Error && typeof expected === "string") {
+      actual = actual.message;
+    }
+
     this.assert(deepEqual(actual, expected), {
       message,
       actual,
