@@ -146,7 +146,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "undefined data",
     should: "not stop if written",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream();
       let count = 0;
 
@@ -165,7 +165,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "an input stream",
     should: "end before close",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream();
       let ended = false;
       let closed = false;
@@ -191,7 +191,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "an input stream with auto destroy deactivated",
     should: "stay open",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream();
       let ended = false;
       let closed = false;
@@ -223,7 +223,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "multiple end of stream events",
     should: "end only once",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream();
       let ended = false;
       let endedOnce = false;
@@ -247,7 +247,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "multiple end calls",
     should: "end only once",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream();
       let ended = false;
       let endedOnce = false;
@@ -268,7 +268,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "an input stream",
     should: "buffer a set of data",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
         () => stream.queue(null)
@@ -289,7 +289,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "an input stream",
     should: "ignores writing after pausing the stream",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
         () => stream.queue(null)
@@ -314,7 +314,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "an input stream",
     should: "add buffered data after stream resumes",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
         () => stream.queue(null)
@@ -340,7 +340,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "an input stream",
     should: "buffers and ends stream",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
         () => stream.queue(null)
@@ -373,7 +373,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "a stream on buffering",
     should: "does not contain written data on pause",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
         () => stream.queue(null)
@@ -396,7 +396,7 @@ describe("duplex streams", async (assert) => {
   assert({
     given: "a stream on buffering",
     should: "have data in queue when ends",
-    actual: await execute(() => {
+    actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
         () => stream.queue(null)
