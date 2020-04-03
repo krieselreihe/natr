@@ -23,6 +23,8 @@
   "keywords": [
     "natr",
     "test",
+    "testing",
+    "tdd",
     "runner",
     "opinionated",
     "tap"
