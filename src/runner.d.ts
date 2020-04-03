@@ -21,6 +21,6 @@ export function toMatchSnapshot(): SnapshotResolver;
 
 export function execute<ActualType>(
   callback: ExecuteCallback<ActualType>
-): Promise<ActualType>;
+): Promise<ActualType> | ActualType;
 
 export function describe(name: string, unit: UnitTest): void;

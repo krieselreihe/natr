@@ -97,8 +97,6 @@ describe("my test suite", async (assert) => {
 });
 ```
 
-**Note:** The `execute` function always should be awaited regardless of the inner expressions.
-
 ### Exceptions
 
 To test if a function throws an error you can use the `execute` helper and pass a function to wrap your execution.
@@ -106,11 +104,11 @@ To test if a function throws an error you can use the `execute` helper and pass 
 ```javascript
 import { describe, execute } from "@krieselreihe/natr";
 
-describe("my test suite", async (assert) => {
+describe("my test suite", (assert) => {
   assert({
     given: "an expression that will throw",
     should: "throw an error",
-    actual: await execute(() => throw new Error("Doh!")),
+    actual: execute(() => throw new Error("Doh!")),
     expected: new Error("Doh!"),
   });
 });
@@ -287,7 +285,7 @@ type Describe = (unit: string, fn: TestSuite) => void;
 
 type Execute<ReturnType = any> = (
   callback: () => ReturnType
-) => Promise<ReturnType | Error>;
+) => Promise<ReturnType> | ReturnType;
 ```
 
 ### describe
@@ -321,7 +319,7 @@ Function to execute code to either a returned value or a thrown error.
 assert({
   given: string,
   should: string,
-  actual: await execute(() => any),
+  actual: [await] execute(() => any),
   expected: any
 });
 ```

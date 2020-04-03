@@ -30,7 +30,7 @@ describe("runner", async (assert) => {
   assert({
     given: "a function that will throw",
     should: "throw",
-    actual: await execute(() => {
+    actual: execute(() => {
       throw new Error("Err!");
     }),
     expected: new Error("Err!"),
@@ -39,9 +39,7 @@ describe("runner", async (assert) => {
   assert({
     given: "a promise",
     should: "resolve",
-    actual: await execute(() => {
-      return Promise.resolve(23);
-    }),
+    actual: await execute(() => Promise.resolve(23)),
     expected: 23,
   });
 });

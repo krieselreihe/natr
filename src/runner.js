@@ -243,9 +243,9 @@ function describe(description, unit) {
  * @param {Function} fn Execution wrapper
  * @returns {Promise<*>} Returns resolved return value or thrown error
  */
-async function execute(fn) {
+function execute(fn) {
   try {
-    return await Promise.resolve(catchPromise(fn()));
+    return catchPromise(fn());
   } catch (err) {
     return err;
   }
