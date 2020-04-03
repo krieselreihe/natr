@@ -46,7 +46,7 @@ describe("runner", async (assert) => {
   });
 });
 
-describe("multiple describe in one file", async (assert) => {
+describe("multiple describe in one file", (assert) => {
   assert({
     given: "some string concatenation",
     should: "resolve to the string",
@@ -55,7 +55,7 @@ describe("multiple describe in one file", async (assert) => {
   });
 });
 
-describe("toMatchSnapshot", async (assert) => {
+describe("toMatchSnapshot", (assert) => {
   assert({
     given: "an object",
     should: "match a specific snapshot",

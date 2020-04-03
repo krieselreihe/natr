@@ -1,7 +1,7 @@
 const { describe } = require("../runner");
 const { isInternal, cleanInternal, API_DESCRIPTION } = require("../messaging");
 
-describe("messaging", async (assert) => {
+describe("messaging", (assert) => {
   assert({
     given: "an internal message",
     should: "detect this message as internal",

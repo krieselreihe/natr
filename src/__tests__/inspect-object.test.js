@@ -1,7 +1,7 @@
 const { describe } = require("../runner");
 const inspectObject = require("../inspect-object");
 
-describe("inspect object", async (assert) => {
+describe("inspect object", (assert) => {
   assert({
     given: "an empty string",
     should: "return an empty inspect string",

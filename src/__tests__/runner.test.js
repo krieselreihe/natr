@@ -43,7 +43,7 @@ describe("runner", async (assert) => {
   });
 });
 
-describe("multiple describe in one file", async (assert) => {
+describe("multiple describe in one file", (assert) => {
   assert({
     given: "some string concatenation",
     should: "resolve to the string",

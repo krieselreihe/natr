@@ -3,7 +3,7 @@ const renderer = require("react-test-renderer");
 
 const { describe, toMatchSnapshot } = require("../runner");
 
-describe("toMatchSnapshot", async (assert) => {
+describe("toMatchSnapshot", (assert) => {
   assert({
     given: "an object",
     should: "match a specific snapshot",
