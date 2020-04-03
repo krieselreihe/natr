@@ -231,6 +231,8 @@ function describe(description, unit) {
     if (isPromise(result)) {
       return result.then(end);
     }
+
+    end();
   });
 }
 

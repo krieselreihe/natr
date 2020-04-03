@@ -58,7 +58,7 @@ Unit tests are explicit, so there are no global variables injected. Import `desc
 ```javascript
 import { describe } from "@krieselreihe/natr";
 
-describe("my test suite", async (assert) => {
+describe("my test suite", (assert) => {
   assert({
     given: "a basic arithmetic expression",
     should: "calculate 2",
@@ -120,7 +120,7 @@ describe("my test suite", async (assert) => {
 
 To render react component you can just use [react-test-renderer](https://reactjs.org/docs/test-renderer.html) and its API.
 
-```jsx
+```javascript
 import { describe } from "@krieselreihe/natr";
 import render from "react-test-renderer";
 
@@ -131,7 +131,7 @@ const MyComponent = () => (
 );
 const SubComponent = () => <p className="sub">Sub</p>;
 
-describe("my test suite", async (assert) => {
+describe("my test suite", (assert) => {
   assert({
     given: "a react component",
     should: "be of a specific type",
@@ -163,7 +163,7 @@ const MyComponent = () => (
 );
 const SubComponent = () => <p className="sub">Sub</p>;
 
-describe("my test suite", async (assert) => {
+describe("my test suite", (assert) => {
   assert({
     given: "a react component",
     should: "match snapshot",
@@ -281,7 +281,7 @@ interface Assert<TestType = any> {
 
 type UnitTest = (assert: Assert) => void;
 
-type TestSuite = (test: UnitTest) => Promise<void>;
+type TestSuite = (test: UnitTest) => Promise<void> | void;
 
 type Describe = (unit: string, fn: TestSuite) => void;
 
@@ -303,7 +303,7 @@ describe(string, TestSuite);
 Gets passed by `describe`s test suite function and describes a single unit test with an object:
 
 ```
-describe(string, async assert => {
+describe(string, [async] assert => {
   assert({
     given: string,
     should: string,
