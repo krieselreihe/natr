@@ -12,7 +12,7 @@
     "test:typings": "tsc",
     "coverage": "nyc --reporter=html --reporter=text ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | tap-nyc",
     "coverage:ci": "nyc --reporter=text-lcov ./src/cli.js -r @babel/register \"src/__tests__/*.test.(js|jsx)\" | coveralls",
-    "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
+    "lint": "eslint --ext .js,.jsx .",
     "format": "prettier --write .",
     "format:check": "prettier --list-different .",
     "ci": "pnpm run prerelease && pnpm run coverage:ci",
