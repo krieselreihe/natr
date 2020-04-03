@@ -58,3 +58,5 @@ describe("multiple describe in one file", (assert) => {
     expected: "Hello World",
   });
 });
+
+describe("describe misses a callback function");

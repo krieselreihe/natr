@@ -15,8 +15,13 @@ function createExitHarness(conf = {}) {
   const extendedStream = stream.pipe(conf.stream || createDefaultStream());
   let ended = false;
 
-  extendedStream.on("error", () => (harness.exitCode = 1));
-  stream.on("end", () => (ended = true));
+  extendedStream.on("error", () => {
+    harness.exitCode = 1;
+  });
+
+  stream.on("end", () => {
+    ended = true;
+  });
 
   process.on("exit", (code) => {
     if (code !== 0) {
@@ -40,16 +45,18 @@ function createHarness() {
     const test = new Test(name, cb);
     testHarness.tests.push(test);
 
-    (function inspectCode(stream) {
+    function inspectCode(stream) {
       stream.on("test", inspectCode);
       stream.on("result", (result) => {
         if (!result.ok && typeof result !== "string") {
           testHarness.exitCode = 1;
         }
       });
-    })(test);
+    }
 
+    inspectCode(test);
     results.push(test);
+
     return test;
   };
 
@@ -193,7 +200,7 @@ function createAssert(description, test) {
       test.deepEqual(
         testDescriptor,
         messaging.API_DESCRIPTION,
-        "You either used the assert function wrong or there is a typo."
+        "You either used the assert function wrong or there is a typo in your property names."
       );
       return;
     }
@@ -223,9 +230,16 @@ function createAssert(description, test) {
  * @param {function(Function)} unit Actual unit tests that gets `assert` passed
  */
 function describe(description, unit) {
+  const isUnitMissing = typeof unit !== "function";
+
   _describe(description, (test) => {
     const end = () => test.end();
     const assert = createAssert(description, test);
+
+    if (isUnitMissing) {
+      return end();
+    }
+
     const result = unit(assert);
 
     if (isPromise(result)) {
