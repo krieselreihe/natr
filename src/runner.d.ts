@@ -9,11 +9,9 @@ export type AssertFunction = (description: AssertDescription) => void;
 
 export type UnitTest = (assert: AssertFunction) => Promise<void> | void;
 
-export type CheckFunction = (actual: any, expected: any) => void;
-
-export type ExecuteCallback<ActualType> = (
-  check: CheckFunction
-) => Promise<ActualType> | ActualType;
+export type ExecuteCallback<ActualType> = () =>
+  | Promise<ActualType>
+  | ActualType;
 
 export type Snapshot = object;
 

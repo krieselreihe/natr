@@ -18,7 +18,6 @@
   - [Basic test](#basic-test)
   - [Encapsulate execution](#encapsulate-execution)
   - [Exceptions](#exceptions)
-  - [Sub checks](#sub-checks)
   - [React components](#react-components)
   - [Snapshot testing](#snapshot-testing)
 - [CLI](#cli)
@@ -31,7 +30,6 @@
   - [describe](#describe)
   - [assert](#assert)
   - [execute](#execute)
-  - [check](#check)
 - [Disclaimer](#disclaimer)
 
 ## Principles
@@ -116,46 +114,6 @@ describe("my test suite", async (assert) => {
     expected: new Error("Doh!"),
   });
 });
-```
-
-### Sub checks
-
-Inside executions you can perform assert checks as well that will throw if values are not deeply equal. Therefore the `execute` function passes a `check` function to the callback.
-
-```javascript
-import { describe, execute } from "@krieselreihe/natr";
-
-describe("my test suite", async (assert) => {
-  assert({
-    given: "user object",
-    should: "have the correct user id and structure",
-    actual: await execute((check) => {
-      const user = { id: 1, name: "Helga" };
-
-      check(user, { id: 1, name: "Max" });
-
-      return user.id;
-    }),
-    expected: 1,
-  });
-});
-```
-
-This would throw and result in a console output like the following:
-
-```shell
-not ok 1 - Given user object: should have the correct user id and structure
-  ---
-  expected: |-
-    1
-  actual: |-
-    {
-      Error: check() in execute() didn't match:
-      { id: 1, name: 'Helga' }
-      with:
-      { id: 1, name: 'Max' }
-      at check ... more stack trace ...
-    }
 ```
 
 ### React components
@@ -327,10 +285,8 @@ type TestSuite = (test: UnitTest) => Promise<void>;
 
 type Describe = (unit: string, fn: TestSuite) => void;
 
-type Check = (a: any, b: any) => void;
-
 type Execute<ReturnType = any> = (
-  callback: (check: Check) => ReturnType
+  callback: () => ReturnType
 ) => Promise<ReturnType | Error>;
 ```
 
@@ -368,16 +324,6 @@ assert({
   actual: await execute(() => any),
   expected: any
 });
-```
-
-### check
-
-The `execute` function passes an "check" method that will throw an error if the two passed values are not deep equal.
-
-```
-await execute(check => {
-  check(any, any);
-})
 ```
 
 ## Disclaimer
