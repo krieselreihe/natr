@@ -12,6 +12,9 @@
 
 ## Contents
 
+<details>
+  <summary>Click to show</summary>
+
 - [Principles](#principles)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -31,6 +34,7 @@
   - [assert](#assert)
   - [execute](#execute)
 - [Disclaimer](#disclaimer)
+</details>
 
 ## Principles
 
