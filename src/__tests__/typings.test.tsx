@@ -37,34 +37,12 @@ describe("runner", async (assert) => {
   });
 
   assert({
-    given: "a failed check execution",
-    should: "throw",
-    actual: await execute((check) => {
-      check(true, false);
-    }),
-    expected: new Error("check() in execute() didn't match: true with false"),
-  });
-
-  assert({
     given: "a promise",
     should: "resolve",
     actual: await execute(() => {
       return Promise.resolve(23);
     }),
     expected: 23,
-  });
-
-  assert({
-    given: "user object",
-    should: "have the correct user id and structure",
-    actual: await execute((check) => {
-      const user = { id: 1, name: "Helga" };
-
-      check(user, { id: 1, name: "Helga" });
-
-      return user.id;
-    }),
-    expected: 1,
   });
 });
 

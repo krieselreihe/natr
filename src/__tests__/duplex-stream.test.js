@@ -29,7 +29,7 @@ function read(stream, callback) {
 
 describe("duplex streams", async (assert) => {
   // 100 is just a generic length for the test data set
-  const expected = Array.from({ length: 100 }, () =>
+  const randomNumberArray = Array.from({ length: 100 }, () =>
     Math.floor(Math.random() * 100)
   );
 
@@ -136,11 +136,11 @@ describe("duplex streams", async (assert) => {
         mockedStream.validate();
       });
 
-      write(expected, stream);
+      write(randomNumberArray, stream);
 
       return result;
     }),
-    expected,
+    expected: randomNumberArray,
   });
 
   assert({
@@ -267,65 +267,120 @@ describe("duplex streams", async (assert) => {
 
   assert({
     given: "an input stream",
-    should: "buffer",
-    actual: await execute((check) => {
+    should: "buffer a set of data",
+    actual: await execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
         () => stream.queue(null)
       );
-      let ended = false;
-      let actual = [];
+      const actual = [];
 
       stream.on("data", actual.push.bind(actual));
-      stream.on("end", () => {
-        ended = true;
-      });
 
       stream.write(1);
       stream.write(2);
       stream.write(3);
 
-      check(actual, [1, 2, 3]);
+      return actual;
+    }),
+    expected: [1, 2, 3],
+  });
 
+  assert({
+    given: "an input stream",
+    should: "ignores writing after pausing the stream",
+    actual: await execute(() => {
+      const stream = duplexStream(
+        (data) => stream.queue(data),
+        () => stream.queue(null)
+      );
+      const actual = [];
+
+      stream.on("data", actual.push.bind(actual));
+
+      stream.write(1);
+      stream.write(2);
+      stream.write(3);
       stream.pause();
       stream.write(4);
       stream.write(5);
       stream.write(6);
 
-      check(actual, [1, 2, 3]);
-
-      stream.resume();
-
-      check(actual, [1, 2, 3, 4, 5, 6]);
-
-      stream.pause();
-      stream.end();
-
-      check(ended, false);
-
-      stream.resume();
-
-      return ended;
+      return actual;
     }),
-    expected: true,
+    expected: [1, 2, 3],
   });
 
   assert({
-    given: "a stream on buffering",
-    should: "have data in queue when ends",
-    actual: await execute((check) => {
+    given: "an input stream",
+    should: "add buffered data after stream resumes",
+    actual: await execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
         () => stream.queue(null)
       );
+      const actual = [];
 
+      stream.on("data", actual.push.bind(actual));
+
+      stream.write(1);
+      stream.write(2);
+      stream.write(3);
+      stream.pause();
+      stream.write(4);
+      stream.write(5);
+      stream.write(6);
+      stream.resume();
+
+      return actual;
+    }),
+    expected: [1, 2, 3, 4, 5, 6],
+  });
+
+  assert({
+    given: "an input stream",
+    should: "buffers and ends stream",
+    actual: await execute(() => {
+      const stream = duplexStream(
+        (data) => stream.queue(data),
+        () => stream.queue(null)
+      );
+      const actual = [];
       let ended = false;
-      let actual = [];
 
       stream.on("data", actual.push.bind(actual));
       stream.on("end", () => {
         ended = true;
       });
+
+      stream.write(1);
+      stream.write(2);
+      stream.write(3);
+      stream.pause();
+      stream.write(4);
+      stream.write(5);
+      stream.write(6);
+      stream.resume();
+      stream.pause();
+      stream.end();
+      stream.resume();
+
+      return [[1, 2, 3, 4, 5, 6], ended];
+    }),
+    expected: [[1, 2, 3, 4, 5, 6], true],
+  });
+
+  assert({
+    given: "a stream on buffering",
+    should: "does not contain written data on pause",
+    actual: await execute(() => {
+      const stream = duplexStream(
+        (data) => stream.queue(data),
+        () => stream.queue(null)
+      );
+      const actual = [];
+
+      stream.on("data", actual.push.bind(actual));
 
       stream.pause();
       stream.write(1);
@@ -333,15 +388,32 @@ describe("duplex streams", async (assert) => {
       stream.write(3);
       stream.end();
 
-      check(actual, []);
-      check(ended, false);
+      return actual;
+    }),
+    expected: [],
+  });
 
+  assert({
+    given: "a stream on buffering",
+    should: "have data in queue when ends",
+    actual: await execute(() => {
+      const stream = duplexStream(
+        (data) => stream.queue(data),
+        () => stream.queue(null)
+      );
+      const actual = [];
+
+      stream.on("data", actual.push.bind(actual));
+
+      stream.pause();
+      stream.write(1);
+      stream.write(2);
+      stream.write(3);
+      stream.end();
       stream.resume();
 
-      check(actual, [1, 2, 3]);
-
-      return ended;
+      return actual;
     }),
-    expected: true,
+    expected: [1, 2, 3],
   });
 });

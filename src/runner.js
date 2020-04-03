@@ -1,10 +1,8 @@
-const deepEqual = require("fast-deep-equal");
 const fs = require("fs");
 const path = require("path");
 
 const createDefaultStream = require("./default-stream");
 const duplexStream = require("./duplex-stream");
-const inspectObject = require("./inspect-object");
 const messaging = require("./messaging");
 const Results = require("./results");
 const Test = require("./test");
@@ -216,16 +214,6 @@ function createAssert(description, test) {
   };
 }
 
-function check(a, b) {
-  if (!deepEqual(a, b)) {
-    throw new Error(
-      `check() in execute() didn't match:\n${inspectObject(
-        a
-      )}\nwith:\n${inspectObject(b)}`
-    );
-  }
-}
-
 /**
  * Describe a test suite
  *
@@ -255,7 +243,7 @@ function describe(description, unit) {
  */
 async function execute(fn) {
   try {
-    return await Promise.resolve(catchPromise(fn(check)));
+    return await Promise.resolve(catchPromise(fn()));
   } catch (err) {
     return err;
   }
