@@ -126,7 +126,7 @@
     "@babel/core": "7.9.0",
     "@babel/plugin-transform-react-jsx": "7.9.4",
     "@babel/register": "7.9.0",
-    "commitizen": "4.0.3",
+    "commitizen": "4.0.4",
     "concat-stream": "2.0.0",
     "conventional-changelog-conventionalcommits": "4.2.3",
     "coveralls": "3.0.11",
