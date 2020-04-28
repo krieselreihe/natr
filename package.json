@@ -120,7 +120,7 @@
     "fast-glob": "3.2.2",
     "minimist": "1.2.5",
     "object-inspect": "1.7.0",
-    "stack-utils": "2.0.1"
+    "stack-utils": "2.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
