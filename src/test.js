@@ -8,36 +8,32 @@ module.exports = class Test extends EventEmitter {
   constructor(name, cb) {
     super();
 
-    this.name = name || "(anonymous)";
+    this.name = name;
     this.assertCount = 0;
     this.cb = cb;
-    this.progeny = [];
     this.ok = true;
   }
 
   run() {
-    if (!this.cb) {
-      return this._end();
-    }
-
-    this.timeoutAfter();
+    this._timeoutAfter();
     this.emit("prerun");
     this.cb(this);
     this.emit("run");
   }
 
-  timeoutAfter() {
+  _timeoutAfter() {
+    const timeToFail = 500;
     const timeout = setTimeout(() => {
-      this.fail(`test timed out after ${500}ms`);
+      this._fail(`test timed out after ${timeToFail}ms`);
       this.end();
-    }, 500);
+    }, timeToFail);
 
     this.once("end", () => clearTimeout(timeout));
   }
 
   end() {
     if (this.calledEnd) {
-      this.fail(".end() called twice");
+      this._fail(".end() called twice");
     }
 
     this.calledEnd = true;
@@ -45,15 +41,6 @@ module.exports = class Test extends EventEmitter {
   }
 
   _end() {
-    if (this.progeny.length) {
-      const test = this.progeny.shift();
-
-      test.on("end", () => this._end());
-      test.run();
-
-      return;
-    }
-
     if (!this.ended) {
       this.emit("end");
     }
@@ -63,17 +50,15 @@ module.exports = class Test extends EventEmitter {
 
   exit() {
     if (!this.ended) {
-      this.fail("test exited without ending", {
-        exiting: true,
-      });
+      this._fail("test exited without ending");
     }
   }
 
-  assert(ok, opts = {}) {
+  _assert(ok, opts) {
     const result = {
       id: this.assertCount++,
       ok: Boolean(ok),
-      name: opts.message || "(unnamed assert)",
+      name: opts.message,
     };
 
     if (opts.hasOwnProperty("actual")) {
@@ -87,13 +72,13 @@ module.exports = class Test extends EventEmitter {
     this.ok = Boolean(this.ok && ok);
 
     if (!ok) {
-      result.error = opts.error || new Error(result.name);
+      result.error = new Error(result.name);
 
       const error = new Error("exception");
       const errorStack = (error.stack || "").split("\n");
       const dir = `${__dirname}${path.sep}`;
 
-      for (let i = 0; i < errorStack.length; i += 1) {
+      for (let i = 0; i < errorStack.length; i++) {
         const [, callDescription = "<anonymous>", filePath, line, column] =
           errorStackRegExp.exec(errorStack[i]) || [];
 
@@ -124,19 +109,17 @@ module.exports = class Test extends EventEmitter {
     setImmediate(() => this._end());
   }
 
-  fail(message) {
-    this.assert(false, {
-      message,
-    });
+  _fail(message) {
+    this._assert(false, { message });
   }
 
-  deepEqual(actual, expected, message = "should be equal") {
+  deepEqual(actual, expected, message) {
     // @todo: A feature for comparing an error against a string. Maybe useful, maybe not.
     if (actual instanceof Error && typeof expected === "string") {
       actual = actual.message;
     }
 
-    this.assert(deepEqual(actual, expected), {
+    this._assert(deepEqual(actual, expected), {
       message,
       actual,
       expected,
