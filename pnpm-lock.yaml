@@ -8,7 +8,7 @@ devDependencies:
   '@babel/core': 7.9.6
   '@babel/plugin-transform-react-jsx': 7.9.4_@babel+core@7.9.6
   '@babel/register': 7.9.0_@babel+core@7.9.6
-  commitizen: 4.0.4
+  commitizen: 4.0.5
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
@@ -973,7 +973,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-lxu0F/Iq4dudoFeIl5pY3h3CQJzkmQuh3ygnaOvqhAD8Wu2pYBI17ofqSuPHNsBTEOh1r1AVa9kR4Hp0FAHKcQ==
-  /commitizen/4.0.4:
+  /commitizen/4.0.5:
     dependencies:
       cachedir: 2.2.0
       cz-conventional-changelog: 3.0.1
@@ -986,7 +986,7 @@ packages:
       inquirer: 6.5.0
       is-utf8: 0.2.1
       lodash: 4.17.15
-      minimist: 1.2.3
+      minimist: 1.2.5
       shelljs: 0.7.6
       strip-bom: 4.0.0
       strip-json-comments: 3.0.1
@@ -995,7 +995,7 @@ packages:
       node: '>= 10'
     hasBin: true
     resolution:
-      integrity: sha512-gfEt1rDE9VqKif+LE3cAThpqiW/1K3c2Nx83jSU6ohZjQd2CAmz1rMIlgmbPrPagOkKZw7USzSVubS758ZTWdA==
+      integrity: sha512-+aMqiHJSpUSHsVlxI1Jm3UUlbsx6GsxuKSkeVavG/Y3XkUxsZZczV79JPSFs3DYvZXgrRVXIFkh+Iafxs6hclQ==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -3204,10 +3204,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
-  /minimist/1.2.3:
-    dev: true
-    resolution:
-      integrity: sha512-+bMdgqjMN/Z77a6NlY/I3U5LlRDbnmaAk6lDveAPKwSpcPM4tKAuYsvYF8xjhOPXhOYGe/73vVLVez5PW+jqhw==
   /minimist/1.2.5:
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
@@ -5064,7 +5060,7 @@ specifiers:
   '@babel/core': 7.9.6
   '@babel/plugin-transform-react-jsx': 7.9.4
   '@babel/register': 7.9.0
-  commitizen: 4.0.4
+  commitizen: 4.0.5
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
