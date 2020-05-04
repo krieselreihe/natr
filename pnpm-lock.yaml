@@ -8,7 +8,7 @@ devDependencies:
   '@babel/core': 7.9.6
   '@babel/plugin-transform-react-jsx': 7.9.4_@babel+core@7.9.6
   '@babel/register': 7.9.0_@babel+core@7.9.6
-  commitizen: 4.0.5
+  commitizen: 4.1.0
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
@@ -973,6 +973,28 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-+aMqiHJSpUSHsVlxI1Jm3UUlbsx6GsxuKSkeVavG/Y3XkUxsZZczV79JPSFs3DYvZXgrRVXIFkh+Iafxs6hclQ==
+  /commitizen/4.1.0:
+    dependencies:
+      cachedir: 2.2.0
+      cz-conventional-changelog: 3.0.1
+      dedent: 0.7.0
+      detect-indent: 6.0.0
+      find-node-modules: 2.0.0
+      find-root: 1.1.0
+      fs-extra: 8.1.0
+      glob: 7.1.4
+      inquirer: 6.5.0
+      is-utf8: 0.2.1
+      lodash: 4.17.15
+      minimist: 1.2.5
+      strip-bom: 4.0.0
+      strip-json-comments: 3.0.1
+    dev: true
+    engines:
+      node: '>= 10'
+    hasBin: true
+    resolution:
+      integrity: sha512-AG58G01FSiYFISFDEILzUsULWfal9KBEEzj1D+u8IbaAshouTKRYUk8AE5EcyZ/Q9c+I/fEEfL09Tp4uuibrwg==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -5032,7 +5054,7 @@ specifiers:
   '@babel/core': 7.9.6
   '@babel/plugin-transform-react-jsx': 7.9.4
   '@babel/register': 7.9.0
-  commitizen: 4.0.5
+  commitizen: 4.1.0
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.2.3
   coveralls: 3.1.0
