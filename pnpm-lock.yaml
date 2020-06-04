@@ -24,7 +24,7 @@ devDependencies:
   stream-spec: 0.3.6
   tap-color: 1.2.0
   tap-nyc: 1.0.3
-  typescript: 3.9.3
+  typescript: 3.9.5
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.1:
@@ -4808,13 +4808,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/3.9.3:
+  /typescript/3.9.5:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
+      integrity: sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
   /uglify-js/3.9.2:
     dependencies:
       commander: 2.20.3
@@ -5032,4 +5032,4 @@ specifiers:
   stream-spec: 0.3.6
   tap-color: 1.2.0
   tap-nyc: 1.0.3
-  typescript: 3.9.3
+  typescript: 3.9.5
