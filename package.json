@@ -138,7 +138,7 @@
     "prettier": "2.0.5",
     "react": "16.13.1",
     "react-test-renderer": "16.13.1",
-    "standard-version": "8.0.1",
+    "standard-version": "8.0.2",
     "stream-spec": "0.3.6",
     "tap-color": "1.2.0",
     "tap-nyc": "1.0.3",

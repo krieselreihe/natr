@@ -20,7 +20,7 @@ devDependencies:
   prettier: 2.0.5
   react: 16.13.1
   react-test-renderer: 16.13.1_react@16.13.1
-  standard-version: 8.0.1
+  standard-version: 8.0.2
   stream-spec: 0.3.6
   tap-color: 1.2.0
   tap-nyc: 1.0.3
@@ -4525,7 +4525,7 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-0H7QK2ECz3fyZMzQ8rH0j2ykpfbnd20BFtfg/SqVC2+sCTtcw0aDTGB7dk+de4U4uUeuz6nOtJcrkFFLG1B0Rg==
-  /standard-version/8.0.1:
+  /standard-version/8.0.2:
     dependencies:
       chalk: 2.4.2
       conventional-changelog: 3.1.21
@@ -4547,7 +4547,7 @@ packages:
       node: '>=8.0'
     hasBin: true
     resolution:
-      integrity: sha512-FLZdjvL2tBdwlctfQeyBf4+dX+SFljwdWfUA0F3wPiU9Rn0+FSuD3I0WXuzC1RmcaWwU5WL3EyV4Aanejc8Pqg==
+      integrity: sha512-L8X9KFq2SmVmaeZgUmWHFJMOsEWpjgFAwqic6yIIoveM1kdw1vH4Io03WWxUDjypjGqGU6qUtcJoR8UvOv5w3g==
   /static-extend/0.1.2:
     dependencies:
       define-property: 0.2.5
@@ -5197,7 +5197,7 @@ specifiers:
   react: 16.13.1
   react-test-renderer: 16.13.1
   stack-utils: 2.0.2
-  standard-version: 8.0.1
+  standard-version: 8.0.2
   stream-spec: 0.3.6
   tap-color: 1.2.0
   tap-nyc: 1.0.3
