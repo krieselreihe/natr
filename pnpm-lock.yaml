@@ -13,9 +13,9 @@ devDependencies:
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.2.0
-  eslint: 7.6.0
-  eslint-config-prettier: 6.11.0_eslint@7.6.0
-  eslint-plugin-react: 7.20.6_eslint@7.6.0
+  eslint: 7.7.0
+  eslint-config-prettier: 6.11.0_eslint@7.7.0
+  eslint-plugin-react: 7.20.6_eslint@7.7.0
   nyc: 15.1.0
   prettier: 2.0.5
   react: 16.13.1
@@ -1682,9 +1682,9 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
-  /eslint-config-prettier/6.11.0_eslint@7.6.0:
+  /eslint-config-prettier/6.11.0_eslint@7.7.0:
     dependencies:
-      eslint: 7.6.0
+      eslint: 7.7.0
       get-stdin: 6.0.0
     dev: true
     hasBin: true
@@ -1692,12 +1692,12 @@ packages:
       eslint: '>=3.14.1'
     resolution:
       integrity: sha512-oB8cpLWSAjOVFEJhhyMZh6NOEOtBVziaqdDQ86+qhDHFbZXoRTM7pNSvFRfW/W/L/LrQ38C99J5CGuRBBzBsdA==
-  /eslint-plugin-react/7.20.6_eslint@7.6.0:
+  /eslint-plugin-react/7.20.6_eslint@7.7.0:
     dependencies:
       array-includes: 3.1.1
       array.prototype.flatmap: 1.2.3
       doctrine: 2.1.0
-      eslint: 7.6.0
+      eslint: 7.7.0
       has: 1.0.3
       jsx-ast-utils: 2.4.1
       object.entries: 1.1.2
@@ -1736,7 +1736,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==
-  /eslint/7.6.0:
+  /eslint/7.7.0:
     dependencies:
       '@babel/code-frame': 7.10.4
       ajv: 6.12.2
@@ -1779,7 +1779,7 @@ packages:
       node: ^10.12.0 || >=12.0.0
     hasBin: true
     resolution:
-      integrity: sha512-QlAManNtqr7sozWm5TF4wIH9gmUm2hE3vNRUvyoYAa4y1l5/jxD/PQStEjBMQtCqZmSep8UxrcecI60hOpe61w==
+      integrity: sha512-1KUxLzos0ZVsyL81PnRN335nDtQ8/vZUD6uMtWbF+5zDtjKcsklIi78XoE0MVL93QvWTu+E5y44VyyCsOMBrIg==
   /espree/7.2.0:
     dependencies:
       acorn: 7.3.1
@@ -5222,7 +5222,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
   cz-conventional-changelog: 3.2.0
-  eslint: 7.6.0
+  eslint: 7.7.0
   eslint-config-prettier: 6.11.0
   eslint-plugin-react: 7.20.6
   fast-deep-equal: 3.1.3
