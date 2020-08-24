@@ -8,7 +8,7 @@ devDependencies:
   '@babel/core': 7.11.4
   '@babel/plugin-transform-react-jsx': 7.10.4_@babel+core@7.11.4
   '@babel/register': 7.10.5_@babel+core@7.11.4
-  commitizen: 4.1.5
+  commitizen: 4.2.0
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
@@ -1075,7 +1075,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-+aMqiHJSpUSHsVlxI1Jm3UUlbsx6GsxuKSkeVavG/Y3XkUxsZZczV79JPSFs3DYvZXgrRVXIFkh+Iafxs6hclQ==
-  /commitizen/4.1.5:
+  /commitizen/4.2.0:
     dependencies:
       cachedir: 2.2.0
       cz-conventional-changelog: 3.2.0
@@ -1096,7 +1096,7 @@ packages:
       node: '>= 10'
     hasBin: true
     resolution:
-      integrity: sha512-oGNNeOARhunAPi5VF7FnLJAUPwajgt7DaC9hrDXFVo+qFlHaCtMtjY+iXOvfIrMBV3qmDZZyjgBsrTQMN5u1rg==
+      integrity: sha512-dMTgCkmxDOaH32HViVyvoGqVzCAyvBsgMViWnIDQxVHlEwHS1d6d8rweCGE7fjCROryBZmHRQrWVWN9GTw2F/g==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -5208,7 +5208,7 @@ specifiers:
   '@babel/core': 7.11.4
   '@babel/plugin-transform-react-jsx': 7.10.4
   '@babel/register': 7.10.5
-  commitizen: 4.1.5
+  commitizen: 4.2.0
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.4.0
   coveralls: 3.1.0
