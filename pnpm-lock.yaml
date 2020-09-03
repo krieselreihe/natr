@@ -5,9 +5,9 @@ dependencies:
   object-inspect: 1.8.0
   stack-utils: 2.0.2
 devDependencies:
-  '@babel/core': 7.11.5
-  '@babel/plugin-transform-react-jsx': 7.10.4_@babel+core@7.11.5
-  '@babel/register': 7.11.5_@babel+core@7.11.5
+  '@babel/core': 7.11.6
+  '@babel/plugin-transform-react-jsx': 7.10.4_@babel+core@7.11.6
+  '@babel/register': 7.11.5_@babel+core@7.11.6
   commitizen: 4.2.1
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.4.0
@@ -62,10 +62,10 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-KQmV9yguEjQsXqyOUGKjS4+3K8/DlOCE2pZcq4augdQmtTy5iv5EHtmMSJ7V4c1BIPjuwtZYqYLCq9Ga+hGBRQ==
-  /@babel/core/7.11.5:
+  /@babel/core/7.11.6:
     dependencies:
       '@babel/code-frame': 7.10.4
-      '@babel/generator': 7.11.5
+      '@babel/generator': 7.11.6
       '@babel/helper-module-transforms': 7.11.0
       '@babel/helpers': 7.10.4
       '@babel/parser': 7.11.5
@@ -79,12 +79,12 @@ packages:
       lodash: 4.17.20
       resolve: 1.17.0
       semver: 5.7.1
-      source-map: 0.6.1
+      source-map: 0.5.7
     dev: true
     engines:
       node: '>=6.9.0'
     resolution:
-      integrity: sha512-fsEANVOcZHzrsV6dMVWqpSeXClq3lNbYrfFGme6DE25FQWe7pyeYpXyx9guqUnpy466JLzZ8z4uwSr2iv60V5Q==
+      integrity: sha512-Wpcv03AGnmkgm6uS6k8iwhIwTrcP0m17TL1n1sy7qD0qelDu4XNeW0dN0mHfa+Gei211yDaLoEe/VlbXQzM4Bg==
   /@babel/generator/7.10.2:
     dependencies:
       '@babel/types': 7.10.2
@@ -94,14 +94,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-AxfBNHNu99DTMvlUPlt1h2+Hn7knPpH5ayJ8OqDWSeLld+Fi2AYBTC/IejWDM9Edcii4UzZRCsbUt0WlSDsDsA==
-  /@babel/generator/7.11.5:
+  /@babel/generator/7.11.6:
     dependencies:
       '@babel/types': 7.11.5
       jsesc: 2.5.2
-      source-map: 0.6.1
+      source-map: 0.5.7
     dev: true
     resolution:
-      integrity: sha512-9UqHWJ4IwRTy4l0o8gq2ef8ws8UPzvtMkVKjTLAiRmza9p9V6Z+OfuNd9fB1j5Q67F+dVJtPC2sZXI8NM9br4g==
+      integrity: sha512-DWtQ1PV3r+cLbySoHrwn9RWEgKMBLLma4OBQloPRyDYvc5msJM9kvTLo1YnlJd1P/ZuKbdli3ijr5q3FvAF3uA==
   /@babel/helper-annotate-as-pure/7.10.4:
     dependencies:
       '@babel/types': 7.10.4
@@ -313,30 +313,30 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-X9rD8qqm695vgmeaQ4fvz/o3+Wk4ZzQvSHkDBgpYKxpD4qTAUm88ZKtHkVqIOsYFFbIQ6wQYhC6q7pjqVK0E0Q==
-  /@babel/plugin-syntax-jsx/7.10.4_@babel+core@7.11.5:
+  /@babel/plugin-syntax-jsx/7.10.4_@babel+core@7.11.6:
     dependencies:
-      '@babel/core': 7.11.5
+      '@babel/core': 7.11.6
       '@babel/helper-plugin-utils': 7.10.4
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-KCg9mio9jwiARCB7WAcQ7Y1q+qicILjoK8LP/VkPkEKaf5dkaZZK1EcTe91a3JJlZ3qy6L5s9X52boEYi8DM9g==
-  /@babel/plugin-transform-react-jsx/7.10.4_@babel+core@7.11.5:
+  /@babel/plugin-transform-react-jsx/7.10.4_@babel+core@7.11.6:
     dependencies:
-      '@babel/core': 7.11.5
+      '@babel/core': 7.11.6
       '@babel/helper-builder-react-jsx': 7.10.4
       '@babel/helper-builder-react-jsx-experimental': 7.10.4
       '@babel/helper-plugin-utils': 7.10.4
-      '@babel/plugin-syntax-jsx': 7.10.4_@babel+core@7.11.5
+      '@babel/plugin-syntax-jsx': 7.10.4_@babel+core@7.11.6
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-L+MfRhWjX0eI7Js093MM6MacKU4M6dnCRa/QPDwYMxjljzSCzzlzKzj9Pk4P3OtrPcxr2N3znR419nr3Xw+65A==
-  /@babel/register/7.11.5_@babel+core@7.11.5:
+  /@babel/register/7.11.5_@babel+core@7.11.6:
     dependencies:
-      '@babel/core': 7.11.5
+      '@babel/core': 7.11.6
       find-cache-dir: 2.1.0
       lodash: 4.17.20
       make-dir: 2.1.0
@@ -380,7 +380,7 @@ packages:
   /@babel/traverse/7.11.5:
     dependencies:
       '@babel/code-frame': 7.10.4
-      '@babel/generator': 7.11.5
+      '@babel/generator': 7.11.6
       '@babel/helper-function-name': 7.10.4
       '@babel/helper-split-export-declaration': 7.11.0
       '@babel/parser': 7.11.5
@@ -5168,7 +5168,7 @@ packages:
     resolution:
       integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
 specifiers:
-  '@babel/core': 7.11.5
+  '@babel/core': 7.11.6
   '@babel/plugin-transform-react-jsx': 7.10.4
   '@babel/register': 7.11.5
   commitizen: 4.2.1
