@@ -18,8 +18,8 @@ devDependencies:
   eslint-plugin-react: 7.21.5_eslint@7.11.0
   nyc: 15.1.0
   prettier: 2.1.2
-  react: 16.14.0
-  react-test-renderer: 16.14.0_react@16.14.0
+  react: 17.0.0
+  react-test-renderer: 16.14.0_react@17.0.0
   standard-version: 9.0.0
   stream-spec: 0.3.6
   tap-color: 1.2.0
@@ -3952,11 +3952,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-  /react-test-renderer/16.14.0_react@16.14.0:
+  /react-test-renderer/16.14.0_react@17.0.0:
     dependencies:
       object-assign: 4.1.1
       prop-types: 15.7.2
-      react: 16.14.0
+      react: 17.0.0
       react-is: 16.13.1
       scheduler: 0.19.1
     dev: true
@@ -3964,16 +3964,15 @@ packages:
       react: ^16.14.0
     resolution:
       integrity: sha512-L8yPjqPE5CZO6rKsKXRO/rVPiaCOy0tQQJbC+UjPNlobl5mad59lvPjwFsQHTvL03caVDIVr9x9/OSgDe6I5Eg==
-  /react/16.14.0:
+  /react/17.0.0:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      prop-types: 15.7.2
     dev: true
     engines:
       node: '>=0.10.0'
     resolution:
-      integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
+      integrity: sha512-rG9bqS3LMuetoSUKHN8G3fMNuQOePKDThK6+2yXFWtoeTDLVNh/QCaxT+Jr+rNf4lwNXpx+atdn3Aa0oi8/6eQ==
   /read-pkg-up/1.0.1:
     dependencies:
       find-up: 1.1.2
@@ -5219,7 +5218,7 @@ specifiers:
   nyc: 15.1.0
   object-inspect: 1.8.0
   prettier: 2.1.2
-  react: 16.14.0
+  react: 17.0.0
   react-test-renderer: 16.14.0
   stack-utils: 2.0.2
   standard-version: 9.0.0
