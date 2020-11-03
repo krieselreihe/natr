@@ -124,7 +124,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
-    "@babel/plugin-transform-react-jsx": "7.12.1",
+    "@babel/plugin-transform-react-jsx": "7.12.5",
     "@babel/register": "7.12.1",
     "commitizen": "4.2.2",
     "concat-stream": "2.0.0",
