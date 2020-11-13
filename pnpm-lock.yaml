@@ -3,7 +3,7 @@ dependencies:
   fast-glob: 3.2.4
   minimist: 1.2.5
   object-inspect: 1.8.0
-  stack-utils: 2.0.2
+  stack-utils: 2.0.3
 devDependencies:
   '@babel/core': 7.12.3
   '@babel/plugin-transform-react-jsx': 7.12.5_@babel+core@7.12.3
@@ -4564,14 +4564,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-HXXqVUq7+pcKeLqqZj6mHFUMvXtOJt1uoUx09pFW6011inTMxqI8BA8PM95myrIyyKwdnzjdFjLiE6KBPVtJIg==
-  /stack-utils/2.0.2:
+  /stack-utils/2.0.3:
     dependencies:
       escape-string-regexp: 2.0.0
     dev: false
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-0H7QK2ECz3fyZMzQ8rH0j2ykpfbnd20BFtfg/SqVC2+sCTtcw0aDTGB7dk+de4U4uUeuz6nOtJcrkFFLG1B0Rg==
+      integrity: sha512-gL//fkxfWUsIlFL2Tl42Cl6+HFALEaB1FU76I/Fy+oZjRreP7OPMXFlGbxM7NQsI0ZpUfw76sHnv0WNYuTb7Iw==
   /standard-version/9.0.0:
     dependencies:
       chalk: 2.4.2
@@ -5244,7 +5244,7 @@ specifiers:
   prettier: 2.1.2
   react: 17.0.1
   react-test-renderer: 17.0.1
-  stack-utils: 2.0.2
+  stack-utils: 2.0.3
   standard-version: 9.0.0
   stream-spec: 0.3.6
   tap-color: 1.2.0
