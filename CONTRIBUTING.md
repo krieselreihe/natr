@@ -1,6 +1,6 @@
 # Contributing
 
-You want to help get _natr_ on track? Nice! And of course: you are the best! 🥳
+You want to help get _natr_ on track? Nice! You are the best! 🥳
 
 ## Contents
 
@@ -96,14 +96,14 @@ pnpm run format:check
 
 Checkout a new branch, there is no naming convention for branches, only for commits. Add your changes and run `pnpx git-cz` to start the commitizen cli to create a proper commit message.
 
-Push the changes and your feature branch and create a "Merge Request" on GitHub.
+Push the changes with your feature branch and create a "Merge Request" on GitHub.
 
 ## Recommended workflow for release
 
 1.  Make changes
 2.  Commit those changes with `pnpx git-cz`
 3.  Create a new release with `pnpm run release`
-4.  Push your release `git push --follow-tags origin master`
+4.  Push your release `git push --follow-tags origin main`
 5.  Publish: `NPM_CONFIG_OTP=XXXXXX pnpm publish` (replace `XXXXXX` with a valid 2FA token)
 6.  **Done!**
 

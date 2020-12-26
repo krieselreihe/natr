@@ -6,9 +6,9 @@
 [![Commitizen friendly][cfimg]][cfurl]
 [![code style: prettier][ptimg]][pturl]
 
-**Not another test runner!** (natr) But it is, and it is a highly opinionated one that is used for own projects. But if you want to use it as well, you are very welcome to do and give feedback 😎
+**Not another test runner!** (natr) But it is, and it is a highly opinionated one that is used for own projects. In case you want to use it as well, you are very welcome to do and give feedback 😎
 
-**Important note:** This runner is a MVP. Therefore not stable, features missing and not every edge case tested, overall alpha software. Use at own risk. If you want to help get _natr_ on track please read the [contribution guide](./CONTRIBUTING.md).
+**Important note:** This runner is an MVP. Therefore it is not stable, features missing and not every edge case tested, overall alpha software. Use at own risk. If you want to help get _natr_ on track please read the [contribution guide](./CONTRIBUTING.md).
 
 ## Contents
 
@@ -38,7 +38,7 @@
 
 ## Principles
 
-The goal of _natr_ is a reduced API by only using deep equal to check values for tests. This got inspired by [RITEWay](https://github.com/ericelliott/riteway) and uses the same API. Another goal was readability. Every test case should state a clear goal without over complicating things. By implement [TAP](https://testanything.org/) it is also possible to already use a wide variety of tools together with _natr_ for test coverage, color output and formatting. Besides that, speed is another factor. Tests should be execute often and therefore _natr_ aims to be as fast as possible.
+The goal of _natr_ is a reduced API by only using deep equal to check values for tests. This got inspired by [RITEWay](https://github.com/ericelliott/riteway) and uses the same API. Another goal was readability. Every test case should state a clear goal without over complicating things. By implement [TAP](https://testanything.org/) it is also possible to already use a wide variety of tools together with _natr_ for test coverage, color output and formatting. Speed is another factor. Tests should be executed often and therefore _natr_ aims to be as fast as possible.
 
 ## Installation
 
@@ -152,7 +152,7 @@ describe("my test suite", (assert) => {
 
 ### Snapshot testing
 
-Snapshot testing is included and can be used to test React component as JSON tree or regular JavaScript objects as well. Therefore the "expected" helper function `toMatchSnapshot` is exposed, that will create a snapshot on first run and match against on further.
+Snapshot testing is included and can be used to test React component as JSON tree or regular JavaScript objects as well. The "expected" helper function `toMatchSnapshot` is exposed, that will create a snapshot on first run and match against on further.
 
 ```javascript
 import { describe, toMatchSnapshot } from "@krieselreihe/natr";
@@ -198,7 +198,7 @@ After installing _natr_ you can use the CLI to execute multiple test files at on
 natr "src/**/__tests__/*.(js|jsx)"
 ```
 
-It uses [fast-glob](https://github.com/mrmlnc/fast-glob) and you can find documentation about the supported patterns at the [fast-glob pattern syntax documentation](https://github.com/mrmlnc/fast-glob#pattern-syntax). If you do not want to use _fast-glob_ for pattern matching you can write patterns without quotes to let your shell handle the file matching:
+It uses [fast-glob](https://github.com/mrmlnc/fast-glob) and you can find documentation about the supported patterns at the [fast-glob pattern syntax documentation](https://github.com/mrmlnc/fast-glob#pattern-syntax). If you do not want to use _fast-glob_ for "pattern matching" you can write patterns without quotes to let your shell handle the file matching:
 
 ```bash
 natr src/__tests__/*.js
@@ -213,7 +213,7 @@ node src/__tests__/my.test.js
 
 ### Preload files and modules
 
-To preload modules and files you can use the `--require` (`-r`) flag for the CLI. It can also be used multiple times if needed. For example you can require [Babel](https://babeljs.io/) to enable certain transformations like supporting JSX or new ECMAScript features (for Babel you need also a [`.babelrc` configuration file](https://babeljs.io/docs/en/config-files) to make it work).
+To preload modules and files you can use the `--require` (`-r`) flag for the CLI. It can also be used multiple times if needed. For example, you can require [Babel](https://babeljs.io/) to enable certain transformations like supporting JSX or new ECMAScript features (for Babel you need also a [`.babelrc` configuration file](https://babeljs.io/docs/en/config-files) to make it work).
 
 ```bash
 # Register babel
@@ -263,7 +263,7 @@ Through the implementation of [TAP](https://testanything.org/) you can use a var
 - [tap-spec](https://github.com/scottcorgan/tap-spec)
 - [tap-xunit](https://github.com/aghassemi/tap-xunit)
 
-And probably many many more. To use any of them install it and pipe the _natr_ output to the respective formatter:
+Probably many, many more. To use any of them install it and pipe the _natr_ output to the respective formatter:
 
 ```bash
 natr "src/__tests__/*.test.js" | tap-nirvana
@@ -334,10 +334,10 @@ This runner was highly inspired by [RITEWay](https://github.com/ericelliott/rite
 
 [npmurl]: https://www.npmjs.com/package/@krieselreihe/natr
 [npmimg]: https://img.shields.io/npm/v/@krieselreihe/natr.svg
-[bsurl]: https://travis-ci.org/krieselreihe/natr.svg?branch=master
-[bsimg]: https://travis-ci.org/krieselreihe/natr
-[cvurl]: https://coveralls.io/repos/github/krieselreihe/natr/badge.svg?branch=master
-[cvimg]: https://coveralls.io/github/krieselreihe/natr?branch=master
+[bsurl]: https://travis-ci.com/krieselreihe/natr.svg?branch=master
+[bsimg]: https://travis-ci.com/krieselreihe/natr
+[cvurl]: https://coveralls.io/repos/github/krieselreihe/natr/badge.svg?branch=main
+[cvimg]: https://coveralls.io/github/krieselreihe/natr?branch=main
 [cfimg]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [cfurl]: http://commitizen.github.io/cz-cli/
 [ptimg]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
