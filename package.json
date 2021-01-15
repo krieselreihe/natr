@@ -129,7 +129,7 @@
     "@babel/core": "7.12.10",
     "@babel/plugin-transform-react-jsx": "7.12.12",
     "@babel/register": "7.12.10",
-    "commitizen": "4.2.2",
+    "commitizen": "4.2.3",
     "concat-stream": "2.0.0",
     "conventional-changelog-conventionalcommits": "4.5.0",
     "coveralls": "3.1.0",
