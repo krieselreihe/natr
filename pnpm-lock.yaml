@@ -21,7 +21,7 @@ specifiers:
   react: 17.0.2
   react-test-renderer: 17.0.2
   stack-utils: 2.0.3
-  standard-version: 9.2.0
+  standard-version: 9.3.0
   stream-spec: 0.3.6
   tap-color: 1.2.0
   tap-nyc: 1.0.3
@@ -50,7 +50,7 @@ devDependencies:
   prettier: 2.2.1
   react: 17.0.2
   react-test-renderer: 17.0.2_react@17.0.2
-  standard-version: 9.2.0
+  standard-version: 9.3.0
   stream-spec: 0.3.6
   tap-color: 1.2.0
   tap-nyc: 1.0.3
@@ -1153,7 +1153,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       compare-func: 2.0.0
-      lodash: 4.17.20
+      lodash: 4.17.21
       q: 1.5.1
     dev: true
 
@@ -1252,7 +1252,7 @@ packages:
       conventional-changelog-angular: 5.0.12
       conventional-changelog-atom: 2.0.8
       conventional-changelog-codemirror: 2.0.8
-      conventional-changelog-conventionalcommits: 4.5.0
+      conventional-changelog-conventionalcommits: 4.6.0
       conventional-changelog-core: 4.2.1
       conventional-changelog-ember: 2.0.9
       conventional-changelog-eslint: 3.0.9
@@ -4315,8 +4315,8 @@ packages:
       escape-string-regexp: 2.0.0
     dev: false
 
-  /standard-version/9.2.0:
-    resolution: {integrity: sha512-utJcqjk/wR4sePSwDoRcc5CzJ6S+kec5Hd0+1TJI+j1TRYuuptweAnEUdkkjGf2vYoGab2ezefyVtW065HZ1Uw==}
+  /standard-version/9.3.0:
+    resolution: {integrity: sha512-cYxxKXhYfI3S9+CA84HmrJa9B88H56V5FQ302iFF2TNwJukJCNoU8FgWt+11YtwKFXRkQQFpepC2QOF7aDq2Ow==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
