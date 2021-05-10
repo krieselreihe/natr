@@ -2,7 +2,8 @@ const deepEqual = require("fast-deep-equal");
 const path = require("path");
 const { EventEmitter } = require("events");
 
-const errorStackRegExp = /^(?:[^\s]*\s*\bat\s+)(?:(.*)\s+\()?((?:\/|[a-zA-Z]:\\)[^:)]+:(\d+)(?::(\d+))?)/;
+const errorStackRegExp =
+  /^(?:[^\s]*\s*\bat\s+)(?:(.*)\s+\()?((?:\/|[a-zA-Z]:\\)[^:)]+:(\d+)(?::(\d+))?)/;
 
 module.exports = class Test extends EventEmitter {
   constructor(name, cb) {
