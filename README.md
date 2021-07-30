@@ -334,8 +334,8 @@ This runner was highly inspired by [RITEWay](https://github.com/ericelliott/rite
 
 [npmurl]: https://www.npmjs.com/package/@krieselreihe/natr
 [npmimg]: https://img.shields.io/npm/v/@krieselreihe/natr.svg
-[bsurl]: https://travis-ci.com/krieselreihe/natr.svg?branch=master
-[bsimg]: https://travis-ci.com/krieselreihe/natr
+[bsurl]: https://circleci.com/gh/krieselreihe/natr/tree/main.svg?style=shield
+[bsimg]: https://circleci.com/gh/krieselreihe/natr/tree/main
 [cvurl]: https://coveralls.io/repos/github/krieselreihe/natr/badge.svg?branch=main
 [cvimg]: https://coveralls.io/github/krieselreihe/natr?branch=main
 [cfimg]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
