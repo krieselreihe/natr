@@ -6,7 +6,7 @@ specifiers:
   '@babel/register': 7.15.3
   commitizen: 4.2.4
   concat-stream: 2.0.0
-  conventional-changelog-conventionalcommits: 4.6.0
+  conventional-changelog-conventionalcommits: 4.6.1
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
   eslint: 7.32.0
@@ -40,7 +40,7 @@ devDependencies:
   '@babel/register': 7.15.3_@babel+core@7.15.5
   commitizen: 4.2.4
   concat-stream: 2.0.0
-  conventional-changelog-conventionalcommits: 4.6.0
+  conventional-changelog-conventionalcommits: 4.6.1
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
   eslint: 7.32.0
@@ -1222,6 +1222,15 @@ packages:
 
   /conventional-changelog-conventionalcommits/4.6.0:
     resolution: {integrity: sha512-sj9tj3z5cnHaSJCYObA9nISf7eq/YjscLPoq6nmew4SiOjxqL2KRpK20fjnjVbpNDjJ2HR3MoVcWKXwbVvzS0A==}
+    engines: {node: '>=10'}
+    dependencies:
+      compare-func: 2.0.0
+      lodash: 4.17.21
+      q: 1.5.1
+    dev: true
+
+  /conventional-changelog-conventionalcommits/4.6.1:
+    resolution: {integrity: sha512-lzWJpPZhbM1R0PIzkwzGBCnAkH5RKJzJfFQZcl/D+2lsJxAwGnDKBqn/F4C1RD31GJNn8NuKWQzAZDAVXPp2Mw==}
     engines: {node: '>=10'}
     dependencies:
       compare-func: 2.0.0
