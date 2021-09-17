@@ -124,7 +124,7 @@
     "fast-glob": "3.2.7",
     "minimist": "1.2.5",
     "object-inspect": "1.11.0",
-    "stack-utils": "2.0.4"
+    "stack-utils": "2.0.5"
   },
   "devDependencies": {
     "@babel/core": "7.15.5",
