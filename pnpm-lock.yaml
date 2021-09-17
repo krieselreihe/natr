@@ -20,7 +20,7 @@ specifiers:
   prettier: 2.4.1
   react: 17.0.2
   react-test-renderer: 17.0.2
-  stack-utils: 2.0.4
+  stack-utils: 2.0.5
   standard-version: 9.3.1
   stream-spec: 0.3.6
   tap-color: 1.2.0
@@ -32,7 +32,7 @@ dependencies:
   fast-glob: 3.2.7
   minimist: 1.2.5
   object-inspect: 1.11.0
-  stack-utils: 2.0.4
+  stack-utils: 2.0.5
 
 devDependencies:
   '@babel/core': 7.15.5
@@ -894,6 +894,7 @@ packages:
 
   /buffer-from/1.1.1:
     resolution: {integrity: sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==}
+    dev: true
 
   /byline/5.0.0:
     resolution: {integrity: sha1-dBxSFkaOrcRXsDQQEYrXfejB3bE=}
@@ -4334,13 +4335,6 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /source-map-support/0.5.20:
-    resolution: {integrity: sha512-n1lZZ8Ve4ksRqizaBQgxXDgKwttHDhyfQjA6YZZn8+AroHbsIz+JjwxQDxbp+7y5OYCI8t1Yk7etjD9CRd2hIw==}
-    dependencies:
-      buffer-from: 1.1.1
-      source-map: 0.6.1
-    dev: false
-
   /source-map-url/0.4.0:
     resolution: {integrity: sha1-PpNdfd1zYxuXZZlW1VEo6HtQhKM=}
     dev: true
@@ -4353,6 +4347,7 @@ packages:
   /source-map/0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
+    dev: true
 
   /spawn-wrap/2.0.0:
     resolution: {integrity: sha512-EeajNjfN9zMnULLwhZZQU3GWBoFNkbngTUPfaawT4RkMiviTxcX0qfhVbGey39mfctfDHkWtuecgQ8NJcyQWHg==}
@@ -4433,12 +4428,11 @@ packages:
       tweetnacl: 0.14.5
     dev: true
 
-  /stack-utils/2.0.4:
-    resolution: {integrity: sha512-ERg+H//lSSYlZhBIUu+wJnqg30AbyBbpZlIhcshpn7BNzpoRODZgfyr9J+8ERf3ooC6af3u7Lcl01nleau7MrA==}
+  /stack-utils/2.0.5:
+    resolution: {integrity: sha512-xrQcmYhOsn/1kX+Vraq+7j4oE2j/6BFscZ0etmYg81xuM8Gq0022Pxb8+IqgOFUIaxHs0KaSb7T1+OegiNrNFA==}
     engines: {node: '>=10'}
     dependencies:
       escape-string-regexp: 2.0.0
-      source-map-support: 0.5.20
     dev: false
 
   /standard-version/9.3.1:
