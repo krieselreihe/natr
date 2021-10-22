@@ -9,7 +9,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.6.1
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
-  eslint: 8.0.1
+  eslint: 8.1.0
   eslint-config-prettier: 8.3.0
   eslint-plugin-react: 7.26.1
   fast-deep-equal: 3.1.3
@@ -43,9 +43,9 @@ devDependencies:
   conventional-changelog-conventionalcommits: 4.6.1
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
-  eslint: 8.0.1
-  eslint-config-prettier: 8.3.0_eslint@8.0.1
-  eslint-plugin-react: 7.26.1_eslint@8.0.1
+  eslint: 8.1.0
+  eslint-config-prettier: 8.3.0_eslint@8.1.0
+  eslint-plugin-react: 7.26.1_eslint@8.1.0
   nyc: 15.1.0
   prettier: 2.4.1
   react: 17.0.2
@@ -89,7 +89,7 @@ packages:
       '@babel/traverse': 7.12.12
       '@babel/types': 7.12.12
       convert-source-map: 1.7.0
-      debug: 4.3.1
+      debug: 4.3.2
       gensync: 1.0.0-beta.2
       json5: 2.1.3
       lodash: 4.17.20
@@ -453,7 +453,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.12.11
       '@babel/parser': 7.12.11
       '@babel/types': 7.12.12
-      debug: 4.3.1
+      debug: 4.3.2
       globals: 11.12.0
       lodash: 4.17.21
     transitivePeerDependencies:
@@ -471,7 +471,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.15.4
       '@babel/parser': 7.15.8
       '@babel/types': 7.15.6
-      debug: 4.3.1
+      debug: 4.3.2
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -1693,16 +1693,16 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier/8.3.0_eslint@8.0.1:
+  /eslint-config-prettier/8.3.0_eslint@8.1.0:
     resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 8.0.1
+      eslint: 8.1.0
     dev: true
 
-  /eslint-plugin-react/7.26.1_eslint@8.0.1:
+  /eslint-plugin-react/7.26.1_eslint@8.1.0:
     resolution: {integrity: sha512-Lug0+NOFXeOE+ORZ5pbsh6mSKjBKXDXItUD2sQoT+5Yl0eoT82DqnXeTMfUare4QVCn9QwXbfzO/dBLjLXwVjQ==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -1711,7 +1711,7 @@ packages:
       array-includes: 3.1.3
       array.prototype.flatmap: 1.2.4
       doctrine: 2.1.0
-      eslint: 8.0.1
+      eslint: 8.1.0
       estraverse: 5.2.0
       jsx-ast-utils: 3.2.0
       minimatch: 3.0.4
@@ -1733,13 +1733,13 @@ packages:
       estraverse: 5.2.0
     dev: true
 
-  /eslint-utils/3.0.0_eslint@8.0.1:
+  /eslint-utils/3.0.0_eslint@8.1.0:
     resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==}
     engines: {node: ^10.0.0 || ^12.0.0 || >= 14.0.0}
     peerDependencies:
       eslint: '>=5'
     dependencies:
-      eslint: 8.0.1
+      eslint: 8.1.0
       eslint-visitor-keys: 2.0.0
     dev: true
 
@@ -1753,8 +1753,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint/8.0.1:
-    resolution: {integrity: sha512-LsgcwZgQ72vZ+SMp4K6pAnk2yFDWL7Ti4pJaRvsZ0Hsw2h8ZjUIW38a9AFn2cZXdBMlScMFYYgsSp4ttFI/0bA==}
+  /eslint/8.1.0:
+    resolution: {integrity: sha512-JZvNneArGSUsluHWJ8g8MMs3CfIEzwaLx9KyH4tZ2i+R2/rPWzL8c0zg3rHdwYVpN/1sB9gqnjHwz9HoeJpGHw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -1768,7 +1768,7 @@ packages:
       enquirer: 2.3.6
       escape-string-regexp: 4.0.0
       eslint-scope: 6.0.0
-      eslint-utils: 3.0.0_eslint@8.0.1
+      eslint-utils: 3.0.0_eslint@8.1.0
       eslint-visitor-keys: 3.0.0
       espree: 9.0.0
       esquery: 1.4.0
@@ -2058,7 +2058,7 @@ packages:
     engines: {node: '>= 0.10'}
     dependencies:
       detect-file: 1.0.0
-      is-glob: 4.0.1
+      is-glob: 4.0.3
       micromatch: 3.1.10
       resolve-dir: 1.0.1
     dev: true
@@ -2068,7 +2068,7 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       detect-file: 1.0.0
-      is-glob: 4.0.1
+      is-glob: 4.0.3
       micromatch: 4.0.2
       resolve-dir: 1.0.1
     dev: true
@@ -2669,6 +2669,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extglob: 2.1.1
+    dev: false
 
   /is-glob/4.0.3:
     resolution: {integrity: sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==}
@@ -2834,7 +2835,7 @@ packages:
     resolution: {integrity: sha512-c16LpFRkR8vQXyHZ5nLpY35JZtzj1PQY1iZmesUbf1FZHbIupcWfjgOXBY9YHkLEQ6puz1u4Dgj6qmU/DisrZg==}
     engines: {node: '>=8'}
     dependencies:
-      debug: 4.3.1
+      debug: 4.3.2
       istanbul-lib-coverage: 3.0.0
       source-map: 0.6.1
     transitivePeerDependencies:
