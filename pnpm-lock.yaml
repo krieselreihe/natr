@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/core': 7.16.7
   '@babel/plugin-transform-react-jsx': 7.16.7
-  '@babel/register': 7.16.7
+  '@babel/register': 7.16.8
   commitizen: 4.2.4
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.6.3
@@ -37,7 +37,7 @@ dependencies:
 devDependencies:
   '@babel/core': 7.16.7
   '@babel/plugin-transform-react-jsx': 7.16.7_@babel+core@7.16.7
-  '@babel/register': 7.16.7_@babel+core@7.16.7
+  '@babel/register': 7.16.8_@babel+core@7.16.7
   commitizen: 4.2.4
   concat-stream: 2.0.0
   conventional-changelog-conventionalcommits: 4.6.3
@@ -254,8 +254,8 @@ packages:
       '@babel/types': 7.16.7
     dev: true
 
-  /@babel/register/7.16.7_@babel+core@7.16.7:
-    resolution: {integrity: sha512-Ft+cuxorVxFj4RrPDs9TbJNE7ZbuJTyazUC6jLWRvBQT/qIDZPMe7MHgjlrA+11+XDLh+I0Pnx7sxPp4LRhzcA==}
+  /@babel/register/7.16.8_@babel+core@7.16.7:
+    resolution: {integrity: sha512-aoUj2ocH92k7qyyA59y07sUaCVxxS7VjNul/jR0mpAyYvpo6n5HELZmyUGtrgFm7/1b0UutT7I1w/4bAkXxCHA==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
