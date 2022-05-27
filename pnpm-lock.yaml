@@ -6,7 +6,7 @@ specifiers:
   '@babel/register': 7.17.7
   commitizen: 4.2.4
   concat-stream: 2.0.0
-  conventional-changelog-conventionalcommits: 4.6.3
+  conventional-changelog-conventionalcommits: 5.0.0
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
   eslint: 8.16.0
@@ -40,7 +40,7 @@ devDependencies:
   '@babel/register': 7.17.7_@babel+core@7.18.2
   commitizen: 4.2.4
   concat-stream: 2.0.0
-  conventional-changelog-conventionalcommits: 4.6.3
+  conventional-changelog-conventionalcommits: 5.0.0
   coveralls: 3.1.1
   cz-conventional-changelog: 3.3.0
   eslint: 8.16.0
@@ -604,7 +604,7 @@ packages:
     dev: true
 
   /array-ify/1.0.0:
-    resolution: {integrity: sha1-nlKHYrSpBmrRY6aWKjZEGOlibs4=}
+    resolution: {integrity: sha512-c5AMf34bKdvPhQ7tBGhqkgKNUzMr4WUs+WDtC2ZUGOUncbxKMTvqxYctiseW3+L4bA8ec+GcZ6/A/FW4m8ukng==}
     dev: true
 
   /array-includes/3.1.5:
@@ -1058,6 +1058,15 @@ packages:
 
   /conventional-changelog-conventionalcommits/4.6.3:
     resolution: {integrity: sha512-LTTQV4fwOM4oLPad317V/QNQ1FY4Hju5qeBIM1uTHbrnCE+Eg4CdRZ3gO2pUeR+tzWdp80M2j3qFFEDWVqOV4g==}
+    engines: {node: '>=10'}
+    dependencies:
+      compare-func: 2.0.0
+      lodash: 4.17.21
+      q: 1.5.1
+    dev: true
+
+  /conventional-changelog-conventionalcommits/5.0.0:
+    resolution: {integrity: sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw==}
     engines: {node: '>=10'}
     dependencies:
       compare-func: 2.0.0
