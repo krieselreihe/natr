@@ -17,7 +17,7 @@ specifiers:
   minimist: 1.2.6
   nyc: 15.1.0
   object-inspect: 1.12.2
-  prettier: 2.6.2
+  prettier: 2.7.0
   react: 18.2.0
   react-test-renderer: 18.2.0
   stack-utils: 2.0.5
@@ -47,7 +47,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.17.0
   eslint-plugin-react: 7.30.0_eslint@8.17.0
   nyc: 15.1.0
-  prettier: 2.6.2
+  prettier: 2.7.0
   react: 18.2.0
   react-test-renderer: 18.2.0_react@18.2.0
   standard-version: 9.5.0
@@ -3712,8 +3712,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.6.2:
-    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
+  /prettier/2.7.0:
+    resolution: {integrity: sha512-nwoX4GMFgxoPC6diHvSwmK/4yU8FFH3V8XWtLQrbj4IBsK2pkYhG4kf/ljF/haaZ/aii+wNJqISrCDPgxGWDVQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
