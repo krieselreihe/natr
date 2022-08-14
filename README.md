@@ -8,7 +8,7 @@
 
 **Not another test runner!** (natr) But it is, and it is a highly opinionated one that is used for own projects. In case you want to use it as well, you are very welcome to do and give feedback 😎
 
-**Important note:** This runner is an MVP. Therefore it is not stable, features missing and not every edge case tested, overall alpha software. Use at own risk. If you want to help get _natr_ on track please read the [contribution guide](./CONTRIBUTING.md).
+**Important note:** This runner is an MVP. Therefore, it is not stable, features missing and not every edge case tested, overall alpha software. Use at own risk. If you want to help get _natr_ on track please read the [contribution guide](./CONTRIBUTING.md).
 
 ## Contents
 
@@ -198,7 +198,7 @@ After installing _natr_ you can use the CLI to execute multiple test files at on
 natr "src/**/__tests__/*.(js|jsx)"
 ```
 
-It uses [fast-glob](https://github.com/mrmlnc/fast-glob) and you can find documentation about the supported patterns at the [fast-glob pattern syntax documentation](https://github.com/mrmlnc/fast-glob#pattern-syntax). If you do not want to use _fast-glob_ for "pattern matching" you can write patterns without quotes to let your shell handle the file matching:
+It uses [fast-glob](https://github.com/mrmlnc/fast-glob), you can find documentation about the supported patterns at the [fast-glob pattern syntax documentation](https://github.com/mrmlnc/fast-glob#pattern-syntax). If you do not want to use _fast-glob_ for "pattern matching" you can write patterns without quotes to let your shell handle the file matching:
 
 ```bash
 natr src/__tests__/*.js
@@ -330,7 +330,7 @@ assert({
 
 ## Disclaimer
 
-This runner was highly inspired by [RITEWay](https://github.com/ericelliott/riteway) on how to write tests with focus on simplicity (e.g. only use deep equal, enforce reduced API), and [node-tap](https://www.node-tap.org/) on how to log test reports based on the [TAP](https://testanything.org/) (Test Anything Protocol). Also [Jest](https://jestjs.io/) for snapshot testing and [tape](https://github.com/substack/tape) on actual creating a runner that had to hold as base for _natr_.
+This runner was highly inspired by [RITEWay](https://github.com/ericelliott/riteway) on how to write tests with focus on simplicity (e.g. only use deep equal, enforce reduced API), and [node-tap](https://www.node-tap.org/) on how to log test reports based on the [TAP](https://testanything.org/) (Test Anything Protocol). Also, [Jest](https://jestjs.io/) for snapshot testing and [tape](https://github.com/substack/tape) on actual creating a runner that had to hold as base for _natr_.
 
 [npmurl]: https://www.npmjs.com/package/@krieselreihe/natr
 [npmimg]: https://img.shields.io/npm/v/@krieselreihe/natr.svg
