@@ -17,8 +17,7 @@
     "format:check": "prettier --list-different .",
     "ci": "pnpm run prerelease && pnpm run coverage:ci",
     "prerelease": "pnpm run lint && pnpm run format:check && pnpm test && pnpm run test:typings",
-    "release": "standard-version -a -s",
-    "prepare": "node ./scripts/ensure-package-manager.js"
+    "release": "standard-version -a -s"
   },
   "keywords": [
     "natr",
