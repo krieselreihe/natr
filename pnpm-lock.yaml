@@ -20,7 +20,7 @@ specifiers:
   prettier: 2.7.1
   react: 18.2.0
   react-test-renderer: 18.2.0
-  stack-utils: 2.0.5
+  stack-utils: 2.0.6
   standard-version: 9.5.0
   stream-spec: 0.3.6
   tap-color: 1.2.0
@@ -32,7 +32,7 @@ dependencies:
   fast-glob: 3.2.12
   minimist: 1.2.7
   object-inspect: 1.12.2
-  stack-utils: 2.0.5
+  stack-utils: 2.0.6
 
 devDependencies:
   '@babel/core': 7.20.2
@@ -1422,7 +1422,7 @@ packages:
     dev: true
 
   /escape-string-regexp/1.0.5:
-    resolution: {integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=}
+    resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
     dev: true
 
@@ -3794,8 +3794,8 @@ packages:
       tweetnacl: 0.14.5
     dev: true
 
-  /stack-utils/2.0.5:
-    resolution: {integrity: sha512-xrQcmYhOsn/1kX+Vraq+7j4oE2j/6BFscZ0etmYg81xuM8Gq0022Pxb8+IqgOFUIaxHs0KaSb7T1+OegiNrNFA==}
+  /stack-utils/2.0.6:
+    resolution: {integrity: sha512-XlkWvfIm6RmsWtNJx+uqtKLS8eqFbxUg0ZzLXqY0caEy9l7hruX8IpiDnjsLavoBgqCCR71TqWO8MaXYheJ3RQ==}
     engines: {node: '>=10'}
     dependencies:
       escape-string-regexp: 2.0.0
