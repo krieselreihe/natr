@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': 7.20.12
-  '@babel/plugin-transform-react-jsx': 7.20.7
+  '@babel/plugin-transform-react-jsx': 7.20.13
   '@babel/register': 7.18.9
   commitizen: 4.3.0
   concat-stream: 2.0.0
@@ -36,7 +36,7 @@ dependencies:
 
 devDependencies:
   '@babel/core': 7.20.12
-  '@babel/plugin-transform-react-jsx': 7.20.7_@babel+core@7.20.12
+  '@babel/plugin-transform-react-jsx': 7.20.13_@babel+core@7.20.12
   '@babel/register': 7.18.9_@babel+core@7.20.12
   commitizen: 4.3.0
   concat-stream: 2.0.0
@@ -245,8 +245,8 @@ packages:
       '@babel/helper-plugin-utils': 7.20.2
     dev: true
 
-  /@babel/plugin-transform-react-jsx/7.20.7_@babel+core@7.20.12:
-    resolution: {integrity: sha512-Tfq7qqD+tRj3EoDhY00nn2uP2hsRxgYGi5mLQ5TimKav0a9Lrpd4deE+fcLXU8zFYRjlKPHZhpCvfEA6qnBxqQ==}
+  /@babel/plugin-transform-react-jsx/7.20.13_@babel+core@7.20.12:
+    resolution: {integrity: sha512-MmTZx/bkUrfJhhYAYt3Urjm+h8DQGrPrnKQ94jLo7NLuOU+T89a7IByhKmrb8SKhrIYIQ0FN0CHMbnFRen4qNw==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
