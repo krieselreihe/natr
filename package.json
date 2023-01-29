@@ -136,7 +136,7 @@
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.33.0",
     "eslint-config-prettier": "8.6.0",
-    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react": "7.32.2",
     "nyc": "15.1.0",
     "prettier": "2.8.3",
     "react": "18.2.0",
