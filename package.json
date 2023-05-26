@@ -126,8 +126,8 @@
     "stack-utils": "2.0.6"
   },
   "devDependencies": {
-    "@babel/core": "7.21.8",
-    "@babel/plugin-transform-react-jsx": "7.21.5",
+    "@babel/core": "7.22.1",
+    "@babel/plugin-transform-react-jsx": "7.22.0",
     "@babel/register": "7.21.0",
     "commitizen": "4.3.0",
     "concat-stream": "2.0.0",
