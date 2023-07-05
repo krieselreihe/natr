@@ -288,7 +288,7 @@ type TestSuite = (test: UnitTest) => Promise<void> | void;
 type Describe = (unit: string, fn: TestSuite) => void;
 
 type Execute<ReturnType = any> = (
-  callback: () => ReturnType
+  callback: () => ReturnType,
 ) => Promise<ReturnType> | ReturnType;
 ```
 

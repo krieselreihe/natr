@@ -37,7 +37,7 @@ opts._.forEach((arg) => {
 
   if (!Array.isArray(files)) {
     throw new TypeError(
-      "unknown error: glob.sync did not return an array or throw. Please report this."
+      "unknown error: glob.sync did not return an array or throw. Please report this.",
     );
   }
 

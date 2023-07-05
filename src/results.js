@@ -46,12 +46,12 @@ function encodeResult(result, count) {
     ) {
       output.push(
         `${outer}expected: |-\n${inner}${expected}\n`,
-        `${outer}actual: |-\n${inner}${actual}\n`
+        `${outer}actual: |-\n${inner}${actual}\n`,
       );
     } else {
       output.push(
         `${outer}expected: ${expected}\n`,
-        `${outer}actual:   ${actual}\n`
+        `${outer}actual:   ${actual}\n`,
       );
     }
   }

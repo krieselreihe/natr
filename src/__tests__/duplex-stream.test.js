@@ -30,7 +30,7 @@ function read(stream, callback) {
 describe("duplex streams", async (assert) => {
   // 100 is just a generic length for the test data set
   const randomNumberArray = Array.from({ length: 100 }, () =>
-    Math.floor(Math.random() * 100)
+    Math.floor(Math.random() * 100),
   );
 
   // @todo: Bug report
@@ -271,7 +271,7 @@ describe("duplex streams", async (assert) => {
     actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
-        () => stream.queue(null)
+        () => stream.queue(null),
       );
       const actual = [];
 
@@ -292,7 +292,7 @@ describe("duplex streams", async (assert) => {
     actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
-        () => stream.queue(null)
+        () => stream.queue(null),
       );
       const actual = [];
 
@@ -317,7 +317,7 @@ describe("duplex streams", async (assert) => {
     actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
-        () => stream.queue(null)
+        () => stream.queue(null),
       );
       const actual = [];
 
@@ -343,7 +343,7 @@ describe("duplex streams", async (assert) => {
     actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
-        () => stream.queue(null)
+        () => stream.queue(null),
       );
       const actual = [];
       let ended = false;
@@ -376,7 +376,7 @@ describe("duplex streams", async (assert) => {
     actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
-        () => stream.queue(null)
+        () => stream.queue(null),
       );
       const actual = [];
 
@@ -399,7 +399,7 @@ describe("duplex streams", async (assert) => {
     actual: execute(() => {
       const stream = duplexStream(
         (data) => stream.queue(data),
-        () => stream.queue(null)
+        () => stream.queue(null),
       );
       const actual = [];
 
