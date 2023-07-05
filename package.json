@@ -138,7 +138,7 @@
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-react": "7.32.2",
     "nyc": "15.1.0",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "react": "18.2.0",
     "react-test-renderer": "18.2.0",
     "standard-version": "9.5.0",

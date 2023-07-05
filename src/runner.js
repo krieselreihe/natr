@@ -149,7 +149,7 @@ function resolveSnapshot(name, value) {
   const testFile = getTestFile();
   const snapshotDir = `${path.dirname(testFile)}${path.sep}__snapshots__`;
   const snapshotFile = `${snapshotDir}${path.sep}${path.basename(
-    testFile
+    testFile,
   )}.snap`;
 
   if (!fs.existsSync(snapshotDir)) {
@@ -193,7 +193,7 @@ function createAssert(description, test) {
       test.deepEqual(
         testDescriptor,
         messaging.API_DESCRIPTION,
-        "You either used the assert function wrong or there is a typo."
+        "You either used the assert function wrong or there is a typo.",
       );
       return;
     }
@@ -205,7 +205,7 @@ function createAssert(description, test) {
       test.deepEqual(
         actual,
         resolveSnapshot(`${description}, ${message}`, actual),
-        message
+        message,
       );
       return;
     }

@@ -20,7 +20,7 @@ export type SnapshotResolver = (name: string, value: Snapshot) => Snapshot;
 export function toMatchSnapshot(): SnapshotResolver;
 
 export function execute<ActualType>(
-  callback: ExecuteCallback<ActualType>
+  callback: ExecuteCallback<ActualType>,
 ): Promise<ActualType> | ActualType;
 
 export function describe(name: string, unit: UnitTest): void;
